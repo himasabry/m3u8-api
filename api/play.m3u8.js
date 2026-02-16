@@ -2,7 +2,7 @@ export default function handler(req, res) {
   const { id } = req.query;
 
   const channels = {
-    "116900": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+    "116900": "http://135.125.109.73:9000/Bein%20Sports%201%204K%20QA_.m3u8"
   };
 
   if (!channels[id]) {
