@@ -5,6 +5,12 @@ export default async function handler(req, res) {
   const { id } = req.query;
   if (!id) return res.status(400).send("Missing id");
 
+  // تحقق من User-Agent
+  const userAgent = req.headers['user-agent'] || '';
+  if (!userAgent.includes("SUPER2026")) {
+    return res.status(403).send("Forbidden: Invalid User-Agent");
+  }
+
   const filePath = path.join(process.cwd(), "data", "channels.json");
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
