@@ -2,21 +2,26 @@ import fs from "fs";
 import path from "path";
 
 export default async function handler(req, res) {
-  const { group, id } = req.query;
+  const { id } = req.query;
 
-  if (!group || !id) {
-    return res.status(400).send("Missing parameters");
+  if (!id) {
+    return res.status(400).send("Missing id");
   }
 
   try {
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-    if (!data[group]) {
-      return res.status(404).send("Group not found");
-    }
+    let channel = null;
 
-    const channel = data[group].find(ch => ch.id == id);
+    // البحث داخل كل الجروبات
+    for (const group in data) {
+      const found = data[group].find(ch => ch.id == id);
+      if (found) {
+        channel = found;
+        break;
+      }
+    }
 
     if (!channel) {
       return res.status(404).send("Channel not found");
