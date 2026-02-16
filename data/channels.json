@@ -45,9 +45,9 @@
         "Origin": ""
       },
       "streams": {
-        "high": "http://4kgood.org/live/warad01_604070/bqSSYCi4/1.m3u8",
-        "mid":  "http://4kgood.org/live/warad01_604070/bqSSYCi4/534831.m3u8",
-        "low":  "http://4kgood.org/live/warad01_604070/bqSSYCi4/2541.m3u8"
+        "high": "https://xvg1xtr.m-2026-mobile.xyz/32_.m3u8",
+        "mid":  "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
+        "low":  "https://xvg1xtr.m-2026-mobile.xyz/1_.m3u8"
       }
     }
   ]
