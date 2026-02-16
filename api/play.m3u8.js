@@ -1,16 +1,12 @@
 import fs from "fs";
 import path from "path";
+import fetch from "node-fetch";
 
 export default async function handler(req, res) {
   const { id } = req.query;
   if (!id) return res.status(400).send("Missing id");
 
-  const userAgent = req.headers['user-agent'] || '';
-  const REQUIRED_AGENT = "SUPER2026";
-  if (!userAgent.includes(REQUIRED_AGENT)) {
-    return res.status(403).send("Forbidden");
-  }
-
+  // قراءة ملف القنوات
   const filePath = path.join(process.cwd(), "data", "channels.json");
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
@@ -22,27 +18,26 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // قناة ABR → نرسل Master Playlist يشير للـ Proxy
-  if (channel.streams) {
+  const targetUrl =
+    channel.streams?.master ||
+    channel.streams?.high ||
+    channel.url;
+
+  try {
+    const response = await fetch(targetUrl, {
+      headers: channel.headers || {}
+    });
+
+    if (!response.ok) {
+      return res.status(500).send("Stream fetch failed");
+    }
+
     res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
 
-    const host = `https://${req.headers.host}`;
+    const body = await response.text();
+    res.status(200).send(body);
 
-    return res.send(`#EXTM3U
-#EXT-X-VERSION:6
-#EXT-X-INDEPENDENT-SEGMENTS
-
-#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160,CODECS="avc1.640028,mp4a.40.2"
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.high)}
-
-#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080,CODECS="avc1.640028,mp4a.40.2"
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.mid)}
-
-#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480,CODECS="avc1.64001F,mp4a.40.2"
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.low)}
-`);
+  } catch (err) {
+    res.status(500).send("Stream proxy error");
   }
-
-  // القنوات العادية
-  res.redirect(channel.url);
 }
