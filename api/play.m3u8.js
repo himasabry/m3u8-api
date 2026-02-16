@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // قناة ABR
+  // قناة ABR → نرسل Master Playlist يشير للـ Proxy
   if (channel.streams) {
     res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
 
@@ -32,13 +32,13 @@ export default async function handler(req, res) {
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
 
-#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160,FRAME-RATE=50.000,CODECS="avc1.640028,mp4a.40.2"
+#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160,CODECS="avc1.640028,mp4a.40.2"
 ${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.high)}
 
-#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080,FRAME-RATE=50.000,CODECS="avc1.640028,mp4a.40.2"
+#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080,CODECS="avc1.640028,mp4a.40.2"
 ${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.mid)}
 
-#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480,FRAME-RATE=50.000,CODECS="avc1.64001F,mp4a.40.2"
+#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480,CODECS="avc1.64001F,mp4a.40.2"
 ${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.low)}
 `);
   }
