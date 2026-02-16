@@ -1,8 +1,8 @@
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const { id } = req.query;
 
   const channels = {
-    "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8"
+    "116900": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8"
   };
 
   if (!channels[id]) {
@@ -10,9 +10,23 @@ export default function handler(req, res) {
     return;
   }
 
-  res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-  res.send(`#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=6000000
-${channels[id]}`);
+  try {
+    const url = channels[id];
+    const base = url.substring(0, url.lastIndexOf("/") + 1);
+
+    const response = await fetch(url);
+    let body = await response.text();
+
+    // تحويل المسارات النسبية إلى مطلقة
+    body = body.replace(
+      /^(?!#)(.+)$/gm,
+      line => line.startsWith("http") ? line : base + line
+    );
+
+    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
+    res.send(body);
+
+  } catch (e) {
+    res.status(500).send("#EXTM3U\n# Stream error");
+  }
 }
