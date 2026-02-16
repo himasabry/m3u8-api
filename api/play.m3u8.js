@@ -4,40 +4,54 @@ import path from "path";
 export default async function handler(req, res) {
   const { id } = req.query;
 
-  if (!id) {
-    return res.status(400).send("Missing id");
-  }
-
   try {
+    // قراءة ملف القنوات
     const filePath = path.join(process.cwd(), "data", "channels.json");
-    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const rawData = fs.readFileSync(filePath, "utf8");
+    const channelsData = JSON.parse(rawData);
 
-    let channel = null;
-
-    // البحث داخل كل الجروبات
-    for (const group in data) {
-      const found = data[group].find(ch => ch.id == id);
-      if (found) {
-        channel = found;
+    // البحث عن القناة
+    let streamUrl = null;
+    for (const cat in channelsData) {
+      const ch = channelsData[cat].find(c => c.id === id);
+      if (ch) {
+        streamUrl = ch.url;
         break;
       }
     }
 
-    if (!channel) {
-      return res.status(404).send("Channel not found");
+    if (!streamUrl) {
+      res.status(404).send("#EXTM3U\n# Channel not found");
+      return;
     }
 
-    const headers = channel.headers || {};
-
-    const response = await fetch(channel.url, {
-      headers
+    // جلب البث مع هيدرز احترافية
+    const response = await fetch(streamUrl, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36",
+        "Referer": new URL(streamUrl).origin + "/",
+        "Origin": new URL(streamUrl).origin
+      }
     });
 
-    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-    res.status(200).send(await response.text());
+    let body = await response.text();
 
-  } catch (err) {
-    console.error(err);
-    res.status(500).send("Server error");
+    // لو رجّع رابط مباشر
+    if (body.startsWith("http")) {
+      body = `#EXTM3U\n#EXT-X-STREAM-INF:BANDWIDTH=8000000\n${body}`;
+    }
+
+    // إصلاح المسارات النسبية
+    const base = streamUrl.substring(0, streamUrl.lastIndexOf("/") + 1);
+    body = body.replace(
+      /^(?!#)(.+)$/gm,
+      line => (line.startsWith("http") ? line : base + line)
+    );
+
+    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
+    res.send(body);
+  } catch (e) {
+    res.status(500).send("#EXTM3U\n# Stream error");
   }
 }
