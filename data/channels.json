@@ -1,0 +1,24 @@
+{
+  "Bein Sports": [
+    {
+      "id": "01",
+      "name": "Bein Sports 1 4K QA",
+      "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8",
+      "category": "Sports"
+    },
+    {
+      "id": "02",
+      "name": "Bein Sports 2 HD",
+      "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
+      "category": "Sports"
+    }
+  ],
+  "MBC": [
+    {
+      "id": "117000",
+      "name": "MBC 1 HD",
+      "url": "http://example.com/mbc1.m3u8",
+      "category": "Entertainment"
+    }
+  ]
+}
