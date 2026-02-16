@@ -20,7 +20,7 @@
         {
           "url": "https://on-tv.site/api/MN2.php?action=stream&id=116900&cat=4524",
           "headers": {
-            "User-Agent": "PUT_YOUR_USER_AGENT_HERE",
+            "User-Agent": "PUT_YOUR_USER_AGENT",
             "Referer": "https://on-tv.site/",
             "Origin": "https://on-tv.site"
           }
@@ -29,14 +29,6 @@
           "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8"
         }
       ]
-    }
-  ],
-  "MBC": [
-    {
-      "id": "101",
-      "name": "MBC 1 HD",
-      "category": "Entertainment",
-      "url": "https://example.com/mbc1.m3u8"
     }
   ]
 }
