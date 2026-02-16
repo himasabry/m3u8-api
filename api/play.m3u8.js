@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   // 1️⃣ تحقق من User-Agent
   const userAgent = req.headers['user-agent'] || '';
-  const REQUIRED_AGENT = "MyCustomPlayer"; // غير الاسم ده حسب اختيارك
+  const REQUIRED_AGENT = "SUPER2026"; // غير الاسم ده حسب اختيارك
   if (!userAgent.includes(REQUIRED_AGENT)) {
     return res.status(403).send("Forbidden: Invalid User-Agent");
   }
