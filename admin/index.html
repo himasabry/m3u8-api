@@ -2,17 +2,17 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>لوحة التحكم - القنوات</title>
+<title>لوحة تحكم القنوات</title>
 <style>
 body{font-family:tahoma;background:#111;color:#fff;margin:0;padding:20px}
 h1{text-align:center}
 table{width:100%;border-collapse:collapse;margin-top:20px}
 th,td{border:1px solid #444;padding:8px;text-align:center}
 th{background:#222}
-input,select,button{padding:6px;border-radius:5px;border:0}
+input,button{padding:6px;border-radius:5px;border:0;width:100%}
 button{cursor:pointer}
-.add{background:#28a745;color:#fff}
-.save{background:#007bff;color:#fff}
+.add{background:#28a745;color:#fff;margin-bottom:10px}
+.save{background:#007bff;color:#fff;margin-top:15px}
 .del{background:#dc3545;color:#fff}
 </style>
 </head>
@@ -22,7 +22,7 @@ button{cursor:pointer}
 
 <button class="add" onclick="addRow()">➕ إضافة قناة</button>
 
-<table id="table">
+<table>
 <thead>
 <tr>
 <th>ID</th>
@@ -35,10 +35,9 @@ button{cursor:pointer}
 <th>حذف</th>
 </tr>
 </thead>
-<tbody></tbody>
+<tbody id="tbody"></tbody>
 </table>
 
-<br>
 <button class="save" onclick="save()">💾 حفظ التعديلات</button>
 
 <script>
@@ -51,55 +50,80 @@ async function load(){
 }
 
 function render(){
-  const tbody = document.querySelector("#table tbody");
+  const tbody = document.getElementById("tbody");
   tbody.innerHTML = '';
-  Object.keys(channels).forEach(cat=>{
-    channels[cat].forEach(ch=>{
-      tbody.innerHTML += row(ch,cat);
-    })
-  })
+  Object.keys(channels).forEach(pack=>{
+    channels[pack].forEach(ch=>{
+      tbody.innerHTML += row(ch,pack);
+    });
+  });
 }
 
-function row(ch,cat){
+function row(ch,pack){
   return `<tr>
   <td><input value="${ch.id || ''}"></td>
   <td><input value="${ch.name || ''}"></td>
-  <td><input value="${cat || ''}"></td>
-  <td><input value="${ch.url || ''}" style="width:100%"></td>
-  <td><input value="${ch.headers?.['user-agent'] || ''}" placeholder="User-Agent"></td>
-  <td><input value="${ch.headers?.referer || ''}" placeholder="Referer"></td>
-  <td><input value="${ch.headers?.origin || ''}" placeholder="Origin"></td>
+  <td><input value="${pack || ''}"></td>
+  <td><input value="${ch.url || ''}"></td>
+  <td><input value="${ch.headers?.['user-agent'] || ''}"></td>
+  <td><input value="${ch.headers?.referer || ''}"></td>
+  <td><input value="${ch.headers?.origin || ''}"></td>
   <td><button class="del" onclick="this.parentElement.parentElement.remove()">❌</button></td>
-  </tr>`
+  </tr>`;
 }
 
 function addRow(){
-  document.querySelector("#table tbody").innerHTML += row({id:'',name:'',url:''},'');
+  document.getElementById("tbody").innerHTML += row({},'');
 }
 
 async function save(){
-  const rows = document.querySelectorAll("tbody tr");
+  const rows = document.querySelectorAll("#tbody tr");
   let data = {};
+
   rows.forEach(r=>{
     const t = r.querySelectorAll("input");
-    const id = t[0].value;
-    const name = t[1].value;
-    const url = t[2].value;
-    const cat = t[3].value || "Other";
-    if(!data[cat]) data[cat]=[];
-    data[cat].push({id,name,url,category:cat});
+
+    const id   = t[0].value.trim();
+    const name = t[1].value.trim();
+    const pack = t[2].value.trim() || "General";
+    const url  = t[3].value.trim();
+
+    const ua  = t[4].value.trim();
+    const ref = t[5].value.trim();
+    const ori = t[6].value.trim();
+
+    if(!id || !name || !url) return;
+
+    if(!data[pack]) data[pack] = [];
+
+    data[pack].push({
+      id,
+      name,
+      url,
+      category: pack,
+      headers: {
+        "user-agent": ua,
+        "referer": ref,
+        "origin": ori
+      }
+    });
   });
 
-  await fetch('/api/save',{
+  const res = await fetch('/api/save',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify(data)
+    body: JSON.stringify(data, null, 2)
   });
 
-  alert("تم الحفظ بنجاح ✅");
+  if(res.ok){
+    alert("✅ تم حفظ القنوات بنجاح");
+  }else{
+    alert("❌ حصل خطأ أثناء الحفظ");
+  }
 }
 
 load();
 </script>
+
 </body>
 </html>
