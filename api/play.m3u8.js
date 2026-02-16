@@ -14,6 +14,7 @@ export default async function handler(req, res) {
 
     let channel = null;
 
+    // البحث داخل كل الجروبات
     for (const group in data) {
       const found = data[group].find(ch => ch.id == id);
       if (found) {
@@ -29,18 +30,11 @@ export default async function handler(req, res) {
     const headers = channel.headers || {};
 
     const response = await fetch(channel.url, {
-      headers,
-      redirect: "follow"
+      headers
     });
 
-    if (!response.ok) {
-      return res.status(500).send("Upstream error");
-    }
-
-    res.setHeader("Content-Type", response.headers.get("content-type") || "application/vnd.apple.mpegurl");
-
-    const buffer = Buffer.from(await response.arrayBuffer());
-    res.status(200).send(buffer);
+    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
+    res.status(200).send(await response.text());
 
   } catch (err) {
     console.error(err);
