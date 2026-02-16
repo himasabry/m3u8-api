@@ -3,32 +3,25 @@
     {
       "id": "01",
       "name": "Bein Sports 1 4K QA",
-      "category": "Sports",
-      "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8"
+      "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8",
+      "category": "Sports"
     },
     {
       "id": "02",
       "name": "Bein Sports 2 HD",
-      "category": "Sports",
-      "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8"
+      "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
+      "category": "Sports"
     },
     {
       "id": "03",
       "name": "Bein Sports 1 MULTI QA",
+      "url": "https://on-tv.site/api/MN2.php?action=stream&id=116900&cat=4524",
       "category": "Sports",
-      "sources": [
-        {
-          "url": "https://on-tv.site/api/MN2.php?action=stream&id=116900&cat=4524",
-          "headers": {
-            "User-Agent": "PUT_YOUR_USER_AGENT",
-            "Referer": "https://on-tv.site/",
-            "Origin": "https://on-tv.site"
-          }
-        },
-        {
-          "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8"
-        }
-      ]
+      "headers": {
+        "User-Agent": "PUT_YOUR_USER_AGENT_HERE",
+        "Referer": "https://on-tv.site/",
+        "Origin": "https://on-tv.site"
+      }
     }
   ]
 }
