@@ -1,12 +1,6 @@
 {
   "Bein Sports": [
     {
-      "id": "03",
-      "name": "Bein Sports 1 MULTI QA",
-      "url": "https://on-tv.site/api/MN2.php?action=stream&id=116900&cat=4524",
-      "category": "Sports"
-    },
-    {
       "id": "01",
       "name": "Bein Sports 1 4K QA",
       "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8",
@@ -16,6 +10,12 @@
       "id": "02",
       "name": "Bein Sports 2 HD",
       "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
+      "category": "Sports"
+    },
+    {
+      "id": "03",
+      "name": "Bein Sports 1 MULTI QA",
+      "url": "https://on-tv.site/api/MN2.php?action=stream&id=116900&cat=4524",
       "category": "Sports"
     }
   ],
