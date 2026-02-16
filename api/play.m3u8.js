@@ -22,20 +22,21 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // قناة الجودة التلقائية فقط
+  // قناة الجودة التلقائية
   if (channel.streams) {
     res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
 
     return res.send(`#EXTM3U
-#EXT-X-VERSION:3
+#EXT-X-VERSION:6
+#EXT-X-INDEPENDENT-SEGMENTS
 
-#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160
+#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160,FRAME-RATE=50.000,CODECS="avc1.640028,mp4a.40.2"
 ${channel.streams.high}
 
-#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080
+#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080,FRAME-RATE=50.000,CODECS="avc1.640028,mp4a.40.2"
 ${channel.streams.mid}
 
-#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480
+#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480,FRAME-RATE=50.000,CODECS="avc1.64001F,mp4a.40.2"
 ${channel.streams.low}
 `);
   }
