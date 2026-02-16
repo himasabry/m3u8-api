@@ -59,10 +59,13 @@ function render(){
 
 function row(ch,cat){
   return `<tr>
-  <td><input value="${ch.id}"></td>
-  <td><input value="${ch.name}"></td>
-  <td><input value="${ch.url}" style="width:100%"></td>
-  <td><input value="${cat}"></td>
+  <td><input value="${ch.id || ''}"></td>
+  <td><input value="${ch.name || ''}"></td>
+  <td><input value="${cat || ''}"></td>
+  <td><input value="${ch.url || ''}" style="width:100%"></td>
+  <td><input value="${ch.headers?.['user-agent'] || ''}" placeholder="User-Agent"></td>
+  <td><input value="${ch.headers?.referer || ''}" placeholder="Referer"></td>
+  <td><input value="${ch.headers?.origin || ''}" placeholder="Origin"></td>
   <td><button class="del" onclick="this.parentElement.parentElement.remove()">❌</button></td>
   </tr>`
 }
