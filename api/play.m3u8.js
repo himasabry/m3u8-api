@@ -4,9 +4,7 @@ import path from "path";
 export default async function handler(req, res) {
   const { id } = req.query;
 
-  if (!id) {
-    return res.status(400).send("Missing id");
-  }
+  if (!id) return res.status(400).send("Missing id");
 
   try {
     const filePath = path.join(process.cwd(), "data", "channels.json");
@@ -22,28 +20,44 @@ export default async function handler(req, res) {
       }
     }
 
-    if (!channel) {
-      return res.status(404).send("Channel not found");
+    if (!channel) return res.status(404).send("Channel not found");
+
+    let sources = [];
+
+    if (channel.sources) {
+      sources = channel.sources;
+    } else {
+      sources = [{ url: channel.url, headers: channel.headers || {} }];
     }
 
-    const headers = channel.headers || {};
+    let lastError = null;
 
-    const response = await fetch(channel.url, {
-      headers,
-      redirect: "follow"
-    });
+    for (const source of sources) {
+      try {
+        const response = await fetch(source.url, {
+          headers: source.headers || {},
+          redirect: "follow"
+        });
 
-    if (!response.ok) {
-      return res.status(500).send("Upstream error");
+        if (!response.ok) continue;
+
+        res.setHeader(
+          "Content-Type",
+          response.headers.get("content-type") || "application/vnd.apple.mpegurl"
+        );
+
+        const buffer = Buffer.from(await response.arrayBuffer());
+        return res.status(200).send(buffer);
+
+      } catch (err) {
+        lastError = err;
+      }
     }
 
-    res.setHeader("Content-Type", response.headers.get("content-type") || "application/vnd.apple.mpegurl");
-
-    const buffer = Buffer.from(await response.arrayBuffer());
-    res.status(200).send(buffer);
+    return res.status(500).send("All sources failed");
 
   } catch (err) {
     console.error(err);
-    res.status(500).send("Server error");
+    return res.status(500).send("Server error");
   }
 }
