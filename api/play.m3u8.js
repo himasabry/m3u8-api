@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import fetch from "node-fetch";
 
 export default async function handler(req, res) {
   const { id } = req.query;
@@ -23,25 +22,24 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // قناة ABR → Proxy + Master Playlist
+  // قناة الجودة التلقائية فقط
   if (channel.streams) {
     res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-    const host = `https://${req.headers.host}`; // يبقى https دايمًا
 
     return res.send(`#EXTM3U
 #EXT-X-VERSION:3
 
 #EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.high)}
+${channel.streams.high}
 
 #EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.mid)}
+${channel.streams.mid}
 
 #EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.low)}
+${channel.streams.low}
 `);
   }
 
   // القنوات العادية
-  res.redirect(channel.url);
+  return res.redirect(channel.url);
 }
