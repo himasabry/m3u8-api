@@ -32,6 +32,7 @@ button{cursor:pointer}
 <th>User-Agent</th>
 <th>Referer</th>
 <th>Origin</th>
+<th>الهيدرز</th>
 <th>حذف</th>
 </tr>
 </thead>
@@ -60,6 +61,15 @@ function render(){
 }
 
 function row(ch,pack){
+
+  const hasHeaders =
+    ch.headers &&
+    (ch.headers['user-agent'] || ch.headers.referer || ch.headers.origin);
+
+  const status = hasHeaders
+    ? '<span style="color:#28a745;font-weight:bold">✔ موجود</span>'
+    : '<span style="color:#dc3545;font-weight:bold">✖ لا يوجد</span>';
+
   return `<tr>
   <td><input value="${ch.id || ''}"></td>
   <td><input value="${ch.name || ''}"></td>
@@ -68,9 +78,11 @@ function row(ch,pack){
   <td><input value="${ch.headers?.['user-agent'] || ''}"></td>
   <td><input value="${ch.headers?.referer || ''}"></td>
   <td><input value="${ch.headers?.origin || ''}"></td>
+  <td>${status}</td>
   <td><button class="del" onclick="this.parentElement.parentElement.remove()">❌</button></td>
   </tr>`;
 }
+
 
 function addRow(){
   document.getElementById("tbody").innerHTML += row({},'');
