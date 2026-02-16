@@ -11,6 +11,17 @@
       "name": "Bein Sports 2 HD",
       "category": "Sports",
       "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8"
+    },
+    {
+      "id": "03",
+      "name": "Bein Sports 1 MULTI QA",
+      "category": "Sports",
+      "url": "https://on-tv.site/api/MN2.php?action=stream&id=116900&cat=4524",
+      "headers": {
+        "User-Agent": "PUT_YOUR_USER_AGENT",
+        "Referer": "https://on-tv.site/",
+        "Origin": "https://on-tv.site"
+      }
     }
   ]
 }
