@@ -2,7 +2,10 @@ export default async function handler(req, res) {
   const { id } = req.query;
 
   const channels = {
-    "116900": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8"
+    "01": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8",
+    "02": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
+    "03": "https://xvg1xtr.m-2026-mobile.xyz/25_.m3u8",
+    "04": "https://xvg1xtr.m-2026-mobile.xyz/26_.m3u8"
   };
 
   if (!channels[id]) {
