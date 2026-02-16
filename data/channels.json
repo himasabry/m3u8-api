@@ -32,10 +32,12 @@
         "Referer": "",
         "Origin": ""
       }
-    },
+    }
+  ],
+  "Sports": [
     {
       "id": "04",
-      "name": "Warad TV 4K ABR",
+      "name": "Warad TV AUTO",
       "category": "Sports",
       "headers": {
         "User-Agent": "",
