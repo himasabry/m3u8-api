@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   try {
     const r = await fetch(url, {
       headers: {
-        "User-Agent": "SUPER2026"
+        "User-Agent": "Mozilla/5.0"
       }
     });
 
