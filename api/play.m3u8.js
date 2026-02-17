@@ -25,6 +25,16 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // 4️⃣ إرسال البث
-  res.redirect(channel.url);
+  // 4️⃣ اختيار رابط البث الصحيح
+  // لو القناة ABR فيها master stream
+  const targetUrl = channel.streams?.master 
+                  || channel.streams?.high 
+                  || channel.url; // fallback للقنوات العادية
+
+  // 5️⃣ إرسال البث مع Headers
+  res.writeHead(302, {
+    Location: targetUrl,
+    ...channel.headers // User-Agent, Referer, Origin
+  });
+  res.end();
 }
