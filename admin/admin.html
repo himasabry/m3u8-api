@@ -64,10 +64,10 @@ let channels = {};
 let editId = null;
 
 async function load(){
-  const r = await fetch('/api/channels.js');
+  const r = await fetch('/api/channels.js'); // قراءة القنوات
   channels = await r.json();
   render();
-  loadViewers(); // تحديث المشاهدين عند التحميل
+  loadViewers();
 }
 
 function render(){
@@ -160,12 +160,13 @@ function del(groupName,idVal){
 }
 
 async function save(){
-  await fetch('/api/save.js',{
+  await fetch('/api/save.js', {      // حفظ التغييرات
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify(channels)
   });
-  id.value=name.value=url.value=group.value=ua.value=ref.value=org.value="";
+  // مسح الحقول بعد الحفظ
+  id.value = name.value = url.value = group.value = ua.value = ref.value = org.value = "";
   load();
 }
 
