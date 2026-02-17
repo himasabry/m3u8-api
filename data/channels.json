@@ -4,60 +4,13 @@
       "id": "01",
       "name": "Bein Sports 1 4K QA",
       "category": "Sports",
-      "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8",
-      "headers": {
-        "User-Agent": "",
-        "Referer": "",
-        "Origin": ""
-      }
+      "url": "https://xvg1xtr.m-2026-mobile.xyz/23_.m3u8"
     },
     {
       "id": "02",
       "name": "Bein Sports 2 HD",
       "category": "Sports",
-      "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
-      "headers": {
-        "User-Agent": "",
-        "Referer": "",
-        "Origin": ""
-      }
-    },
-    {
-      "id": "03",
-      "name": "Bein Sports 1 MULTI QA",
-      "category": "Sports",
-      "url": "https://on-tv.site/api/MN2.php?action=stream&id=116900&cat=4524",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (Linux; Android 12; M2003J15SC Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36",
-        "Referer": "",
-        "Origin": ""
-      }
-    }
-  ],
-  "Sports": [
-    {
-      "id": "04",
-      "name": "Warad TV 4K ABR",
-      "category": "Sports",
-      "streams": {
-    "high": "http://4kgood.org/live/warad01_604070/bqSSYCi4/1.m3u8",
-    "mid":  "http://4kgood.org/live/warad01_604070/bqSSYCi4/534831.m3u8",
-    "low":  "http://4kgood.org/live/warad01_604070/bqSSYCi4/2541.m3u8"
-    },
-    {
-      "id": "05",
-      "name": "Warad TV AUTO",
-      "category": "Sports",
-      "headers": {
-        "User-Agent": "",
-        "Referer": "",
-        "Origin": ""
-      },
-      "streams": {
-        "high": "https://xvg1xtr.m-2026-mobile.xyz/32_.m3u8",
-        "mid":  "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
-        "low":  "https://xvg1xtr.m-2026-mobile.xyz/1_.m3u8"
-      }
+      "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8"
     }
   ]
 }
