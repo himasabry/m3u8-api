@@ -1,10 +1,14 @@
-import { kv } from '@vercel/kv';
+import fs from "fs";
+import path from "path";
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') return res.status(405).end();
+export default function handler(req, res) {
+  if(req.method !== "POST") return res.status(405).json({error:"Method not allowed"});
 
-  const data = req.body;
-  await kv.set('channels', data);
-
-  res.json({ success: true });
+  const filePath = path.join(process.cwd(), "data", "channels.json");
+  try {
+    fs.writeFileSync(filePath, JSON.stringify(req.body, null, 2), "utf8");
+    res.status(200).json({status:"ok"});
+  } catch(e) {
+    res.status(500).json({error: e.message});
+  }
 }
