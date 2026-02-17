@@ -1,20 +1,18 @@
-import fetch from "node-fetch";
-
 export default async function handler(req, res) {
   const { url } = req.query;
   if (!url) return res.status(400).send("Missing url");
 
-  try {
-    const r = await fetch(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0"
-      }
-    });
+  const target = decodeURIComponent(url);
 
-    const body = await r.text();
-    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-    res.send(body);
-  } catch (e) {
-    res.status(500).send("Proxy error");
-  }
+  const r = await fetch(target, {
+    headers: {
+      "User-Agent": "Mozilla/5.0",
+      "Referer": "",
+      "Origin": ""
+    }
+  });
+
+  res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
+  const body = await r.text();
+  res.send(body);
 }
