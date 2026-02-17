@@ -24,13 +24,11 @@ export default async function handler(req, res) {
 
   let targetUrl = channel.url;
 
-  // دعم الجودات المتعددة
+  // قنوات متعددة الجودات
   if (channel.streams) {
-
     if (q === "low") targetUrl = channel.streams.low;
     else if (q === "mid") targetUrl = channel.streams.mid;
     else if (q === "high") targetUrl = channel.streams.high;
-
     else {
       // Auto ذكي
       const saveData = req.headers['save-data'];
@@ -43,9 +41,12 @@ export default async function handler(req, res) {
     }
   }
 
-  res.writeHead(302, {
-    Location: targetUrl,
-    ...channel.headers
-  });
-  res.end();
+  // هل القناة تحتاج proxy ؟
+  if (channel.headers && Object.values(channel.headers).some(v => v)) {
+    return res.redirect(
+      `/api/proxy.m3u8?url=${encodeURIComponent(targetUrl)}`
+    );
+  }
+
+  res.redirect(targetUrl);
 }
