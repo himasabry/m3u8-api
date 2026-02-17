@@ -33,7 +33,6 @@ export default async function handler(req, res) {
 
     let body = await response.text();
 
-    // تصحيح الروابط النسبية داخل m3u8
     const baseUrl = targetUrl.substring(0, targetUrl.lastIndexOf("/") + 1);
     body = body.replace(/^(?!#)(.+)$/gm, line => {
       if (line.startsWith("http")) return line;
