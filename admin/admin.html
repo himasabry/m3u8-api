@@ -2,219 +2,169 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>لوحة التحكم - القنوات</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-
+<title>لوحة تحكم Super IPTV</title>
 <style>
-*{box-sizing:border-box;font-family:'Cairo',sans-serif}
-
-body{
-margin:0;
-background:#0f172a;
-color:#fff;
-}
-
-header{
-background:#020617;
-padding:15px;
-text-align:center;
-font-size:20px;
-font-weight:bold;
-box-shadow:0 0 15px #000;
-}
-
-.container{
-padding:15px;
-max-width:1200px;
-margin:auto;
-}
-
-/* شريط الادوات */
-.toolbar{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-bottom:15px;
-}
-
-.toolbar input, .toolbar select{
-flex:1;
-min-width:150px;
-padding:10px;
-border-radius:8px;
-border:none;
-outline:none;
-background:#020617;
-color:#fff;
-}
-
-.toolbar button{
-padding:10px 15px;
-border-radius:8px;
-border:none;
-background:#2563eb;
-color:#fff;
-cursor:pointer;
-font-weight:bold;
-}
-
-.toolbar button:hover{
-background:#1d4ed8;
-}
-
-/* الجدول */
-.table-box{
-background:#020617;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 0 15px #000;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-}
-
-thead{
-background:#020617;
-}
-
-th,td{
-padding:12px;
-text-align:center;
-border-bottom:1px solid #1e293b;
-font-size:14px;
-}
-
-th{
-color:#38bdf8;
-}
-
-tbody tr:hover{
-background:#020617aa;
-}
-
-img{
-width:45px;
-height:45px;
-border-radius:8px;
-object-fit:contain;
-background:#fff;
-padding:3px;
-}
-
-/* أزرار التحكم */
-.actions button{
-margin:0 3px;
-padding:6px 10px;
-border-radius:6px;
-border:none;
-cursor:pointer;
-font-size:12px;
-}
-
-.edit{background:#22c55e;color:#000;}
-.delete{background:#ef4444;color:#fff;}
-.play{background:#38bdf8;color:#000;}
-
-@media(max-width:700px){
-th:nth-child(4),td:nth-child(4){display:none;}
-}
-
+body{font-family:tahoma;background:#0f172a;color:#fff;margin:0;padding:0}
+header{background:#020617;padding:15px;text-align:center;font-size:22px;font-weight:bold}
+.container{padding:20px;max-width:1200px;margin:auto}
+input,select,button{padding:10px;border-radius:6px;border:0;font-size:14px}
+button{cursor:pointer;background:#22c55e;color:#000;font-weight:bold}
+button.red{background:#ef4444;color:#fff}
+button.blue{background:#3b82f6;color:#fff}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+th,td{padding:10px;border-bottom:1px solid #1e293b;text-align:center}
+th{background:#020617}
+tr:hover{background:#020617}
+.form{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:15px}
+.search{margin-bottom:10px;width:100%}
+@media(max-width:900px){.form{grid-template-columns:1fr}}
 </style>
 </head>
-
 <body>
-
-<header>لوحة التحكم - إدارة القنوات</header>
-
+<header>لوحة تحكم Super IPTV</header>
 <div class="container">
-
-  <div class="toolbar">
-    <input type="text" id="search" placeholder="بحث عن قناة...">
-    <select id="filter">
-      <option value="">كل التصنيفات</option>
-      <option value="رياضة">رياضة</option>
-      <option value="أفلام">أفلام</option>
-      <option value="مسلسلات">مسلسلات</option>
-    </select>
-    <button onclick="addChannel()">➕ إضافة قناة</button>
-  </div>
-
-  <div class="table-box">
-    <table>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>اللوجو</th>
-          <th>اسم القناة</th>
-          <th>التصنيف</th>
-          <th>الإجراءات</th>
-        </tr>
-      </thead>
-      <tbody id="channelTable"></tbody>
-    </table>
-  </div>
-
+<div class="form">
+<input id="id" placeholder="ID">
+<input id="name" placeholder="اسم القناة">
+<input id="url" placeholder="رابط البث">
+<input id="group" placeholder="اسم الباقة">
+<input id="ua" placeholder="User-Agent">
+<input id="ref" placeholder="Referer">
+<input id="org" placeholder="Origin">
+<button onclick="addChannel()">➕ إضافة</button>
+<button onclick="updateChannel()" class="blue">💾 حفظ التعديل</button>
+</div>
+<input class="search" id="search" placeholder="بحث سريع..." oninput="render()">
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>الاسم</th>
+<th>الباقة</th>
+<th>المشاهدين</th>
+<th>التحكم</th>
+</tr>
+</thead>
+<tbody id="list"></tbody>
+</table>
 </div>
 
 <script>
-let channels=[
- {id:1,name:"beIN Sports 1",cat:"رياضة",logo:"https://upload.wikimedia.org/wikipedia/commons/5/5c/Bein_sport_logo.png"},
- {id:2,name:"ON Drama",cat:"مسلسلات",logo:"https://upload.wikimedia.org/wikipedia/commons/f/f7/ON_TV_logo.png"},
- {id:3,name:"Rotana Cinema",cat:"أفلام",logo:"https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotana_Cinema_Logo.png"},
-];
+let channels = {};
+let editId = null;
+const list = document.getElementById("list");
+const search = document.getElementById("search");
+const id = document.getElementById("id");
+const name = document.getElementById("name");
+const url = document.getElementById("url");
+const group = document.getElementById("group");
+const ua = document.getElementById("ua");
+const ref = document.getElementById("ref");
+const org = document.getElementById("org");
 
-function renderTable(){
- const tbody=document.getElementById('channelTable');
- const search=document.getElementById('search').value.toLowerCase();
- const filter=document.getElementById('filter').value;
-
- tbody.innerHTML='';
-
- channels.filter(c=>
-   c.name.toLowerCase().includes(search) &&
-   (filter=='' || c.cat==filter)
- ).forEach((c,i)=>{
-
- tbody.innerHTML+=`
- <tr>
-   <td>${i+1}</td>
-   <td><img src="${c.logo}"></td>
-   <td>${c.name}</td>
-   <td>${c.cat}</td>
-   <td class="actions">
-     <button class="play">▶</button>
-     <button class="edit" onclick="editChannel(${c.id})">✏</button>
-     <button class="delete" onclick="deleteChannel(${c.id})">🗑</button>
-   </td>
- </tr>`;
-
- });
+async function load(){
+  const r = await fetch('/api/channels');
+  channels = await r.json();
+  render();
+  loadViewers();
 }
 
-document.getElementById('search').onkeyup=renderTable;
-document.getElementById('filter').onchange=renderTable;
+function render(){
+  const q = search.value.toLowerCase();
+  list.innerHTML='';
+  for(const grp in channels){
+    channels[grp].forEach(ch=>{
+      if(ch.name.toLowerCase().includes(q) || ch.id.toString().includes(q)){
+        list.innerHTML+=`
+        <tr>
+          <td>${ch.id}</td>
+          <td>${ch.name}</td>
+          <td>${grp}</td>
+          <td id="viewers-${ch.id}">0</td>
+          <td>
+            <button onclick='edit("${grp}","${ch.id}")' class="blue">✏️</button>
+            <button onclick='del("${grp}","${ch.id}")' class="red">🗑</button>
+          </td>
+        </tr>`;
+      }
+    })
+  }
+}
 
 function addChannel(){
- alert("هنا نضيف فورم إضافة قناة");
+  const g = group.value.trim();
+  if(!channels[g]) channels[g]=[];
+  channels[g].push({
+    id:id.value.trim(),
+    name:name.value.trim(),
+    url:url.value.trim(),
+    headers:{
+      "User-Agent": ua.value.trim(),
+      "Referer": ref.value.trim(),
+      "Origin": org.value.trim()
+    }
+  });
+  save();
 }
 
-function editChannel(id){
- alert("تعديل القناة رقم "+id);
+function edit(grp, idVal){
+  const ch = channels[grp].find(x=>x.id==idVal);
+  id.value=ch.id; name.value=ch.name; url.value=ch.url; group.value=grp;
+  ua.value=ch.headers?.["User-Agent"]||""; ref.value=ch.headers?.["Referer"]||""; org.value=ch.headers?.["Origin"]||"";
+  editId=idVal;
 }
 
-function deleteChannel(id){
- if(confirm("هل تريد حذف القناة؟")){
-   channels=channels.filter(c=>c.id!=id);
-   renderTable();
- }
+function updateChannel(){
+  if(!editId) return alert("اختر قناة أولاً");
+  const g = group.value.trim();
+  for(const k in channels) channels[k]=channels[k].filter(x=>x.id!=editId);
+  if(!channels[g]) channels[g]=[];
+  channels[g].push({
+    id:id.value.trim(),
+    name:name.value.trim(),
+    url:url.value.trim(),
+    headers:{
+      "User-Agent": ua.value.trim(),
+      "Referer": ref.value.trim(),
+      "Origin": org.value.trim()
+    }
+  });
+  editId=null;
+  save();
 }
 
-renderTable();
+function del(grp, idVal){
+  if(!confirm("حذف القناة؟")) return;
+  channels[grp]=channels[grp].filter(x=>x.id!=idVal);
+  save();
+}
+
+async function save(){
+  await fetch('/api/channels',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(channels)
+  });
+  id.value=name.value=url.value=group.value=ua.value=ref.value=org.value="";
+  load();
+}
+
+async function loadViewers(){
+  try{
+    for(const grp in channels){
+      for(const ch of channels[grp]){
+        const res = await fetch(`/api/viewers?id=${ch.id}`);
+        const data = await res.json();
+        const count = data[ch.id] || 0;
+        const el = document.getElementById(`viewers-${ch.id}`);
+        if(el) el.innerText = count;
+      }
+    }
+  }catch(e){ console.error("خطأ في جلب المشاهدين:", e.message); }
+}
+
+setInterval(loadViewers, 1000);
+load();
 </script>
-
 </body>
 </html>
