@@ -34,9 +34,14 @@ tr:hover{background:#020617}
 <input id="url" placeholder="رابط البث">
 <input id="group" placeholder="اسم الباقة">
 
+<input id="ua" placeholder="User-Agent">
+<input id="ref" placeholder="Referer">
+<input id="org" placeholder="Origin">
+
 <button onclick="addChannel()">➕ إضافة</button>
 <button onclick="updateChannel()" class="blue">💾 حفظ التعديل</button>
 </div>
+
 
 <input class="search" id="search" placeholder="بحث سريع..." oninput="render()">
 
@@ -97,7 +102,12 @@ function addChannel(){
   channels[g].push({
     id:id.value.trim(),
     name:name.value.trim(),
-    url:url.value.trim()
+    url:url.value.trim(),
+    headers:{
+      "User-Agent": ua.value.trim(),
+      "Referer": ref.value.trim(),
+      "Origin": org.value.trim()
+    }
   });
 
   save();
@@ -109,8 +119,12 @@ function edit(groupName,idVal){
   name.value=ch.name;
   url.value=ch.url;
   group.value=groupName;
+  ua.value=ch.headers?.["User-Agent"] || "";
+  ref.value=ch.headers?.["Referer"] || "";
+  org.value=ch.headers?.["Origin"] || "";
   editId=idVal;
 }
+
 
 function updateChannel(){
   if(!editId) return alert("اختر قناة أولاً");
@@ -126,12 +140,18 @@ function updateChannel(){
   channels[g].push({
     id:id.value.trim(),
     name:name.value.trim(),
-    url:url.value.trim()
+    url:url.value.trim(),
+    headers:{
+      "User-Agent": ua.value.trim(),
+      "Referer": ref.value.trim(),
+      "Origin": org.value.trim()
+    }
   });
 
   editId=null;
   save();
 }
+
 
 function del(groupName,idVal){
   if(!confirm("حذف القناة؟")) return;
