@@ -22,24 +22,5 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // 🔥 قناة جودة تلقائية حقيقية
-  if (channel.streams) {
-    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-
-    return res.send(`#EXTM3U
-#EXT-X-VERSION:3
-
-#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160
-${channel.streams.high}
-
-#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080
-${channel.streams.mid}
-
-#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480
-${channel.streams.low}
-`);
-  }
-
-  // القنوات العادية
   res.redirect(channel.url);
 }
