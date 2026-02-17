@@ -37,6 +37,15 @@
   "Sports": [
     {
       "id": "04",
+      "name": "Warad TV 4K ABR",
+      "category": "Sports",
+      "streams": {
+    "high": "http://4kgood.org/live/warad01_604070/bqSSYCi4/1.m3u8",
+    "mid":  "http://4kgood.org/live/warad01_604070/bqSSYCi4/534831.m3u8",
+    "low":  "http://4kgood.org/live/warad01_604070/bqSSYCi4/2541.m3u8"
+    },
+    {
+      "id": "05",
       "name": "Warad TV AUTO",
       "category": "Sports",
       "headers": {
