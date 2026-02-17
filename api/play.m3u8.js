@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   // 1️⃣ تحقق من User-Agent
   const userAgent = req.headers['user-agent'] || '';
-  const REQUIRED_AGENT = "SUPER2026"; // غير الاسم ده حسب اختيارك
+  const REQUIRED_AGENT = "SUPER2026";
   if (!userAgent.includes(REQUIRED_AGENT)) {
     return res.status(403).send("Forbidden: Invalid User-Agent");
   }
@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   const filePath = path.join(process.cwd(), "data", "channels.json");
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-  // 3️⃣ إيجاد القناة حسب id
+  // 3️⃣ إيجاد القناة
   let channel = null;
   for (const group in data) {
     const found = data[group].find(ch => ch.id == id);
@@ -25,16 +25,30 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // 4️⃣ اختيار رابط البث الصحيح
-  // لو القناة ABR فيها master stream
-  const targetUrl = channel.streams?.master 
-                  || channel.streams?.high 
-                  || channel.url; // fallback للقنوات العادية
+  let targetUrl = channel.url;
 
-  // 5️⃣ إرسال البث مع Headers
+  // 4️⃣ اختيار الجودة تلقائي للقنوات متعددة الجودات
+  if (channel.streams) {
+
+    const saveData = req.headers['save-data'];
+    const connection = req.headers['connection'] || "";
+
+    // اختيار ذكي
+    if (saveData === "on") {
+      targetUrl = channel.streams.low;
+    } else if (connection.includes("3g")) {
+      targetUrl = channel.streams.low;
+    } else if (connection.includes("4g")) {
+      targetUrl = channel.streams.mid;
+    } else {
+      targetUrl = channel.streams.high;
+    }
+  }
+
+  // 5️⃣ إعادة التوجيه
   res.writeHead(302, {
     Location: targetUrl,
-    ...channel.headers // User-Agent, Referer, Origin
+    ...channel.headers
   });
   res.end();
 }
