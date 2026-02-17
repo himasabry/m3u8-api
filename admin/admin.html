@@ -42,7 +42,6 @@ tr:hover{background:#020617}
 <button onclick="updateChannel()" class="blue">💾 حفظ التعديل</button>
 </div>
 
-
 <input class="search" id="search" placeholder="بحث سريع..." oninput="render()">
 
 <table>
@@ -51,6 +50,7 @@ tr:hover{background:#020617}
 <th>ID</th>
 <th>الاسم</th>
 <th>الباقة</th>
+<th>المشاهدين</th>
 <th>التحكم</th>
 </tr>
 </thead>
@@ -67,6 +67,7 @@ async function load(){
   const r = await fetch('/api/channels.js');
   channels = await r.json();
   render();
+  loadViewers(); // تحديث المشاهدين عند التحميل
 }
 
 function render(){
@@ -84,6 +85,7 @@ function render(){
           <td>${ch.id}</td>
           <td>${ch.name}</td>
           <td>${group}</td>
+          <td id="viewers-${ch.id}">0</td>
           <td>
             <button onclick='edit("${group}","${ch.id}")' class="blue">✏️</button>
             <button onclick='del("${group}","${ch.id}")' class="red">🗑</button>
@@ -125,7 +127,6 @@ function edit(groupName,idVal){
   editId=idVal;
 }
 
-
 function updateChannel(){
   if(!editId) return alert("اختر قناة أولاً");
 
@@ -152,7 +153,6 @@ function updateChannel(){
   save();
 }
 
-
 function del(groupName,idVal){
   if(!confirm("حذف القناة؟")) return;
   channels[groupName]=channels[groupName].filter(x=>x.id!=idVal);
@@ -165,9 +165,30 @@ async function save(){
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify(channels)
   });
-  id.value=name.value=url.value=group.value="";
+  id.value=name.value=url.value=group.value=ua.value=ref.value=org.value="";
   load();
 }
+
+// ================== عداد المشاهدين ==================
+async function loadViewers(){
+  try{
+    const res = await fetch('/api/viewers.json'); // ملف JSON للعداد
+    const data = await res.json();
+
+    for(const group in channels){
+      channels[group].forEach(ch=>{
+        const count = data[ch.id] || 0;
+        const el = document.getElementById(`viewers-${ch.id}`);
+        if(el) el.innerText = count;
+      });
+    }
+  }catch(e){
+    console.error("خطأ في جلب المشاهدين:", e.message);
+  }
+}
+
+// تحديث المشاهدين كل 5 ثواني
+setInterval(loadViewers, 5000);
 
 load();
 </script>
