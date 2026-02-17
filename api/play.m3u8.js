@@ -22,27 +22,24 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // قناة ABR → نرسل Master Playlist يشير للـ Proxy
+  // قناة الجودة التلقائية فقط
   if (channel.streams) {
     res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
 
-    const host = `https://${req.headers.host}`;
-
     return res.send(`#EXTM3U
-#EXT-X-VERSION:6
-#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-VERSION:3
 
-#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160,CODECS="avc1.640028,mp4a.40.2"
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.high)}
+#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160
+${channel.streams.high}
 
-#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080,CODECS="avc1.640028,mp4a.40.2"
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.mid)}
+#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080
+${channel.streams.mid}
 
-#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480,CODECS="avc1.64001F,mp4a.40.2"
-${host}/api/proxy.m3u8?url=${encodeURIComponent(channel.streams.low)}
+#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480
+${channel.streams.low}
 `);
   }
 
   // القنوات العادية
-  res.redirect(channel.url);
+  return res.redirect(channel.url);
 }
