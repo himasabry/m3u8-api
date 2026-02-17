@@ -4,5 +4,5 @@ import path from "path";
 export default function handler(req, res) {
   const filePath = path.join(process.cwd(), "data", "channels.json");
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
-  res.json(data);
+  res.status(200).json(data);
 }
