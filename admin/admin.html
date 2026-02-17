@@ -169,28 +169,26 @@ async function save(){
   load();
 }
 
-// ================== عداد المشاهدين ==================
+// ================== عداد المشاهدين اللحظي ==================
 async function loadViewers(){
   try{
-    const res = await fetch('/api/viewers.json'); // ملف JSON للعداد
-    const data = await res.json();
-
     for(const group in channels){
-      channels[group].forEach(ch=>{
+      for(const ch of channels[group]){
+        const res = await fetch(`/api/viewers?id=${ch.id}`);
+        const data = await res.json();
         const count = data[ch.id] || 0;
         const el = document.getElementById(`viewers-${ch.id}`);
         if(el) el.innerText = count;
-      });
+      }
     }
   }catch(e){
     console.error("خطأ في جلب المشاهدين:", e.message);
   }
 }
 
-// تحديث المشاهدين كل 5 ثواني
-setInterval(loadViewers, 5000);
+// تحديث المشاهدين كل ثانية
+setInterval(loadViewers, 1000);
 
-load();
 </script>
 
 </body>
