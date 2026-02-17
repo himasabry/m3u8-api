@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // 🔥 قناة جودة تلقائية حقيقية
+  // قناة الجودة التلقائية فقط
   if (channel.streams) {
     res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
 
@@ -41,5 +41,5 @@ ${channel.streams.low}
   }
 
   // القنوات العادية
-  res.redirect(channel.url);
+  return res.redirect(channel.url);
 }
