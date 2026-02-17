@@ -11,6 +11,12 @@
       "name": "Bein Sports 2 HD",
       "url": "https://xvg1xtr.m-2026-mobile.xyz/24_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "03",
+      "name": "Bein Sports 3 HD",
+      "url": "https://popcdn.day/player/beINAR",
+      "headers": { "User-Agent": "", "Referer": "https://popcdn.day/player/beINAR/", "Origin": "" }
     }
   ]
 }
