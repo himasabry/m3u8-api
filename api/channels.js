@@ -1,9 +1,6 @@
-export default function handler(req, res) {
-  res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
-  res.setHeader("Pragma", "no-cache");
-  res.setHeader("Expires", "0");
+import { kv } from '@vercel/kv';
 
-  const filePath = path.join(process.cwd(), "data", "channels.json");
-  const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
-  res.status(200).json(data);
+export default async function handler(req, res) {
+  const data = await kv.get('channels') || {};
+  res.json(data);
 }
