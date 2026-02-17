@@ -16,9 +16,8 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // 🟢 قناة ABR (جودة تلقائية)
+  // ✅ قناة ABR
   if (channel.streams) {
-
     const base = `${req.headers["x-forwarded-proto"] || "https"}://${req.headers.host}/api/proxy?url=`;
 
     const high = encodeURIComponent(channel.streams.high);
