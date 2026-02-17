@@ -6,7 +6,6 @@ export default async function handler(req, res) {
   const { id } = req.query;
   if (!id) return res.status(400).send("Missing id");
 
-  // قراءة ملف القنوات
   const filePath = path.join(process.cwd(), "data", "channels.json");
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
@@ -32,9 +31,16 @@ export default async function handler(req, res) {
       return res.status(500).send("Stream fetch failed");
     }
 
-    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
+    let body = await response.text();
 
-    const body = await response.text();
+    // تصحيح الروابط النسبية داخل m3u8
+    const baseUrl = targetUrl.substring(0, targetUrl.lastIndexOf("/") + 1);
+    body = body.replace(/^(?!#)(.+)$/gm, line => {
+      if (line.startsWith("http")) return line;
+      return baseUrl + line;
+    });
+
+    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
     res.status(200).send(body);
 
   } catch (err) {
