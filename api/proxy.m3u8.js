@@ -12,6 +12,7 @@ export default async function handler(req, res) {
     });
 
     const body = await r.text();
+
     res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
     res.send(body);
   } catch (e) {
