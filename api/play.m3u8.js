@@ -5,18 +5,15 @@ export default async function handler(req, res) {
   const { id } = req.query;
   if (!id) return res.status(400).send("Missing id");
 
-  // 1️⃣ تحقق من User-Agent
   const userAgent = req.headers['user-agent'] || '';
-  const REQUIRED_AGENT = "SUPER2026"; // غير الاسم ده حسب اختيارك
+  const REQUIRED_AGENT = "SUPER2026";
   if (!userAgent.includes(REQUIRED_AGENT)) {
-    return res.status(403).send("Forbidden: Invalid User-Agent");
+    return res.status(403).send("Forbidden");
   }
 
-  // 2️⃣ قراءة ملف القنوات
   const filePath = path.join(process.cwd(), "data", "channels.json");
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-  // 3️⃣ إيجاد القناة حسب id
   let channel = null;
   for (const group in data) {
     const found = data[group].find(ch => ch.id == id);
@@ -25,16 +22,24 @@ export default async function handler(req, res) {
 
   if (!channel) return res.status(404).send("Channel not found");
 
-  // 4️⃣ اختيار رابط البث الصحيح
-  // لو القناة ABR فيها master stream
-  const targetUrl = channel.streams?.master 
-                  || channel.streams?.high 
-                  || channel.url; // fallback للقنوات العادية
+  // 🔥 قناة جودة تلقائية حقيقية
+  if (channel.streams) {
+    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
 
-  // 5️⃣ إرسال البث مع Headers
-  res.writeHead(302, {
-    Location: targetUrl,
-    ...channel.headers // User-Agent, Referer, Origin
-  });
-  res.end();
+    return res.send(`#EXTM3U
+#EXT-X-VERSION:3
+
+#EXT-X-STREAM-INF:BANDWIDTH=8000000,RESOLUTION=3840x2160
+${channel.streams.high}
+
+#EXT-X-STREAM-INF:BANDWIDTH=3500000,RESOLUTION=1920x1080
+${channel.streams.mid}
+
+#EXT-X-STREAM-INF:BANDWIDTH=1200000,RESOLUTION=854x480
+${channel.streams.low}
+`);
+  }
+
+  // القنوات العادية
+  res.redirect(channel.url);
 }
