@@ -4,36 +4,149 @@
 <meta charset="UTF-8">
 <title>لوحة التحكم - Super IPTV</title>
 <style>
-body{font-family:tahoma;background:#111;color:#fff;padding:20px}
-input,button{padding:8px;margin:5px;border-radius:6px;border:0}
-button{background:#0f0;color:#000;font-weight:bold;cursor:pointer}
-textarea{width:100%;height:300px;background:#000;color:#0f0}
+body{font-family:tahoma;background:#0f172a;color:#fff;margin:0;padding:0}
+header{background:#020617;padding:15px;text-align:center;font-size:22px;font-weight:bold}
+.container{padding:20px;max-width:1200px;margin:auto}
+input,select,button{padding:10px;border-radius:6px;border:0;font-size:14px}
+button{cursor:pointer;background:#22c55e;color:#000;font-weight:bold}
+button.red{background:#ef4444;color:#fff}
+button.blue{background:#3b82f6;color:#fff}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+th,td{padding:10px;border-bottom:1px solid #1e293b;text-align:center}
+th{background:#020617}
+tr:hover{background:#020617}
+.form{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:15px}
+.search{margin-bottom:10px;width:100%}
+@media(max-width:900px){
+.form{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 
-<h2>لوحة التحكم</h2>
+<header>لوحة تحكم Super IPTV</header>
 
-<button onclick="load()">تحميل القنوات</button>
-<button onclick="save()">حفظ التعديلات</button>
+<div class="container">
 
-<textarea id="editor"></textarea>
+<div class="form">
+<input id="id" placeholder="ID">
+<input id="name" placeholder="اسم القناة">
+<input id="url" placeholder="رابط البث">
+<input id="group" placeholder="اسم الباقة">
+
+<button onclick="addChannel()">➕ إضافة</button>
+<button onclick="updateChannel()" class="blue">💾 حفظ التعديل</button>
+</div>
+
+<input class="search" id="search" placeholder="بحث سريع..." oninput="render()">
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>الاسم</th>
+<th>الباقة</th>
+<th>التحكم</th>
+</tr>
+</thead>
+<tbody id="list"></tbody>
+</table>
+
+</div>
 
 <script>
+let channels = {};
+let editId = null;
+
 async function load(){
-  const r = await fetch('/data/channels.json');
-  const j = await r.json();
-  editor.value = JSON.stringify(j,null,2);
+  const r = await fetch('/api/channels.js');
+  channels = await r.json();
+  render();
+}
+
+function render(){
+  const q = search.value.toLowerCase();
+  list.innerHTML='';
+
+  for(const group in channels){
+    channels[group].forEach(ch=>{
+      if(
+        ch.name.toLowerCase().includes(q) ||
+        ch.id.includes(q)
+      ){
+        list.innerHTML+=`
+        <tr>
+          <td>${ch.id}</td>
+          <td>${ch.name}</td>
+          <td>${group}</td>
+          <td>
+            <button onclick='edit("${group}","${ch.id}")' class="blue">✏️</button>
+            <button onclick='del("${group}","${ch.id}")' class="red">🗑</button>
+          </td>
+        </tr>
+        `;
+      }
+    })
+  }
+}
+
+function addChannel(){
+  const g = group.value.trim();
+  if(!channels[g]) channels[g]=[];
+
+  channels[g].push({
+    id:id.value.trim(),
+    name:name.value.trim(),
+    url:url.value.trim()
+  });
+
+  save();
+}
+
+function edit(groupName,idVal){
+  const ch = channels[groupName].find(x=>x.id==idVal);
+  id.value=ch.id;
+  name.value=ch.name;
+  url.value=ch.url;
+  group.value=groupName;
+  editId=idVal;
+}
+
+function updateChannel(){
+  if(!editId) return alert("اختر قناة أولاً");
+
+  const g = group.value.trim();
+
+  for(const k in channels){
+    channels[k]=channels[k].filter(x=>x.id!=editId);
+  }
+
+  if(!channels[g]) channels[g]=[];
+
+  channels[g].push({
+    id:id.value.trim(),
+    name:name.value.trim(),
+    url:url.value.trim()
+  });
+
+  editId=null;
+  save();
+}
+
+function del(groupName,idVal){
+  if(!confirm("حذف القناة؟")) return;
+  channels[groupName]=channels[groupName].filter(x=>x.id!=idVal);
+  save();
 }
 
 async function save(){
-  const body = JSON.parse(editor.value);
   await fetch('/api/save.js',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify(body)
+    body:JSON.stringify(channels)
   });
-  alert('تم الحفظ');
+  id.value=name.value=url.value=group.value="";
+  load();
 }
 
 load();
