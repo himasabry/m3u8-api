@@ -5,17 +5,19 @@ export default async function handler(req, res) {
   if (!url) return res.status(400).send("Missing url");
 
   try {
-    const r = await fetch(url, {
+    const upstream = await fetch(url, {
       headers: {
-        "User-Agent": "Mozilla/5.0"
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "",
+        "Origin": ""
       }
     });
 
-    const body = await r.text();
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Content-Type", upstream.headers.get("content-type") || "application/octet-stream");
 
-    res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-    res.send(body);
+    upstream.body.pipe(res);
   } catch (e) {
-    res.status(500).send("Proxy error");
+    res.status(500).send("Proxy stream error");
   }
 }
