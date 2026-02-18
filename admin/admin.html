@@ -39,29 +39,16 @@ input, select, button {
   border: 0;
   font-size: 14px;
 }
-input, select {
-  width: 100%;
-}
+input, select { width: 100%; }
 button {
   cursor: pointer;
   font-weight: bold;
   transition: all 0.2s;
 }
-button:hover {
-  transform: scale(1.05);
-}
-button.green {
-  background: #22c55e;
-  color: #000;
-}
-button.red {
-  background: #ef4444;
-  color: #fff;
-}
-button.blue {
-  background: #3b82f6;
-  color: #fff;
-}
+button:hover { transform: scale(1.05); }
+button.green { background: #22c55e; color: #000; }
+button.red { background: #ef4444; color: #fff; }
+button.blue { background: #3b82f6; color: #fff; }
 .search {
   margin-bottom: 20px;
   padding: 10px;
@@ -85,6 +72,11 @@ button.blue {
   border-radius: 10px;
   position: relative;
   transition: transform 0.2s, box-shadow 0.2s;
+}
+.card.dragging {
+  opacity: 0.5;
+  transform: scale(1.05);
+  border: 2px dashed #22c55e;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -139,7 +131,6 @@ button.blue {
 <div class="cards" id="list"></div>
 
 <script>
-// === نفس الكود السابق مع تعديل طريقة العرض للبطاقات ===
 let channels = {};
 let editId = null;
 const list = document.getElementById("list");
@@ -165,8 +156,10 @@ function render(){
   for(const grp in channels){
     channels[grp].forEach(ch=>{
       if(ch.name.toLowerCase().includes(q) || ch.id.toString().includes(q)){
-        list.innerHTML+=`
-        <div class="card">
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.setAttribute('draggable', true);
+        card.innerHTML = `
           <h3>${ch.name}</h3>
           <p><strong>ID:</strong> ${ch.id}</p>
           <p><strong>الباقة:</strong> ${grp}</p>
@@ -175,7 +168,9 @@ function render(){
             <button onclick='edit("${grp}","${ch.id}")' class="blue">✏️ تعديل</button>
             <button onclick='del("${grp}","${ch.id}")' class="red">🗑 حذف</button>
           </div>
-        </div>`;
+        `;
+        addDragAndDrop(card, ch, grp);
+        list.appendChild(card);
       }
     })
   }
@@ -251,6 +246,38 @@ async function loadViewers(){
       }
     }
   }catch(e){ console.error("خطأ في جلب المشاهدين:", e.message); }
+}
+
+// === Drag & Drop ===
+function addDragAndDrop(card, channel, grp){
+  card.addEventListener('dragstart', e=>{
+    card.classList.add('dragging');
+    e.dataTransfer.setData('text/plain', JSON.stringify({id: channel.id, group: grp}));
+  });
+  card.addEventListener('dragend', e=>{
+    card.classList.remove('dragging');
+  });
+  list.addEventListener('dragover', e=>{
+    e.preventDefault();
+    const draggingCard = document.querySelector('.dragging');
+    const afterElement = getDragAfterElement(list, e.clientY);
+    if(afterElement == null){
+      list.appendChild(draggingCard);
+    } else {
+      list.insertBefore(draggingCard, afterElement);
+    }
+  });
+}
+
+function getDragAfterElement(container, y){
+  const draggableElements = [...container.querySelectorAll('.card:not(.dragging)')];
+  return draggableElements.reduce((closest, child)=>{
+    const box = child.getBoundingClientRect();
+    const offset = y - box.top - box.height/2;
+    if(offset < 0 && offset > closest.offset){
+      return { offset: offset, element: child };
+    } else return closest;
+  }, {offset: Number.NEGATIVE_INFINITY}).element;
 }
 
 setInterval(loadViewers, 1000);
