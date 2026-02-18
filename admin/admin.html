@@ -49,6 +49,7 @@ button:hover { transform: scale(1.05); }
 button.green { background: #22c55e; color: #000; }
 button.red { background: #ef4444; color: #fff; }
 button.blue { background: #3b82f6; color: #fff; }
+button.yellow { background: #facc15; color: #000; }
 .search {
   margin-bottom: 20px;
   padding: 10px;
@@ -101,9 +102,16 @@ button.blue { background: #3b82f6; color: #fff; }
   gap: 5px;
   justify-content: center;
 }
+.sort-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+}
 @media(max-width:600px){
   .form {grid-template-columns:1fr;}
   .cards {grid-template-columns:1fr;}
+  .sort-buttons {justify-content: center;}
 }
 </style>
 </head>
@@ -122,6 +130,12 @@ button.blue { background: #3b82f6; color: #fff; }
 <input id="org" placeholder="Origin">
 <button onclick="addChannel()" class="green">➕ إضافة</button>
 <button onclick="updateChannel()" class="blue">💾 حفظ التعديل</button>
+</div>
+
+<!-- أزرار الترتيب -->
+<div class="sort-buttons">
+  <button onclick="sortByViewers()" class="yellow">ترتيب حسب المشاهدين ⬆️</button>
+  <button onclick="sortByName()" class="yellow">ترتيب حسب الاسم ⬆️</button>
 </div>
 
 <!-- البحث -->
@@ -302,12 +316,33 @@ function updateChannelOrder(){
     newChannels[grp].push(ch);
   });
   channels = newChannels;
-  // حفظ الترتيب الجديد
   fetch('/api/channels',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify(channels)
   });
+}
+
+// ترتيب حسب المشاهدين
+function sortByViewers(){
+  for(const grp in channels){
+    channels[grp].sort((a,b)=>{
+      const aCount = parseInt(document.getElementById(`viewers-${a.id}`)?.innerText || 0);
+      const bCount = parseInt(document.getElementById(`viewers-${b.id}`)?.innerText || 0);
+      return bCount - aCount;
+    });
+  }
+  updateChannelOrder();
+  render();
+}
+
+// ترتيب حسب الاسم أبجديًا
+function sortByName(){
+  for(const grp in channels){
+    channels[grp].sort((a,b)=>a.name.localeCompare(b.name));
+  }
+  updateChannelOrder();
+  render();
 }
 
 setInterval(loadViewers, 1000);
