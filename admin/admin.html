@@ -63,7 +63,7 @@ button.blue {
   color: #fff;
 }
 .search {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 10px;
   width: 100%;
   border-radius: 6px;
@@ -72,33 +72,54 @@ button.blue {
   background: #1e293b;
   color: #fff;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
+
+/* بطاقات القنوات */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.card {
   background: #1e293b;
+  padding: 15px;
   border-radius: 10px;
-  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-th, td {
-  padding: 12px;
-  border-bottom: 1px solid #334155;
-  text-align: center;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
-th {
-  background: #0f172a;
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #22c55e;
 }
-tr:hover {
-  background: #334155;
-  transition: background 0.2s;
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
 }
-@media(max-width:900px){
+.card .viewers {
+  font-weight: bold;
+  color: #3b82f6;
+}
+.card .buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+@media(max-width:600px){
   .form {grid-template-columns:1fr;}
+  .cards {grid-template-columns:1fr;}
 }
 </style>
 </head>
 <body>
 <header>لوحة تحكم Super IPTV</header>
 <div class="container">
+
+<!-- فورم إضافة وتعديل -->
 <div class="form">
 <input id="id" placeholder="ID">
 <input id="name" placeholder="اسم القناة">
@@ -110,23 +131,15 @@ tr:hover {
 <button onclick="addChannel()" class="green">➕ إضافة</button>
 <button onclick="updateChannel()" class="blue">💾 حفظ التعديل</button>
 </div>
+
+<!-- البحث -->
 <input class="search" id="search" placeholder="بحث سريع..." oninput="render()">
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>الاسم</th>
-<th>الباقة</th>
-<th>المشاهدين</th>
-<th>التحكم</th>
-</tr>
-</thead>
-<tbody id="list"></tbody>
-</table>
-</div>
+
+<!-- قائمة القنوات -->
+<div class="cards" id="list"></div>
 
 <script>
-// === نفس الكود السابق بدون تعديل على الوظائف ===
+// === نفس الكود السابق مع تعديل طريقة العرض للبطاقات ===
 let channels = {};
 let editId = null;
 const list = document.getElementById("list");
@@ -153,16 +166,16 @@ function render(){
     channels[grp].forEach(ch=>{
       if(ch.name.toLowerCase().includes(q) || ch.id.toString().includes(q)){
         list.innerHTML+=`
-        <tr>
-          <td>${ch.id}</td>
-          <td>${ch.name}</td>
-          <td>${grp}</td>
-          <td id="viewers-${ch.id}">0</td>
-          <td>
-            <button onclick='edit("${grp}","${ch.id}")' class="blue">✏️</button>
-            <button onclick='del("${grp}","${ch.id}")' class="red">🗑</button>
-          </td>
-        </tr>`;
+        <div class="card">
+          <h3>${ch.name}</h3>
+          <p><strong>ID:</strong> ${ch.id}</p>
+          <p><strong>الباقة:</strong> ${grp}</p>
+          <p class="viewers"><strong>المشاهدين:</strong> <span id="viewers-${ch.id}">0</span></p>
+          <div class="buttons">
+            <button onclick='edit("${grp}","${ch.id}")' class="blue">✏️ تعديل</button>
+            <button onclick='del("${grp}","${ch.id}")' class="red">🗑 حذف</button>
+          </div>
+        </div>`;
       }
     })
   }
