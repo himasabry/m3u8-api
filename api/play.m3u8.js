@@ -18,16 +18,13 @@ export default function handler(req, res) {
       if (found) { channel = found; break; }
     }
 
-    if (!channel) return res.status(404).send("Channel not found");
+    if (!channel) return res.status(404).send("Not found");
 
-    const params = new URLSearchParams({
+    // إرسال الرابط النهائي مباشرة
+    return res.json({
       url: channel.url,
-      ua: channel.headers?.["User-Agent"] || "SUPER2026",
-      ref: channel.headers?.["Referer"] || "",
-      org: channel.headers?.["Origin"] || ""
+      headers: channel.headers || {}
     });
-
-    return res.redirect(`/api/proxy.m3u8.js?${params.toString()}`);
 
   } catch (e) {
     return res.status(500).send("Server error");
