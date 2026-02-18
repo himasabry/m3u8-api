@@ -159,6 +159,8 @@ function render(){
         const card = document.createElement('div');
         card.className = 'card';
         card.setAttribute('draggable', true);
+        card.dataset.id = ch.id;
+        card.dataset.group = grp;
         card.innerHTML = `
           <h3>${ch.name}</h3>
           <p><strong>ID:</strong> ${ch.id}</p>
@@ -169,13 +171,14 @@ function render(){
             <button onclick='del("${grp}","${ch.id}")' class="red">🗑 حذف</button>
           </div>
         `;
-        addDragAndDrop(card, ch, grp);
+        addDragAndDrop(card);
         list.appendChild(card);
       }
     })
   }
 }
 
+// إضافة قناة
 function addChannel(){
   const g = group.value.trim();
   if(!channels[g]) channels[g]=[];
@@ -192,6 +195,7 @@ function addChannel(){
   save();
 }
 
+// تعديل قناة
 function edit(grp, idVal){
   const ch = channels[grp].find(x=>x.id==idVal);
   id.value=ch.id; name.value=ch.name; url.value=ch.url; group.value=grp;
@@ -199,6 +203,7 @@ function edit(grp, idVal){
   editId=idVal;
 }
 
+// حفظ التعديل
 function updateChannel(){
   if(!editId) return alert("اختر قناة أولاً");
   const g = group.value.trim();
@@ -218,12 +223,14 @@ function updateChannel(){
   save();
 }
 
+// حذف قناة
 function del(grp, idVal){
   if(!confirm("حذف القناة؟")) return;
   channels[grp]=channels[grp].filter(x=>x.id!=idVal);
   save();
 }
 
+// حفظ بيانات القنوات في السيرفر
 async function save(){
   await fetch('/api/channels',{
     method:'POST',
@@ -234,6 +241,7 @@ async function save(){
   load();
 }
 
+// جلب عدد المشاهدين
 async function loadViewers(){
   try{
     for(const grp in channels){
@@ -248,15 +256,16 @@ async function loadViewers(){
   }catch(e){ console.error("خطأ في جلب المشاهدين:", e.message); }
 }
 
-// === Drag & Drop ===
-function addDragAndDrop(card, channel, grp){
+// === Drag & Drop مع حفظ الترتيب ===
+function addDragAndDrop(card){
   card.addEventListener('dragstart', e=>{
     card.classList.add('dragging');
-    e.dataTransfer.setData('text/plain', JSON.stringify({id: channel.id, group: grp}));
   });
   card.addEventListener('dragend', e=>{
     card.classList.remove('dragging');
+    updateChannelOrder();
   });
+
   list.addEventListener('dragover', e=>{
     e.preventDefault();
     const draggingCard = document.querySelector('.dragging');
@@ -269,6 +278,7 @@ function addDragAndDrop(card, channel, grp){
   });
 }
 
+// حساب البطاقة التالية أثناء السحب
 function getDragAfterElement(container, y){
   const draggableElements = [...container.querySelectorAll('.card:not(.dragging)')];
   return draggableElements.reduce((closest, child)=>{
@@ -278,6 +288,26 @@ function getDragAfterElement(container, y){
       return { offset: offset, element: child };
     } else return closest;
   }, {offset: Number.NEGATIVE_INFINITY}).element;
+}
+
+// تحديث ترتيب القنوات وحفظه في السيرفر
+function updateChannelOrder(){
+  const newChannels = {};
+  const cards = list.querySelectorAll('.card');
+  cards.forEach(card=>{
+    const grp = card.dataset.group;
+    const idVal = card.dataset.id;
+    const ch = channels[grp].find(c=>c.id==idVal);
+    if(!newChannels[grp]) newChannels[grp]=[];
+    newChannels[grp].push(ch);
+  });
+  channels = newChannels;
+  // حفظ الترتيب الجديد
+  fetch('/api/channels',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(channels)
+  });
 }
 
 setInterval(loadViewers, 1000);
