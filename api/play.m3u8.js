@@ -29,17 +29,8 @@ export default function handler(req, res) {
       return res.status(404).send("Channel not found");
     }
 
-    // 🔥 دايمًا نمرر على البروكسي
-    const headers = channel.headers || {};
-
-    const params = new URLSearchParams({
-      url: channel.url,
-      ua: headers["User-Agent"] || "",
-      ref: headers["Referer"] || "",
-      org: headers["Origin"] || ""
-    });
-
-    return res.redirect(302, `/api/proxy.m3u8.js?${params.toString()}`);
+    // 🔥 ارجع للسلوك الطبيعي
+    return res.redirect(302, channel.url);
 
   } catch (e) {
     console.error("PLAY ERROR:", e);
