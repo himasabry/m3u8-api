@@ -1,13 +1,20 @@
 import fetch from "node-fetch";
 
 export default async function handler(req, res) {
-  const { url } = req.query;
+  const { url, ua, ref, org } = req.query;
   if (!url) return res.status(400).send("Missing url");
 
   try {
-    const upstream = await fetch(url, { redirect: "follow", timeout: 15000 });
+    const headers = {};
+    if (ua) headers["User-Agent"] = ua;
+    if (ref) headers["Referer"] = ref;
+    if (org) headers["Origin"] = org;
+
+    const upstream = await fetch(url, { headers, redirect: "follow" });
+
     const contentType = upstream.headers.get("content-type") || "";
 
+    // لو m3u8 → نعيد كتابة روابط HTTP فقط
     if (contentType.includes("mpegurl")) {
       let body = await upstream.text();
 
@@ -20,10 +27,11 @@ export default async function handler(req, res) {
       return res.send(body);
     }
 
+    // ts أو ملفات عادية
+    res.setHeader("Access-Control-Allow-Origin", "*");
     upstream.body.pipe(res);
 
   } catch (e) {
-    console.error("PROXY ERROR:", e);
     return res.status(500).send("Proxy error");
   }
 }
