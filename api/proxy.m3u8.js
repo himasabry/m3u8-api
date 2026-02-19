@@ -10,6 +10,11 @@ export default async function handler(req, res) {
     if (ref) headers["Referer"] = ref;
     if (org) headers["Origin"] = org;
 
+    // دعم Range مهم لـ ExoPlayer
+    if (req.headers.range) {
+      headers["Range"] = req.headers.range;
+    }
+
     const upstream = await fetch(url, {
       headers,
       redirect: "follow",
@@ -19,7 +24,11 @@ export default async function handler(req, res) {
     res.status(upstream.status);
 
     upstream.headers.forEach((v, k) => {
-      if (!["content-encoding", "transfer-encoding"].includes(k.toLowerCase())) {
+      if (
+        !["content-encoding", "transfer-encoding", "connection"].includes(
+          k.toLowerCase()
+        )
+      ) {
         res.setHeader(k, v);
       }
     });
