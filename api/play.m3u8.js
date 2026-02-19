@@ -29,11 +29,18 @@ export default function handler(req, res) {
       return res.status(404).send("Channel not found");
     }
 
-    // 🔥 ارجع للسلوك الطبيعي
-    return res.redirect(302, channel.url);
+    const headers = channel.headers || {};
+
+    const params = new URLSearchParams({
+      url: channel.url,
+      ua: headers["User-Agent"] || "",
+      ref: headers["Referer"] || "",
+      org: headers["Origin"] || ""
+    });
+
+    return res.redirect(302, `/api/proxy.m3u8.js?${params.toString()}`);
 
   } catch (e) {
-    console.error("PLAY ERROR:", e);
     return res.status(500).send("Server error");
   }
 }
