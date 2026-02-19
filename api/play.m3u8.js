@@ -29,12 +29,7 @@ export default function handler(req, res) {
       return res.status(404).send("Channel not found");
     }
 
-    // 🔥 لو HTTPS → تشغيل مباشر (زي ما كان قبل التعديلات)
-    if (channel.url.startsWith("https://")) {
-      return res.redirect(302, channel.url);
-    }
-
-    // ⚡ لو HTTP → تمرير عبر Proxy HTTPS
+    // 🔥 دايمًا نمرر على البروكسي
     const headers = channel.headers || {};
 
     const params = new URLSearchParams({
