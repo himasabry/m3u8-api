@@ -13,12 +13,11 @@ export default async function handler(req, res) {
     const upstream = await fetch(url, { headers, redirect: "follow" });
     const contentType = upstream.headers.get("content-type") || "";
 
-    // 🔥 فقط إذا كان m3u8 → نعدل روابط HTTP بدقة
+    // لو m3u8 → نعدل روابط HTTP فقط بشكل آمن
     if (contentType.includes("mpegurl")) {
       let body = await upstream.text();
 
-      // إعادة كتابة روابط HTTP → HTTPS عبر proxy
-      // هذا regex يحافظ على كل التعليقات والتنسيق الأصلي
+      // regex يحافظ على كل التعليقات والتنسيق
       body = body.replace(/^(http:\/\/[^\s#]+)/gm, match => {
         return `/api/proxy.m3u8.js?url=${encodeURIComponent(match)}`;
       });
@@ -29,8 +28,9 @@ export default async function handler(req, res) {
       return res.send(body);
     }
 
-    // TS أو ملفات عادية → تمر مباشرة
+    // TS أو ملفات أخرى → تمر مباشرة مع Range support
     res.setHeader("Access-Control-Allow-Origin", "*");
+    if (req.headers.range) headers["Range"] = req.headers.range;
     upstream.body.pipe(res);
 
   } catch (e) {
