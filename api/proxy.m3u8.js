@@ -11,10 +11,9 @@ export default async function handler(req, res) {
     if (org) headers["Origin"] = org;
 
     const upstream = await fetch(url, { headers, redirect: "follow" });
-
     const contentType = upstream.headers.get("content-type") || "";
 
-    // لو m3u8 → نعيد كتابة روابط HTTP فقط
+    // لو m3u8 → نعيد كتابة كل HTTP داخلها إلى proxy HTTPS
     if (contentType.includes("mpegurl")) {
       let body = await upstream.text();
 
@@ -24,14 +23,16 @@ export default async function handler(req, res) {
 
       res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
       res.setHeader("Access-Control-Allow-Origin", "*");
+      res.setHeader("Cache-Control", "no-store");
       return res.send(body);
     }
 
-    // ts أو ملفات عادية
+    // TS أو ملفات عادية → نمررها مباشرة
     res.setHeader("Access-Control-Allow-Origin", "*");
     upstream.body.pipe(res);
 
   } catch (e) {
+    console.error("PROXY ERROR:", e);
     return res.status(500).send("Proxy error");
   }
 }
