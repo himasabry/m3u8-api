@@ -1,17 +1,18 @@
 import fs from "fs";
 import path from "path";
-import fetch from "node-fetch";
 import { incrementViewer } from "./viewers.js";
 
 const REQUIRED_UA = "SUPER2026";
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
   try {
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
     const ua = req.headers["user-agent"] || "";
-    if (!ua.includes(REQUIRED_UA)) return res.status(403).send("Forbidden UA");
+    if (!ua.includes(REQUIRED_UA)) {
+      return res.status(403).send("Forbidden UA");
+    }
 
     incrementViewer(id);
 
@@ -26,14 +27,13 @@ export default async function handler(req, res) {
 
     if (!channel) return res.status(404).send("Channel not found");
 
-    const params = new URLSearchParams({
-      url: channel.url,
-      ua: channel.headers?.["User-Agent"] || "",
-      ref: channel.headers?.["Referer"] || "",
-      org: channel.headers?.["Origin"] || ""
-    });
+    // تحويل http → https عبر iframe safe redirect
+    let url = channel.url;
+    if (url.startsWith("http://")) {
+      url = "https://cors.isomorphic-git.org/" + url;
+    }
 
-    return res.redirect(`/api/proxy.m3u8.js?${params}`);
+    return res.redirect(url);
 
   } catch (e) {
     return res.status(500).send(e.message);
