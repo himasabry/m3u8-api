@@ -21,24 +21,22 @@ export default function handler(req, res) {
 
     let channel = null;
     for (const group of Object.values(data)) {
-      const found = group.find(ch => ch.id === id);
-      if (found) { channel = found; break; }
+      channel = group.find(ch => ch.id === id);
+      if (channel) break;
     }
 
     if (!channel || !channel.url) {
       return res.status(404).send("Channel not found");
     }
 
-    const headers = channel.headers || {};
-    const hasSpecialHeaders =
-      headers["User-Agent"] || headers["Referer"] || headers["Origin"];
-
-    // 🔥 لو القناة مش محتاجة بروكسي → Redirect مباشر
-    if (!hasSpecialHeaders) {
+    // 🔥 لو HTTPS → تشغيل مباشر (زي ما كان قبل التعديلات)
+    if (channel.url.startsWith("https://")) {
       return res.redirect(302, channel.url);
     }
 
-    // ⚡ لو القناة محتاجة Headers → نعدّي على البروكسي
+    // ⚡ لو HTTP → تمرير عبر Proxy HTTPS
+    const headers = channel.headers || {};
+
     const params = new URLSearchParams({
       url: channel.url,
       ua: headers["User-Agent"] || "",
