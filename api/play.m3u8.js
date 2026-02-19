@@ -10,7 +10,9 @@ export default function handler(req, res) {
     if (!id) return res.status(400).send("Missing id");
 
     const uaClient = req.headers["user-agent"] || "";
-    if (!uaClient.includes(REQUIRED_UA)) return res.status(403).send("Forbidden");
+    if (!uaClient.includes(REQUIRED_UA)) {
+      return res.status(403).send("Forbidden");
+    }
 
     incrementViewer(id);
 
@@ -23,19 +25,12 @@ export default function handler(req, res) {
       if (channel) break;
     }
 
-    if (!channel || !channel.url) return res.status(404).send("Channel not found");
+    if (!channel || !channel.url) {
+      return res.status(404).send("Channel not found");
+    }
 
-    const headers = channel.headers || {};
-
-    const params = new URLSearchParams({
-      url: channel.url,
-      ua: headers["User-Agent"] || "",
-      ref: headers["Referer"] || "",
-      org: headers["Origin"] || ""
-    });
-
-    // كل القنوات تمر على البروكسي (HTTPS Tunnel)
-    return res.redirect(302, `/api/proxy.m3u8.js?${params.toString()}`);
+    // 🔥 ارجع للسلوك الطبيعي
+    return res.redirect(302, channel.url);
 
   } catch (e) {
     console.error("PLAY ERROR:", e);
