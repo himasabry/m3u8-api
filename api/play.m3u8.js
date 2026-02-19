@@ -25,8 +25,8 @@ export default function handler(req, res) {
 
     if (!channel || !channel.url) return res.status(404).send("Channel not found");
 
+    // 🔥 كل القنوات تمر على proxy الآن
     const headers = channel.headers || {};
-
     const params = new URLSearchParams({
       url: channel.url,
       ua: headers["User-Agent"] || "",
@@ -34,7 +34,6 @@ export default function handler(req, res) {
       org: headers["Origin"] || ""
     });
 
-    // كل شيء يمر على البروكسي (حتى HTTPS داخلها HTTP) ✅
     return res.redirect(302, `/api/proxy.m3u8.js?${params.toString()}`);
 
   } catch (e) {
