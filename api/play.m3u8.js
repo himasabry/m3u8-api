@@ -10,9 +10,7 @@ export default function handler(req, res) {
     if (!id) return res.status(400).send("Missing id");
 
     const uaClient = req.headers["user-agent"] || "";
-    if (!uaClient.includes(REQUIRED_UA)) {
-      return res.status(403).send("Forbidden");
-    }
+    if (!uaClient.includes(REQUIRED_UA)) return res.status(403).send("Forbidden");
 
     incrementViewer(id);
 
@@ -25,9 +23,7 @@ export default function handler(req, res) {
       if (channel) break;
     }
 
-    if (!channel || !channel.url) {
-      return res.status(404).send("Channel not found");
-    }
+    if (!channel || !channel.url) return res.status(404).send("Channel not found");
 
     const headers = channel.headers || {};
 
@@ -38,9 +34,11 @@ export default function handler(req, res) {
       org: headers["Origin"] || ""
     });
 
+    // كل شيء يمر على البروكسي (حتى HTTPS داخلها HTTP) ✅
     return res.redirect(302, `/api/proxy.m3u8.js?${params.toString()}`);
 
   } catch (e) {
+    console.error("PLAY ERROR:", e);
     return res.status(500).send("Server error");
   }
 }
