@@ -47,7 +47,7 @@
     {
       "id": "20",
       "name": "YAHALA",
-      "url": "http://filex.me:8080//live/MAS101A/MAS101AABB/296299.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -59,55 +59,55 @@
     {
       "id": "22",
       "name": "YAHALA AFLAM",
-      "url": "http://filex.me:8080//live/MAS101A/MAS101AABB/296298.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20AFLAM.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "23",
       "name": "Movies",
-      "url": "http://filex.me:8080//live/MAS101A/MAS101AABB/296278.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Movies.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "24",
       "name": "Action",
-      "url": "http://filex.me:8080//live/MAS101A/MAS101AABB/296287.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Action.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "25",
       "name": "Comedy",
-      "url": "http://filex.me:8080//live/MAS101A/MAS101AABB/296274.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Comedy.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "26",
       "name": "CINEMA 1",
-      "url": "http://lion20.top:8080/live/890128577161/478344311816/313390.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20CINEMA%201.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "27",
       "name": "CINEMA 2",
-      "url": "http://lion20.top:8080/live/890128577161/478344311816/313391.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20CINEMA%202.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "28",
       "name": "Alfa Musalsalat",
-      "url": "http://lion20.top:8080/live/890128577161/478344311816/313392.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Musalsalat.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
       {
       "id": "27",
       "name": "Alfa Alyoum",
-      "url": "http://lion20.top:8080/live/890128577161/478344311816/313389.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alyoum.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "28",
       "name": "Alfa AFLAM",
-      "url": "http://lion20.top:8080/live/890128577161/478344311816/313387.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alfann.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ]
