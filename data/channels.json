@@ -41,6 +41,12 @@
       "name": "Bein Sports 7 HD",
       "url": "https://xvg1xtr.m-2026-mobile.xyz/29_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "08",
+      "name": "Bein Sports 7 HD",
+      "url": "https://dev-a-live.pantheonsite.io/A/atv.php",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
   "OSN": [
