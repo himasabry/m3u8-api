@@ -45,8 +45,8 @@
     {
       "id": "08",
       "name": "Bein Sports 1",
-      "url": "http://127.0.0.1:63000/live/me_channel?me_url=turbo://live.0vcmc02vl8agx9z8jqsx/79c9c3765c92d3ee7100533e61987a91581b",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "url": "https://matchnow.optikl.ink/drgn/play.m3u8?id=4128&cat=333",
+      "headers": { "User-Agent": "Mozilla/5.0 (Linux; Android 12; M2003J15SC Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36", "Referer": "", "Origin": "" }
     }
   ],
   "OSN": [
