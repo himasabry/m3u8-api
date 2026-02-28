@@ -44,9 +44,9 @@
     },
     {
       "id": "08",
-      "name": "Bein Sports 7 HD",
+      "name": "Bein Sports 1",
       "url": "https://dev-a-live.pantheonsite.io/A/atv.php",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "headers": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36", "Referer": "", "Origin": "" }
     }
   ],
   "OSN": [
