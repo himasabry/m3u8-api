@@ -45,7 +45,7 @@
     {
       "id": "08",
       "name": "Bein Sports 1",
-      "url": "https://matchnow.optikl.ink/drgn/play.m3u8?id=4111&cat=332",
+      "url": "http://127.0.0.1:63000/live/me_channel?me_url=turbo://live.0vcmc02vl8agx9z8jqsx/79c9c3765c92d3ee7100533e61987a91581b",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
