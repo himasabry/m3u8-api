@@ -4,18 +4,20 @@ import { incrementViewer } from "./viewers.js";
 
 const REQUIRED_UA = "SUPER2026";
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
 
   try {
 
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
+    // حماية User-Agent
     const ua = req.headers["user-agent"] || "";
     if (!ua.includes(REQUIRED_UA)) {
       return res.status(403).send("Forbidden");
     }
 
+    // زيادة المشاهدين
     incrementViewer(id);
 
     const filePath = path.join(process.cwd(), "data", "channels.json");
@@ -31,33 +33,15 @@ export default async function handler(req, res) {
       }
     }
 
-    if (!channel) return res.status(404).send("Channel not found");
-
-    const url = channel.url;
-
-    // لو MPD نعمل Proxy
-    if (url.includes(".mpd")) {
-
-      const response = await fetch(url, {
-        headers: {
-          "Referer": channel.headers?.Referer || "",
-          "Origin": channel.headers?.Origin || "",
-          "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
-        }
-      });
-
-      const text = await response.text();
-
-      res.setHeader("Content-Type", "application/dash+xml");
-      return res.send(text);
-
+    if (!channel) {
+      return res.status(404).send("Channel not found");
     }
 
-    // باقي القنوات redirect
-    return res.redirect(url);
+    // تحويل مباشر للقناة
+    return res.redirect(channel.url);
 
   } catch (e) {
-    console.error(e);
+    console.error("PLAY ERROR:", e);
     return res.status(500).send("Server error");
   }
 
