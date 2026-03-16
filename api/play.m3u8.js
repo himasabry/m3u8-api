@@ -1,23 +1,21 @@
 import fs from "fs";
 import path from "path";
-import { incrementViewer } from "./viewers.js";
 
 const REQUIRED_UA = "SUPER2026";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
 
   try {
 
-    const { id } = req.query;
+    const { id, seg } = req.query;
 
     if (!id) return res.status(400).send("Missing id");
 
+    // حماية اليوزر ايجنت
     const ua = req.headers["user-agent"] || "";
     if (!ua.includes(REQUIRED_UA)) {
       return res.status(403).send("Forbidden");
     }
-
-    incrementViewer(id);
 
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -25,7 +23,7 @@ export default function handler(req, res) {
     let channel = null;
 
     for (const group of Object.values(data)) {
-      const found = group.find(ch => ch.id === id);
+      const found = group.find(c => c.id === id);
       if (found) {
         channel = found;
         break;
@@ -34,12 +32,48 @@ export default function handler(req, res) {
 
     if (!channel) return res.status(404).send("Channel not found");
 
-    // تشغيل القناة مباشرة
-    return res.redirect(channel.url);
+    const base = channel.url.substring(0, channel.url.lastIndexOf("/") + 1);
 
-  } catch (e) {
-    console.error(e);
-    return res.status(500).send("Server error");
+    const headers = {
+      "Referer": "https://akotv/",
+      "User-Agent": "Mozilla/5.0"
+    };
+
+    // ===== تحميل segments =====
+    if (seg) {
+
+      const segUrl = base + seg;
+
+      const response = await fetch(segUrl, { headers });
+
+      const buffer = Buffer.from(await response.arrayBuffer());
+
+      res.setHeader("Access-Control-Allow-Origin", "*");
+
+      return res.send(buffer);
+
+    }
+
+    // ===== تحميل MPD =====
+
+    const response = await fetch(channel.url, { headers });
+
+    let text = await response.text();
+
+    // تعديل روابط الفيديو
+    text = text.replace(/(media=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&seg=$2`);
+    text = text.replace(/(initialization=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&seg=$2`);
+
+    res.setHeader("Content-Type", "application/dash+xml");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+
+    res.send(text);
+
+  } catch (err) {
+
+    console.log(err);
+    res.status(500).send("Server error");
+
   }
 
 }
