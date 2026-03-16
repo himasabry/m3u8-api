@@ -5,10 +5,9 @@ import { incrementViewer } from "./viewers.js";
 const REQUIRED_UA = "SUPER2026";
 
 export default async function handler(req, res) {
-
   try {
 
-    const { id } = req.query;
+    const { id, segment } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
     const ua = req.headers["user-agent"] || "";
@@ -35,10 +34,15 @@ export default async function handler(req, res) {
 
     const url = channel.url;
 
-    // معالجة قنوات MPD
-    if (url.includes(".mpd")) {
+    // base path
+    const base = url.substring(0, url.lastIndexOf("/") + 1);
 
-      const response = await fetch(url, {
+    // ====== تحميل segment ======
+    if (segment) {
+
+      const segUrl = base + segment;
+
+      const response = await fetch(segUrl, {
         headers: {
           "Referer": channel.headers?.Referer || "",
           "Origin": channel.headers?.Origin || "",
@@ -46,25 +50,33 @@ export default async function handler(req, res) {
         }
       });
 
-      let text = await response.text();
+      const buffer = Buffer.from(await response.arrayBuffer());
 
-      const base = url.substring(0, url.lastIndexOf("/") + 1);
-
-      // تحويل روابط segments
-      text = text.replace(/(media=")([^"]+)/g, `$1${base}$2`);
-      text = text.replace(/(initialization=")([^"]+)/g, `$1${base}$2`);
-
-      res.setHeader("Content-Type", "application/dash+xml");
-      return res.send(text);
-
+      res.setHeader("Content-Type", "video/mp4");
+      return res.send(buffer);
     }
 
-    // باقي القنوات
-    return res.redirect(url);
+    // ====== تحميل mpd ======
+
+    const response = await fetch(url, {
+      headers: {
+        "Referer": channel.headers?.Referer || "",
+        "Origin": channel.headers?.Origin || "",
+        "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
+      }
+    });
+
+    let text = await response.text();
+
+    // تعديل روابط segments
+    text = text.replace(/(media=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&segment=$2`);
+    text = text.replace(/(initialization=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&segment=$2`);
+
+    res.setHeader("Content-Type", "application/dash+xml");
+    res.send(text);
 
   } catch (e) {
     console.error(e);
-    return res.status(500).send("Server error");
+    res.status(500).send("Server error");
   }
-
 }
