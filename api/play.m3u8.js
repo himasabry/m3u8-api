@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
-    // حماية اليوزر ايجنت
+    // حماية User-Agent
     const ua = req.headers["user-agent"] || "";
     if (!ua.includes(REQUIRED_UA)) {
       return res.status(403).send("Forbidden");
@@ -32,7 +32,9 @@ export default async function handler(req, res) {
       }
     }
 
-    if (!channel) return res.status(404).send("Channel not found");
+    if (!channel) {
+      return res.status(404).send("Channel not found");
+    }
 
     const url = channel.url;
 
@@ -41,14 +43,17 @@ export default async function handler(req, res) {
 
       const response = await fetch(url, {
         headers: {
-          "Referer": "https://akotv/",
-          "User-Agent": "Mozilla/5.0"
+          "Referer": channel.headers?.Referer || "",
+          "Origin": channel.headers?.Origin || "",
+          "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
         }
       });
 
       const text = await response.text();
 
       res.setHeader("Content-Type", "application/dash+xml");
+      res.setHeader("Access-Control-Allow-Origin", "*");
+
       return res.send(text);
     }
 
