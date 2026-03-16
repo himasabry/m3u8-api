@@ -5,9 +5,10 @@ import { incrementViewer } from "./viewers.js";
 const REQUIRED_UA = "SUPER2026";
 
 export default async function handler(req, res) {
+
   try {
 
-    const { id, segment } = req.query;
+    const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
     const ua = req.headers["user-agent"] || "";
@@ -34,15 +35,10 @@ export default async function handler(req, res) {
 
     const url = channel.url;
 
-    // base path
-    const base = url.substring(0, url.lastIndexOf("/") + 1);
+    // ===== قنوات DASH =====
+    if (url.includes(".mpd")) {
 
-    // ====== تحميل segment ======
-    if (segment) {
-
-      const segUrl = base + segment;
-
-      const response = await fetch(segUrl, {
+      const response = await fetch(url, {
         headers: {
           "Referer": channel.headers?.Referer || "",
           "Origin": channel.headers?.Origin || "",
@@ -50,33 +46,18 @@ export default async function handler(req, res) {
         }
       });
 
-      const buffer = Buffer.from(await response.arrayBuffer());
+      const text = await response.text();
 
-      res.setHeader("Content-Type", "video/mp4");
-      return res.send(buffer);
+      res.setHeader("Content-Type", "application/dash+xml");
+      return res.send(text);
     }
 
-    // ====== تحميل mpd ======
-
-    const response = await fetch(url, {
-      headers: {
-        "Referer": channel.headers?.Referer || "",
-        "Origin": channel.headers?.Origin || "",
-        "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
-      }
-    });
-
-    let text = await response.text();
-
-    // تعديل روابط segments
-    text = text.replace(/(media=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&segment=$2`);
-    text = text.replace(/(initialization=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&segment=$2`);
-
-    res.setHeader("Content-Type", "application/dash+xml");
-    res.send(text);
+    // ===== باقي القنوات =====
+    return res.redirect(url);
 
   } catch (e) {
     console.error(e);
-    res.status(500).send("Server error");
+    return res.status(500).send("Server error");
   }
+
 }
