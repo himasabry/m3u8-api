@@ -8,7 +8,8 @@ export default async function handler(req, res) {
 
   try {
 
-    const { id } = req.query;
+    const { id, path: extraPath = "" } = req.query;
+
     if (!id) return res.status(400).send("Missing id");
 
     const ua = req.headers["user-agent"] || "";
@@ -33,34 +34,25 @@ export default async function handler(req, res) {
 
     if (!channel) return res.status(404).send("Channel not found");
 
-    const url = channel.url;
+    const baseUrl = channel.url.substring(0, channel.url.lastIndexOf("/") + 1);
 
-    // معالجة قنوات MPD
-    if (url.includes(".mpd")) {
+    const targetUrl = extraPath
+      ? baseUrl + extraPath
+      : channel.url;
 
-      const response = await fetch(url, {
-        headers: {
-          "Referer": channel.headers?.Referer || "",
-          "Origin": channel.headers?.Origin || "",
-          "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
-        }
-      });
+    const response = await fetch(targetUrl, {
+      headers: {
+        "Referer": channel.headers?.Referer || "",
+        "Origin": channel.headers?.Origin || "",
+        "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
+      }
+    });
 
-      let text = await response.text();
+    const buffer = Buffer.from(await response.arrayBuffer());
 
-      const base = url.substring(0, url.lastIndexOf("/") + 1);
+    res.setHeader("Content-Type", response.headers.get("content-type") || "application/octet-stream");
 
-      // تحويل روابط segments
-      text = text.replace(/(media=")([^"]+)/g, `$1${base}$2`);
-      text = text.replace(/(initialization=")([^"]+)/g, `$1${base}$2`);
-
-      res.setHeader("Content-Type", "application/dash+xml");
-      return res.send(text);
-
-    }
-
-    // باقي القنوات
-    return res.redirect(url);
+    return res.send(buffer);
 
   } catch (e) {
     console.error(e);
