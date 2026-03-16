@@ -35,7 +35,7 @@ export default async function handler(req, res) {
 
     const url = channel.url;
 
-    // لو MPD نعمل Proxy
+    // معالجة قنوات MPD
     if (url.includes(".mpd")) {
 
       const response = await fetch(url, {
@@ -46,14 +46,20 @@ export default async function handler(req, res) {
         }
       });
 
-      const text = await response.text();
+      let text = await response.text();
+
+      const base = url.substring(0, url.lastIndexOf("/") + 1);
+
+      // تحويل روابط segments
+      text = text.replace(/(media=")([^"]+)/g, `$1${base}$2`);
+      text = text.replace(/(initialization=")([^"]+)/g, `$1${base}$2`);
 
       res.setHeader("Content-Type", "application/dash+xml");
       return res.send(text);
 
     }
 
-    // باقي القنوات redirect
+    // باقي القنوات
     return res.redirect(url);
 
   } catch (e) {
