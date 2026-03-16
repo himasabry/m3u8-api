@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { incrementViewer } from "./viewers.js";
 
 const REQUIRED_UA = "SUPER2026";
 
@@ -7,8 +8,7 @@ export default async function handler(req, res) {
 
   try {
 
-    const { id, seg } = req.query;
-
+    const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
     // حماية اليوزر ايجنت
@@ -17,13 +17,15 @@ export default async function handler(req, res) {
       return res.status(403).send("Forbidden");
     }
 
+    incrementViewer(id);
+
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
     let channel = null;
 
     for (const group of Object.values(data)) {
-      const found = group.find(c => c.id === id);
+      const found = group.find(ch => ch.id === id);
       if (found) {
         channel = found;
         break;
@@ -32,47 +34,31 @@ export default async function handler(req, res) {
 
     if (!channel) return res.status(404).send("Channel not found");
 
-    const base = channel.url.substring(0, channel.url.lastIndexOf("/") + 1);
+    const url = channel.url;
 
-    const headers = {
-      "Referer": "https://akotv/",
-      "User-Agent": "Mozilla/5.0"
-    };
+    // ===== قنوات MPD =====
+    if (url.includes(".mpd")) {
 
-    // ===== تحميل segments =====
-    if (seg) {
+      const response = await fetch(url, {
+        headers: {
+          "Referer": "https://akotv/",
+          "User-Agent": "Mozilla/5.0"
+        }
+      });
 
-      const segUrl = base + seg;
+      const text = await response.text();
 
-      const response = await fetch(segUrl, { headers });
-
-      const buffer = Buffer.from(await response.arrayBuffer());
-
-      res.setHeader("Access-Control-Allow-Origin", "*");
-
-      return res.send(buffer);
-
+      res.setHeader("Content-Type", "application/dash+xml");
+      return res.send(text);
     }
 
-    // ===== تحميل MPD =====
+    // ===== باقي القنوات =====
+    return res.redirect(url);
 
-    const response = await fetch(channel.url, { headers });
+  } catch (e) {
 
-    let text = await response.text();
-
-    // تعديل روابط الفيديو
-    text = text.replace(/(media=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&seg=$2`);
-    text = text.replace(/(initialization=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&seg=$2`);
-
-    res.setHeader("Content-Type", "application/dash+xml");
-    res.setHeader("Access-Control-Allow-Origin", "*");
-
-    res.send(text);
-
-  } catch (err) {
-
-    console.log(err);
-    res.status(500).send("Server error");
+    console.error(e);
+    return res.status(500).send("Server error");
 
   }
 
