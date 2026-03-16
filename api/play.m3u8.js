@@ -1,21 +1,12 @@
 import fs from "fs";
 import path from "path";
-import { incrementViewer } from "./viewers.js";
-
-const REQUIRED_UA = "SUPER2026";
 
 export default async function handler(req, res) {
   try {
 
-    const { id } = req.query;
+    const { id, file } = req.query;
+
     if (!id) return res.status(400).send("Missing id");
-
-    const ua = req.headers["user-agent"] || "";
-    if (!ua.includes(REQUIRED_UA)) {
-      return res.status(403).send("Forbidden");
-    }
-
-    incrementViewer(id);
 
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -32,34 +23,45 @@ export default async function handler(req, res) {
 
     if (!channel) return res.status(404).send("Channel not found");
 
-    const url = channel.url;
+    const base = channel.url.substring(0, channel.url.lastIndexOf("/") + 1);
 
-    // ===== قنوات DASH (MPD) =====
-    if (url.includes(".mpd")) {
+    // ===== تحميل ملفات الفيديو (segments) =====
+    if (file) {
 
-      const response = await fetch(url, {
+      const segmentUrl = base + file;
+
+      const response = await fetch(segmentUrl, {
         headers: {
-          "Referer": channel.headers?.Referer || ""
+          "Referer": "https://akotv/"
         }
       });
 
-      if (!response.ok) {
-        return res.status(500).send("Failed to load MPD");
-      }
+      const buffer = Buffer.from(await response.arrayBuffer());
 
-      const text = await response.text();
-
-      res.setHeader("Content-Type", "application/dash+xml");
       res.setHeader("Access-Control-Allow-Origin", "*");
-
-      return res.send(text);
+      return res.send(buffer);
     }
 
-    // ===== باقي القنوات =====
-    return res.redirect(url);
+    // ===== تحميل ملف MPD =====
+    const response = await fetch(channel.url, {
+      headers: {
+        "Referer": "https://akotv/"
+      }
+    });
+
+    let text = await response.text();
+
+    // تعديل روابط الـ segments
+    text = text.replace(/(media=")([^"]+)/g, `$1/api/play?id=${id}&file=$2`);
+    text = text.replace(/(initialization=")([^"]+)/g, `$1/api/play?id=${id}&file=$2`);
+
+    res.setHeader("Content-Type", "application/dash+xml");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+
+    res.send(text);
 
   } catch (e) {
     console.error(e);
-    return res.status(500).send("Server error");
+    res.status(500).send("Server error");
   }
 }
