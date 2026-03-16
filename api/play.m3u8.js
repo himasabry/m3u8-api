@@ -5,11 +5,9 @@ import { incrementViewer } from "./viewers.js";
 const REQUIRED_UA = "SUPER2026";
 
 export default async function handler(req, res) {
-
   try {
 
-    const { id, path: extraPath = "" } = req.query;
-
+    const { id, segment } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
     const ua = req.headers["user-agent"] || "";
@@ -34,13 +32,33 @@ export default async function handler(req, res) {
 
     if (!channel) return res.status(404).send("Channel not found");
 
-    const baseUrl = channel.url.substring(0, channel.url.lastIndexOf("/") + 1);
+    const url = channel.url;
 
-    const targetUrl = extraPath
-      ? baseUrl + extraPath
-      : channel.url;
+    // base path
+    const base = url.substring(0, url.lastIndexOf("/") + 1);
 
-    const response = await fetch(targetUrl, {
+    // ====== تحميل segment ======
+    if (segment) {
+
+      const segUrl = base + segment;
+
+      const response = await fetch(segUrl, {
+        headers: {
+          "Referer": channel.headers?.Referer || "",
+          "Origin": channel.headers?.Origin || "",
+          "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
+        }
+      });
+
+      const buffer = Buffer.from(await response.arrayBuffer());
+
+      res.setHeader("Content-Type", "video/mp4");
+      return res.send(buffer);
+    }
+
+    // ====== تحميل mpd ======
+
+    const response = await fetch(url, {
       headers: {
         "Referer": channel.headers?.Referer || "",
         "Origin": channel.headers?.Origin || "",
@@ -48,15 +66,17 @@ export default async function handler(req, res) {
       }
     });
 
-    const buffer = Buffer.from(await response.arrayBuffer());
+    let text = await response.text();
 
-    res.setHeader("Content-Type", response.headers.get("content-type") || "application/octet-stream");
+    // تعديل روابط segments
+    text = text.replace(/(media=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&segment=$2`);
+    text = text.replace(/(initialization=")([^"]+)/g, `$1/api/play.m3u8?id=${id}&segment=$2`);
 
-    return res.send(buffer);
+    res.setHeader("Content-Type", "application/dash+xml");
+    res.send(text);
 
   } catch (e) {
     console.error(e);
-    return res.status(500).send("Server error");
+    res.status(500).send("Server error");
   }
-
 }
