@@ -132,7 +132,7 @@
       "id": "26",
       "name": "CINEMA 1",
       "url": "https://akotv.site/ako_admin/videos/TVD1311/index.mpd",
-      "headers": { "User-Agent": "", "Referer": "https://akotv/", "Origin": "" }
+      "headers": { "User-Agent": "", "Referer": "https://akotv/", "Origin": "https://akotv/" }
       },
     {
       "id": "27",
