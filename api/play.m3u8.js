@@ -11,7 +11,6 @@ export default async function handler(req, res) {
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
-    // حماية User-Agent
     const ua = req.headers["user-agent"] || "";
     if (!ua.includes(REQUIRED_UA)) {
       return res.status(403).send("Forbidden");
@@ -32,13 +31,11 @@ export default async function handler(req, res) {
       }
     }
 
-    if (!channel) {
-      return res.status(404).send("Channel not found");
-    }
+    if (!channel) return res.status(404).send("Channel not found");
 
     const url = channel.url;
 
-    // ===== قنوات MPD =====
+    // لو MPD نعمل Proxy
     if (url.includes(".mpd")) {
 
       const response = await fetch(url, {
@@ -52,19 +49,16 @@ export default async function handler(req, res) {
       const text = await response.text();
 
       res.setHeader("Content-Type", "application/dash+xml");
-      res.setHeader("Access-Control-Allow-Origin", "*");
-
       return res.send(text);
+
     }
 
-    // ===== باقي القنوات =====
+    // باقي القنوات redirect
     return res.redirect(url);
 
   } catch (e) {
-
     console.error(e);
     return res.status(500).send("Server error");
-
   }
 
 }
