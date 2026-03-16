@@ -11,7 +11,6 @@ export default async function handler(req, res) {
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
-    // حماية اليوزر ايجنت
     const ua = req.headers["user-agent"] || "";
     if (!ua.includes(REQUIRED_UA)) {
       return res.status(403).send("Forbidden");
@@ -36,13 +35,14 @@ export default async function handler(req, res) {
 
     const url = channel.url;
 
-    // ===== قنوات MPD =====
+    // لو MPD نعمل Proxy
     if (url.includes(".mpd")) {
 
       const response = await fetch(url, {
         headers: {
-          "Referer": "https://akotv/",
-          "User-Agent": "Mozilla/5.0"
+          "Referer": channel.headers?.Referer || "",
+          "Origin": channel.headers?.Origin || "",
+          "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0"
         }
       });
 
@@ -50,16 +50,15 @@ export default async function handler(req, res) {
 
       res.setHeader("Content-Type", "application/dash+xml");
       return res.send(text);
+
     }
 
-    // ===== باقي القنوات =====
+    // باقي القنوات redirect
     return res.redirect(url);
 
   } catch (e) {
-
     console.error(e);
     return res.status(500).send("Server error");
-
   }
 
 }
