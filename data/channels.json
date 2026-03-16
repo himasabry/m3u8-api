@@ -147,13 +147,13 @@
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
       {
-      "id": "27",
+      "id": "29",
       "name": "Alfa Alyoum",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alyoum.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "28",
+      "id": "30",
       "name": "Alfa AFLAM",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alfann.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
