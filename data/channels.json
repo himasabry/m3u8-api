@@ -21,8 +21,11 @@
     {
       "id": "04",
       "name": "Bein Sports 4 HD",
-      "url": "https://yacine.sasagms0.workers.dev/proxy?url=http%3A%2F%2Fhet000.4rouwanda-shop.store%2Flive%2F9787488847%2Findex.m3u8%3Ft%3DaQz2DHLU9Pcdp8LJJbQ0Ow%26e%3D1773796086&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F139.0.0.0%20Safari%2F537.36&ref=https%3A%2F%2Fx.com%2F",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "url": "https://yacine.sasagms0.workers.dev/proxy?url=http%3A%2F%2Fhet000.4rouwanda-shop.store%2Flive%2F9787488847%2Findex.m3u8%3Ft%3DaQz2DHLU9Pcdp8LJJbQ0Ow%26e%3D1773796086",
+      "headers": { 
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "Referer": "https://x.com/",
+        "Origin": "" }
     },
     {
       "id": "05",
