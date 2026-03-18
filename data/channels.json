@@ -117,7 +117,7 @@
     {
       "id": "34",
       "name": "ALOSTORA Sports 1",
-      "url": "https://go8knm.optikl.ink/index.php/video.m3u8?id=116900&cat=4524",
+      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/q8Aeqe8Ge6f-Qy5lwJ5fpsCL8b8s-0kQTnfq83z814UPndgtEYYiCbRLTzX5HmCf1eMueBBLiATvwBYxyj5uZw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -129,13 +129,13 @@
     {
       "id": "36",
       "name": "ALOSTORA Sports 3",
-      "url": "https://go8knm.optikl.ink/index.php/video.m3u8?id=116902&cat=4524",
+      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/rLvWMmg5RKPmvPPUpi3awnKEfCt3os2CiNf8DJTy9l2kSWxz6rJyNre21QTC9dzvhtV0sk4hfvd2H9XhScSv6g/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "37",
       "name": "ALOSTORA Sports 4",
-      "url": "https://go8knm.optikl.ink/index.php/video.m3u8?id=116903&cat=4524",
+      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/rLvWMmg5RKPmvPPUpi3awnKEfCt3os2CiNf8DJTy9l2kSWxz6rJyNre21QTC9dzvhtV0sk4hfvd2H9XhScSv6g/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
