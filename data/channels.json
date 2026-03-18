@@ -47,48 +47,93 @@
     },
     {
       "id": "08",
+      "name": "Bein Sports 1 SD",
+      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/11.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "09",
+      "name": "Bein Sports 2 SD",
+      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/11.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "10",
+      "name": "Bein Sports 3 SD",
+      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/11.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "11",
+      "name": "Bein Sports 4 SD",
+      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/11.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "12",
+      "name": "Bein Sports 5 SD",
+      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/14.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "13",
+      "name": "Bein Sports 6 SD",
+      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/17.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "14",
+      "name": "Bein Sports 7 SD",
+      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/401.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "24",
       "name": "ALWAN Sports 1",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ALWAN1.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "09",
+      "id": "25",
       "name": "ALWAN Sports 2",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ALWAN2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "10",
+      "id": "26",
       "name": "ALWAN Sports 3",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ALWAN3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "11",
+      "id": "27",
       "name": "ALWAN Sports 4",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ALWAN4.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "12",
+      "id": "34",
       "name": "ALOSTORA Sports 1",
       "url": "https://go8knm.optikl.ink/index.php/video.m3u8?id=116900&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "13",
+      "id": "35",
       "name": "ALOSTORA Sports 2",
       "url": "https://go8knm.optikl.ink/index.php/video.m3u8?id=116901&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "14",
+      "id": "36",
       "name": "ALOSTORA Sports 3",
       "url": "https://go8knm.optikl.ink/index.php/video.m3u8?id=116902&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "15",
+      "id": "37",
       "name": "ALOSTORA Sports 4",
       "url": "https://go8knm.optikl.ink/index.php/video.m3u8?id=116903&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
@@ -96,43 +141,43 @@
   ],
   "OSN": [
     {
-      "id": "20",
+      "id": "40",
       "name": "YAHALA",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "21",
+      "id": "41",
       "name": "YAHALA BIL ARABI",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20BIL%20ARABI.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "22",
+      "id": "42",
       "name": "YAHALA AFLAM",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20AFLAM.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
-      "id": "23",
+      "id": "43",
       "name": "Movies",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Movies.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "24",
+      "id": "44",
       "name": "Action",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Action.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
-      "id": "25",
+      "id": "54",
       "name": "Comedy",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Comedy.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "26",
+      "id": "56",
       "name": "CINEMA 1",
       "url": "https://bbb.exoadash.com/TVD1346/index.mpd",
       "headers": {
@@ -141,25 +186,25 @@
 "Origin": "" }
       },
     {
-      "id": "27",
+      "id": "49",
       "name": "CINEMA 2",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20CINEMA%202.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "28",
+      "id": "50",
       "name": "Alfa Musalsalat",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Musalsalat.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
       {
-      "id": "29",
+      "id": "51",
       "name": "Alfa Alyoum",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alyoum.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "30",
+      "id": "52",
       "name": "Alfa AFLAM",
       "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alfann.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
