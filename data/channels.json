@@ -48,14 +48,14 @@
     {
       "id": "08",
       "name": "Bein Sports 1 SD",
-      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/326.m3u8",
+      "url": "https://matchnow.optikl.ink/drgn/play.m3u8?id=116900&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "09",
       "name": "Bein Sports 2 SD",
       "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/338.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "headers": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36", "Referer": "", "Origin": "" }
     },
     {
       "id": "10",
