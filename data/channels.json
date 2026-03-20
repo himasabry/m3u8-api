@@ -3,13 +3,13 @@
     {
       "id": "01",
       "name": "Bein Sports 1 4K QA",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60080_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60080_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "02",
       "name": "Bein Sports 2 HD",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60081_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60081_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -54,19 +54,19 @@
     {
       "id": "09",
       "name": "Bein Sports 2 SD",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60011_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60011_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "10",
       "name": "Bein Sports 3 SD",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60012_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60012_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "11",
       "name": "Bein Sports 4 SD",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60013_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60013_.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -75,19 +75,19 @@
     {
       "id": "12",
       "name": "Bein Sports 5 SD",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60014_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60014_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "13",
       "name": "Bein Sports 6 SD",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60015_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60015_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "14",
       "name": "Bein Sports 7 SD",
-      "url": "https://dawn-wave-398b.star7forums.workers.dev/live/60016_.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60016_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -105,37 +105,37 @@
     {
       "id": "26",
       "name": "ALWAN Sports 3",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ALWAN3.m3u8",
+      "url": "https://stream.camcloud.stream/stream/075f2d3a2988/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "27",
       "name": "ALWAN Sports 4",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ALWAN4.m3u8",
+      "url": "https://stream.camcloud.stream/stream/4994d2defc1a/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "34",
       "name": "ALOSTORA Sports 1",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/q8Aeqe8Ge6f-Qy5lwJ5fpsCL8b8s-0kQTnfq83z814UPndgtEYYiCbRLTzX5HmCf1eMueBBLiATvwBYxyj5uZw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://ostora.omao18193.workers.dev/?url=https://dev-a-live.pantheonsite.io/A/atv.php?id=116900&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "35",
       "name": "ALOSTORA Sports 2",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/NygGG9C0-Kq_Q2qALaF-Y8Ka3kGyN9BpSeeSr08Ab7YBChs8ZDVoGTyAhsCzOMyGJHkMPcoWt3uq5Wxvtxd8Cw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://ostora.omao18193.workers.dev/?url=https://dev-a-live.pantheonsite.io/A/atv.php?id=116901&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "36",
       "name": "ALOSTORA Sports 3",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/rLvWMmg5RKPmvPPUpi3awnKEfCt3os2CiNf8DJTy9l2kSWxz6rJyNre21QTC9dzvhtV0sk4hfvd2H9XhScSv6g/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://ostora.omao18193.workers.dev/?url=https://dev-a-live.pantheonsite.io/A/atv.php?id=116902&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "37",
       "name": "ALOSTORA Sports 4",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/rLvWMmg5RKPmvPPUpi3awnKEfCt3os2CiNf8DJTy9l2kSWxz6rJyNre21QTC9dzvhtV0sk4hfvd2H9XhScSv6g/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://ostora.omao18193.workers.dev/?url=https://dev-a-live.pantheonsite.io/A/atv.php?id=116903&cat=4524",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
