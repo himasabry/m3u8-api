@@ -123,7 +123,7 @@
     {
       "id": "34",
       "name": "ALOSTORA Sports 1",
-      "url": "https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/gcek1JFhBQ4RaXR9cRb3M1c5F6vj2atIgIPtLCXefVqUUEzd0Ji3hwPAaYk5IeAs658T7t699RcKtfJ9cu4tWw/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/master_dynamic_highlatency.m3u8?type=live",
+      "url": "https://ostora.omao18193.workers.dev/?url=https://dev-a-live.pantheonsite.io/A/atv.php?id=116900&cat=4524",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
