@@ -123,9 +123,9 @@
     {
       "id": "34",
       "name": "ALOSTORA Sports 1",
-      "url": "https://ostora.pages.dev/api/116900",
+      "url": "https://ostora.omao18193.workers.dev/?url=https://dev-a-live.pantheonsite.io/A/atv.php?id=116900&cat=4524",
       "headers": { 
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+        "User-Agent": "",
         "Referer": "",
         "Origin": "" }
     },
