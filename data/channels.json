@@ -105,19 +105,19 @@
     {
       "id": "16",
       "name": "Bein Sports 2 FHD",
-      "url": "https://ostora.3alaenet.workers.dev/?id=2&quality=2&type=ys",
+      "url": "https://ostora.3alaenet.workers.dev/?id=2&quality=1&type=ys",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "17",
       "name": "Bein Sports 3 FHD",
-      "url": "https://ostora.3alaenet.workers.dev/?id=3&quality=3&type=ys",
+      "url": "https://ostora.3alaenet.workers.dev/?id=3&quality=1&type=ys",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "18",
       "name": "Bein Sports 4 FHD",
-      "url": "https://ostora.3alaenet.workers.dev/?id=2&quality=4&type=ys",
+      "url": "https://ostora.3alaenet.workers.dev/?id=4&quality=1&type=ys",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -126,19 +126,19 @@
     {
       "id": "19",
       "name": "Bein Sports 5 FHD",
-      "url": "https://ostora.3alaenet.workers.dev/?id=2&quality=5&type=ys",
+      "url": "https://ostora.3alaenet.workers.dev/?id=5&quality=1&type=ys",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "20",
       "name": "Bein Sports 6 FHD",
-      "url": "https://ostora.3alaenet.workers.dev/?id=2&quality=6&type=ys",
+      "url": "https://ostora.3alaenet.workers.dev/?id=6&quality=1&type=ys",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "21",
       "name": "Bein Sports 7 FHD",
-      "url": "https://ostora.3alaenet.workers.dev/?id=2&quality=7&type=ys",
+      "url": "https://ostora.3alaenet.workers.dev/?id=7&quality=1&type=ys",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
