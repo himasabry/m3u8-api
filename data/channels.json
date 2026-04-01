@@ -27,7 +27,7 @@
     {
       "id": "04",
       "name": "Bein Sports 4 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/2.m3u8",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/11.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -36,19 +36,19 @@
     {
       "id": "05",
       "name": "Bein Sports 5 HD",
-      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/14.m3u8",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/14.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "06",
       "name": "Bein Sports 6 HD",
-      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/17.m3u8",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/17.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "07",
       "name": "Bein Sports 7 HD",
-      "url": "https://w.shahidtv.net/live/dramaapp/1a65465sadasdd/401.m3u8",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/401.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
