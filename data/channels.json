@@ -240,6 +240,29 @@
       "url": "https://pro.onsitv.site/Thmanya-3-SD/video.m3u8?token=onsitvca",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
+    ],
+  "StarzPlay": [
+    {
+      "id": "61",
+      "name": "StarzPlay SPORT 1 HD",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/392.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "62",
+      "name": "StarzPlay SPORT 2 HD",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/395.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "63",
+      "name": "StarzPlay SPORT 3 HD",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/398.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    }
   ],
   "OSN": [
     {
