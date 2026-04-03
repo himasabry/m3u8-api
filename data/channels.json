@@ -201,7 +201,7 @@
     {
       "id": "55",
       "name": "Thmanyah 1 HD",
-      "url": "https://proxify.kooretna.site/stream/vspaa4",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/41.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -210,13 +210,13 @@
     {
       "id": "56",
       "name": "Thmanyah 2 HD",
-      "url": "https://pro.onsitv.site/Thmanya-2-SD/video.m3u8?token=onsitvca",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/359.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "57",
       "name": "Thmanyah 3 HD",
-      "url": "https://pro.onsitv.site/Thmanya-3-SD/video.m3u8?token=onsitvca",
+      "url": "https://w.shahidtv.net/live/34682514/73347194/362.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
