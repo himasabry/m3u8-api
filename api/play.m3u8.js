@@ -33,40 +33,24 @@ export default async function handler(req, res) {
       return res.status(404).send("Channel not found");
     }
 
-    // 🔥 لو القناة عادية → redirect مباشر
-    if (!channel.headers) {
+    // ✅ لو مش ostora → شغل عادي
+    if (!channel.url.includes("ostora")) {
       return res.redirect(channel.url);
     }
 
-    // 🔥 لو فيها headers (زي ostora) → proxy
+    // 🔥 ostora فقط
     const cleanUrl = channel.url.split("#")[0];
 
     const response = await fetch(cleanUrl, {
       headers: {
-        "User-Agent": channel.headers["User-Agent"],
-        "Referer": channel.headers["Referer"]
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "https://ostora.pages.dev/"
       }
     });
 
-    const contentType = response.headers.get("content-type") || "";
+    const finalUrl = response.url;
 
-    // 🎯 لو m3u8
-    if (contentType.includes("mpegurl")) {
-      const text = await response.text();
-
-      const modified = text.replace(/https?:\/\/[^\s]+/g, (url) => {
-        return `https://${req.headers.host}/api/proxy?url=${encodeURIComponent(url)}`;
-      });
-
-      res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-      return res.send(modified);
-    }
-
-    // 🎯 باقي الأنواع (mp4 / ts)
-    const buffer = await response.arrayBuffer();
-    res.setHeader("Content-Type", contentType || "video/mp2t");
-
-    return res.send(Buffer.from(buffer));
+    return res.redirect(finalUrl);
 
   } catch (e) {
     console.error("PLAY ERROR:", e);
