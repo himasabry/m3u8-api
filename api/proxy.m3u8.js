@@ -1,24 +1,29 @@
+import fetch from "node-fetch";
+
 export default async function handler(req, res) {
+  const { url } = req.query;
+  if (!url) return res.status(400).send("Missing url");
+
   try {
-    const { url } = req.query;
-    if (!url) return res.status(400).send("Missing url");
+    const upstream = await fetch(url, { redirect: "follow", timeout: 15000 });
+    const contentType = upstream.headers.get("content-type") || "";
 
-    const response = await fetch(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        "Referer": "https://ostora.pages.dev/"
-      }
-    });
+    if (contentType.includes("mpegurl")) {
+      let body = await upstream.text();
 
-    const contentType = response.headers.get("content-type") || "video/mp2t";
+      body = body.replace(/http:\/\/[^\s#]+/g, match => {
+        return `/api/proxy.m3u8.js?url=${encodeURIComponent(match)}`;
+      });
 
-    const buffer = await response.arrayBuffer();
+      res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
+      res.setHeader("Access-Control-Allow-Origin", "*");
+      return res.send(body);
+    }
 
-    res.setHeader("Content-Type", contentType);
-    return res.send(Buffer.from(buffer));
+    upstream.body.pipe(res);
 
-  } catch (err) {
-    console.error("PROXY ERROR:", err);
+  } catch (e) {
+    console.error("PROXY ERROR:", e);
     return res.status(500).send("Proxy error");
   }
 }
