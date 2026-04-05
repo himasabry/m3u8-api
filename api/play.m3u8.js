@@ -4,8 +4,10 @@ import { incrementViewer } from "./viewers.js";
 
 const REQUIRED_UA = "SUPER2026";
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
+
   try {
+
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
@@ -35,36 +37,12 @@ export default async function handler(req, res) {
       return res.status(404).send("Channel not found");
     }
 
-    const response = await fetch(channel.url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        "Referer": "https://ostora.pages.dev/",
-        "Origin": "https://ostora.pages.dev"
-      },
-      redirect: "follow"
-    });
-
-    const contentType = response.headers.get("content-type") || "";
-
-    // لو m3u8
-    if (contentType.includes("mpegurl") || channel.url.includes(".m3u8")) {
-      const text = await response.text();
-
-      const modified = text.replace(/https?:\/\/[^\s]+/g, (url) => {
-        return `${req.headers.host}/api/proxy?url=${encodeURIComponent(url)}`;
-      });
-
-      res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
-      return res.send(modified);
-    }
-
-    // لو فيديو مباشر أو ts
-    const buffer = await response.arrayBuffer();
-    res.setHeader("Content-Type", contentType || "video/mp2t");
-    return res.send(Buffer.from(buffer));
+    // تحويل مباشر للقناة
+    return res.redirect(channel.url);
 
   } catch (e) {
     console.error("PLAY ERROR:", e);
     return res.status(500).send("Server error");
   }
+
 }
