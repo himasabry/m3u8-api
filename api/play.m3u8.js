@@ -9,16 +9,13 @@ export default async function handler(req, res) {
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
-    // حماية User-Agent
     const ua = req.headers["user-agent"] || "";
     if (!ua.includes(REQUIRED_UA)) {
       return res.status(403).send("Forbidden");
     }
 
-    // زيادة المشاهدين
     incrementViewer(id);
 
-    // قراءة القنوات
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
@@ -36,21 +33,25 @@ export default async function handler(req, res) {
       return res.status(404).send("Channel not found");
     }
 
-    // 🔥 إزالة #hls
+    // 🔥 لو القناة عادية → redirect مباشر
+    if (!channel.headers) {
+      return res.redirect(channel.url);
+    }
+
+    // 🔥 لو فيها headers (زي ostora) → proxy
     const cleanUrl = channel.url.split("#")[0];
 
-    // طلب البث
     const response = await fetch(cleanUrl, {
       headers: {
-        "User-Agent": channel.headers?.["User-Agent"] || "Mozilla/5.0",
-        "Referer": channel.headers?.["Referer"] || ""
+        "User-Agent": channel.headers["User-Agent"],
+        "Referer": channel.headers["Referer"]
       }
     });
 
     const contentType = response.headers.get("content-type") || "";
 
-    // 🎯 لو M3U8
-    if (contentType.includes("mpegurl") || cleanUrl.includes(".m3u8")) {
+    // 🎯 لو m3u8
+    if (contentType.includes("mpegurl")) {
       const text = await response.text();
 
       const modified = text.replace(/https?:\/\/[^\s]+/g, (url) => {
@@ -61,10 +62,10 @@ export default async function handler(req, res) {
       return res.send(modified);
     }
 
-    // 🎯 لو TS أو فيديو مباشر
+    // 🎯 باقي الأنواع (mp4 / ts)
     const buffer = await response.arrayBuffer();
-
     res.setHeader("Content-Type", contentType || "video/mp2t");
+
     return res.send(Buffer.from(buffer));
 
   } catch (e) {
