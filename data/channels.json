@@ -227,6 +227,18 @@
       "name": "ALOSTORA Sports 4",
       "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=04",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "38",
+      "name": "ALOSTORA Sports 5",
+      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=05",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "39",
+      "name": "ALOSTORA Sports 6",
+      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=06",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
   "Thmanyah": [
