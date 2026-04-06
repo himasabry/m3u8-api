@@ -211,21 +211,21 @@
     {
       "id": "35",
       "name": "ALOSTORA Sports 2",
-      "url": "https://is.gd/kkpzQk.m3u8",
+      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=02",
       "headers": { 
-        "User-Agent": "Mozilla/5.0",
+        "User-Agent": "",
         "Referer": "", "Origin": "" }
     },
     {
       "id": "36",
       "name": "ALOSTORA Sports 3",
-      "url": "https://sport.alamna.live/alammna/live/2e92140d/BeIN_SPORTS_3.m3u8",
+      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=03",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "37",
       "name": "ALOSTORA Sports 4",
-      "url": "https://sport.alamna.live/alammna/live/2e92140d/BeIN_SPORTS_4.m3u8",
+      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=04",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
