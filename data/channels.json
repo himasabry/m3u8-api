@@ -211,9 +211,9 @@
     {
       "id": "35",
       "name": "ALOSTORA Sports 2",
-      "url": "https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/ITqeMj5KDqXvtGkdobY7dHDSls2cyU41LhSJcEY3TFDNiL1L-ZsBOafy8darPmjp8Gozo0cia4RXUxCj3nRzZA/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/master_dynamic_highlatency.m3u8?type=live",
+      "url": "https://is.gd/kkpzQk.m3u8",
       "headers": { 
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0",
         "Referer": "", "Origin": "" }
     },
     {
