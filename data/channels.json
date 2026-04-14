@@ -202,7 +202,7 @@
     {
       "id": "34",
       "name": "ALOSTORA Sports 1",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/2do1v1_1nka0BFIS-U8M21JNWOUfvr4lANhWS46NirvKKuAj-KYqWHgwRjM06zJkukGHRtId1HJgMBL-4uptsA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=01",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -211,7 +211,7 @@
     {
       "id": "35",
       "name": "ALOSTORA Sports 2",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/ClflLO5sdSCRo9_uRTPJUMyiHPgD_cgxFVWzjBV3uoAa2YPxOdLl_1b-xWTJ_7dGtHcSVzVK8j6yB_7CBtKkdQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=02",
       "headers": { 
         "User-Agent": "",
         "Referer": "", "Origin": "" }
@@ -219,25 +219,25 @@
     {
       "id": "36",
       "name": "ALOSTORA Sports 3",
-      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=03",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=03",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "37",
       "name": "ALOSTORA Sports 4",
-      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=04",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=04",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "38",
       "name": "ALOSTORA Sports 5",
-      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=05",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=05",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "39",
       "name": "ALOSTORA Sports 6",
-      "url": "https://bitter-queen-30cc.hima-sabry2015.workers.dev/?id=06",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=06",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
