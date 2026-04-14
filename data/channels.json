@@ -202,7 +202,7 @@
     {
       "id": "34",
       "name": "ALOSTORA Sports 1",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/ClflLO5sdSCRo9_uRTPJUMyiHPgD_cgxFVWzjBV3uoAa2YPxOdLl_1b-xWTJ_7dGtHcSVzVK8j6yB_7CBtKkdQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/2do1v1_1nka0BFIS-U8M21JNWOUfvr4lANhWS46NirvKKuAj-KYqWHgwRjM06zJkukGHRtId1HJgMBL-4uptsA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -211,7 +211,7 @@
     {
       "id": "35",
       "name": "ALOSTORA Sports 2",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/2do1v1_1nka0BFIS-U8M21JNWOUfvr4lANhWS46NirvKKuAj-KYqWHgwRjM06zJkukGHRtId1HJgMBL-4uptsA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/ClflLO5sdSCRo9_uRTPJUMyiHPgD_cgxFVWzjBV3uoAa2YPxOdLl_1b-xWTJ_7dGtHcSVzVK8j6yB_7CBtKkdQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { 
         "User-Agent": "",
         "Referer": "", "Origin": "" }
