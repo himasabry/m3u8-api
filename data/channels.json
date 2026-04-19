@@ -21,7 +21,7 @@
     {
       "id": "03",
       "name": "Bein Sports 3 HD",
-      "url": "https://pro.onsitv.site/beIN-SPORTS-3-FHD/video.m3u8?token=onsitvca",
+      "url": "https://www.d-service.pro/b3.php?autoplay=1&muted=0",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
