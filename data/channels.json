@@ -54,7 +54,7 @@
     {
       "id": "08",
       "name": "Bein Sports 1 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/1_sd.m3u8",
+      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60020_.m3u8",
       "headers": {
         "User-Agent": "",
         "Referer": "",
@@ -241,6 +241,49 @@
       "id": "39",
       "name": "ALOSTORA Sports 6",
       "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=06",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    }
+  ],
+  "POST SPORT": [
+    {
+      "id": "40",
+      "name": "POST Sports 1",
+      "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport1",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "41",
+      "name": "POST Sports 2",
+      "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport2",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "42",
+      "name": "POST Sports 3",
+      "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport3",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "43",
+      "name": "POST Sports 4",
+      "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport4",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "44",
+      "name": "POST Sports 5",
+      "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport5",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "45",
+      "name": "POST Sports 6",
+      "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport6",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
