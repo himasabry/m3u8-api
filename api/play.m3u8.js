@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { incrementViewer } from "./viewers.js";
 
-const REQUIRED_UA = "SUPER2026";
+const REQUIRED_UA = "SUPERLIVETV2026";
 
 export default async function handler(req, res) {
   try {
