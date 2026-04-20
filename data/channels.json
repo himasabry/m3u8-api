@@ -251,7 +251,7 @@
       "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport1",
       "headers": { 
         "User-Agent": "",
-        "Referer": "",
+        "Referer": "https://www.vibertv.xyz/",
         "Origin": "" }
     },
     {
@@ -260,31 +260,31 @@
       "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport2",
       "headers": { 
         "User-Agent": "",
-        "Referer": "", "Origin": "" }
+        "Referer": "https://www.vibertv.xyz/", "Origin": "" }
     },
     {
       "id": "42",
       "name": "POST Sports 3",
       "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport3",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "headers": { "User-Agent": "", "Referer": "https://www.vibertv.xyz/", "Origin": "" }
     },
     {
       "id": "43",
       "name": "POST Sports 4",
       "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport4",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "headers": { "User-Agent": "", "Referer": "https://www.vibertv.xyz/", "Origin": "" }
     },
     {
       "id": "44",
       "name": "POST Sports 5",
       "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport5",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "headers": { "User-Agent": "", "Referer": "https://www.vibertv.xyz/", "Origin": "" }
     },
     {
       "id": "45",
       "name": "POST Sports 6",
       "url": "https://tod-plus-viber.rorkhrap90.workers.dev/live/postsport6",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "headers": { "User-Agent": "", "Referer": "https://www.vibertv.xyz/", "Origin": "" }
     }
   ],
   "Thmanyah": [
@@ -351,6 +351,104 @@
       "id": "63",
       "name": "StarzPlay SPORT 3 HD",
       "url": "https://w.shahidtv.net/live/34682514/73347194/398.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    }
+  ],
+  "SPORT EN": [
+    {
+      "id": "61",
+      "name": "beIN AUS 1 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "62",
+      "name": "beIN AUS 2 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "63",
+      "name": "beIN AUS 3 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+    "id": "61",
+      "name": "beIN FR 1 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "62",
+      "name": "beIN FR 2 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "63",
+      "name": "beIN FR 3 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+    "id": "61",
+      "name": "beIN EN 1 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "62",
+      "name": "beIN EN 2 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "63",
+      "name": "beIN EN 3 HD",
+      "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+    "id": "61",
+      "name": "beIN TR 1 HD",
+      "url": "https://maymunmatematigi.lol/static/bs1.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "62",
+      "name": "beIN TR 2 HD",
+      "url": "https://maymunmatematigi.lol/static/bs2.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "63",
+      "name": "beIN TR 3 HD",
+      "url": "https://maymunmatematigi.lol/static/bs3.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "62",
+      "name": "beIN TR 4 HD",
+      "url": "https://maymunmatematigi.lol/static/bs4.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "63",
+      "name": "beIN TR 5 HD",
+      "url": "https://maymunmatematigi.lol/static/bs5.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
