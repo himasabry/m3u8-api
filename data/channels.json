@@ -356,7 +356,7 @@
   ],
   "SPORT EN": [
     {
-      "id": "61",
+      "id": "64",
       "name": "beIN AUS 1 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
       "headers": { 
@@ -365,19 +365,19 @@
         "Origin": "" }
     },
     {
-      "id": "62",
+      "id": "65",
       "name": "beIN AUS 2 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "63",
+      "id": "66",
       "name": "beIN AUS 3 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-    "id": "61",
+      "id": "67",
       "name": "beIN FR 1 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
       "headers": { 
@@ -386,19 +386,19 @@
         "Origin": "" }
     },
     {
-      "id": "62",
+      "id": "68",
       "name": "beIN FR 2 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "63",
+      "id": "69",
       "name": "beIN FR 3 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-    "id": "61",
+      "id": "70",
       "name": "beIN EN 1 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
       "headers": { 
@@ -407,19 +407,19 @@
         "Origin": "" }
     },
     {
-      "id": "62",
+      "id": "71",
       "name": "beIN EN 2 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "63",
+      "id": "72",
       "name": "beIN EN 3 HD",
       "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-    "id": "61",
+      "id": "73",
       "name": "beIN TR 1 HD",
       "url": "https://maymunmatematigi.lol/static/bs1.m3u8",
       "headers": { 
@@ -428,25 +428,25 @@
         "Origin": "" }
     },
     {
-      "id": "62",
+      "id": "74",
       "name": "beIN TR 2 HD",
       "url": "https://maymunmatematigi.lol/static/bs2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "63",
+      "id": "75",
       "name": "beIN TR 3 HD",
       "url": "https://maymunmatematigi.lol/static/bs3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "62",
+      "id": "76",
       "name": "beIN TR 4 HD",
       "url": "https://maymunmatematigi.lol/static/bs4.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "63",
+      "id": "77",
       "name": "beIN TR 5 HD",
       "url": "https://maymunmatematigi.lol/static/bs5.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
