@@ -102,19 +102,19 @@
     {
       "id": "15",
       "name": "Bein Sports 1 FHD",
-      "url": "https://live.plasma4k.workers.dev/beIN_1.m3u8",
+      "url": "https://live.plasma4k.workers.dev/beIN_1_PL.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "16",
       "name": "Bein Sports 2 FHD",
-      "url": "https://live.plasma4k.workers.dev/beIN_2.m3u8",
+      "url": "https://live.plasma4k.workers.dev/beIN_2_PL.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "17",
       "name": "Bein Sports 3 FHD",
-      "url": "https://live.plasma4k.workers.dev/beIN_3.m3u8",
+      "url": "https://live.plasma4k.workers.dev/beIN_3_PL.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
