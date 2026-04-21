@@ -9,7 +9,7 @@ const NEW_UA = "SUPERLIVETV2026";
 const OLD_UA = "SUPER2026";
 
 // 👇 فيديو المصيدة
-const FAKE_VIDEO = "https://example.com/fake.mp4";
+const FAKE_VIDEO = "https://github.com/himasabry/video/raw/refs/heads/main/fake.mp4";
 
 export default async function handler(req, res) {
 
