@@ -379,7 +379,7 @@
     {
       "id": "67",
       "name": "beIN FR 1 HD",
-      "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN1FR_hd.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -388,19 +388,19 @@
     {
       "id": "68",
       "name": "beIN FR 2 HD",
-      "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN2FR_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "69",
       "name": "beIN FR 3 HD",
-      "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN3FR_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "70",
       "name": "beIN EN 1 HD",
-      "url": "https://hls.iill.top/api/beIN-Sports-1/index.m3u8",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN1EN_hd.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -409,13 +409,13 @@
     {
       "id": "71",
       "name": "beIN EN 2 HD",
-      "url": "https://hls.iill.top/api/beIN-Sports-2/index.m3u8",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN2EN_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "72",
       "name": "beIN EN 3 HD",
-      "url": "https://hls.iill.top/api/beIN-Sports-3/index.m3u8",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN3EN_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
