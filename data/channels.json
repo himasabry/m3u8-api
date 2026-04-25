@@ -27,7 +27,7 @@
     {
       "id": "04",
       "name": "Bein Sports 4 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/11.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/11.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -36,13 +36,13 @@
     {
       "id": "05",
       "name": "Bein Sports 5 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/14.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/14.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "06",
       "name": "Bein Sports 6 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/17.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/17.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -108,7 +108,7 @@
     {
       "id": "16",
       "name": "Bein Sports 2 FHD",
-      "url": "https://man1ted.com/be3/index.m3u8",
+      "url": "https://man1ted.com/be2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -291,7 +291,7 @@
     {
       "id": "55",
       "name": "Thmanyah 1 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/41.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/41.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -300,13 +300,13 @@
     {
       "id": "56",
       "name": "Thmanyah 2 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/359.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/359.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "57",
       "name": "Thmanyah 3 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/362.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/362.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -335,7 +335,7 @@
     {
       "id": "61",
       "name": "StarzPlay SPORT 1 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/392.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/392.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -344,13 +344,13 @@
     {
       "id": "62",
       "name": "StarzPlay SPORT 2 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/395.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/73347194/395.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "63",
       "name": "StarzPlay SPORT 3 HD",
-      "url": "https://w.shahidtv.net/live/34682514/73347194/398.m3u8",
+      "url": "https://w.shahidtv.net/live/94939895/53753163/398.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
