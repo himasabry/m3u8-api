@@ -27,7 +27,7 @@
     {
       "id": "04",
       "name": "Bein Sports 4 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_4_hd/playlist.m3u8",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_4_hd.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
