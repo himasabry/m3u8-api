@@ -173,8 +173,8 @@
     {
       "id": "28",
       "name": "ALWAN Sports 5",
-      "url": "https://23370wa.xyz:443/play/BMoDRXtRtbrnsYhxpeoI7imfrvwzogWJ1RB7BCbatOw/m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "url": "https://23370wa.xyz/play/BMoDRXtRtbrnsYhxpeoI7nUUlBeGgd9sI7PeKoSQ0Tg/m3u8",
+      "headers": { "User-Agent": "IPTVPRO-v5.0.1", "Referer": "", "Origin": "" }
     },
     {
       "id": "29",
@@ -198,6 +198,42 @@
       "id": "32",
       "name": "ALWAN Sports 9",
       "url": "https://stream.camcloud.stream/stream/4994d2defc1a/playlist.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "80",
+      "name": "ALWAN Sports 1",
+      "url": "https://stream.camcloud.stream/stream/8dd8ad49bb05/playlist.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "81",
+      "name": "ALWAN Sports 2",
+      "url": "https://stream.camcloud.stream/stream/8dd8ad49bb05/playlist.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "82",
+      "name": "ALWAN Sports 3",
+      "url": "https://stream.camcloud.stream/stream/075f2d3a2988/playlist.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "83",
+      "name": "ALWAN Sports 4",
+      "url": "https://stream.camcloud.stream/stream/4994d2defc1a/playlist.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "84",
+      "name": "ALWAN Sports 5",
+      "url": "https://23370wa.xyz/play/BMoDRXtRtbrnsYhxpeoI7nUUlBeGgd9sI7PeKoSQ0Tg/m3u8",
+      "headers": { "User-Agent": "IPTVPRO-v5.0.1", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "85",
+      "name": "ALWAN Sports 6",
+      "url": "https://23370wa.xyz:443/play/BMoDRXtRtbrnsYhxpeoI7nBdCVUdIpGNxblJPEf7zT8/m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
