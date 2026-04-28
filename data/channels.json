@@ -143,6 +143,24 @@
       "name": "Bein Sports 7 FHD",
       "url": "https://man1ted.com/be7/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "86",
+      "name": "Bein Sports 1 4K",
+      "url": "https://cors-proxy.cooks.fyi/http://afcocafot.com:8080/bn14k/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "87",
+      "name": "Bein Sports 2 4K",
+      "url": "https://cors-proxy.cooks.fyi/http://afcocafot.com:8080/bn24k/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "88",
+      "name": "Bein Sports 3 4K",
+      "url": "https://cors-proxy.cooks.fyi/http://afcocafot.com:8080/bn34k/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
   "ALWAN": [
