@@ -389,7 +389,7 @@
     {
       "id": "61",
       "name": "StarzPlay SPORT 1 HD",
-      "url": "https://w.shahidtv.net/live/94939895/53753163/392.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/94939895/53753163/392.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -398,13 +398,48 @@
     {
       "id": "62",
       "name": "StarzPlay SPORT 2 HD",
-      "url": "https://w.shahidtv.net/live/94939895/53753163/73347194/395.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/94939895/53753163/73347194/395.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "63",
-      "name": "StarzPlay SPORT 3 HD",
+      "name": "https://ali.albesriali8.workers.dev/?url=StarzPlay SPORT 3 HD",
       "url": "https://w.shahidtv.net/live/94939895/53753163/398.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    }
+  ],
+  "AL-FAJER": [
+    {
+      "id": "89",
+      "name": "AL-FAJER 1 HD",
+      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500266285.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "90",
+      "name": "AL-FAJER 2 HD",
+      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500283275.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "91",
+      "name": "AL-FAJER 3 HD",
+      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500298398.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "92",
+      "name": "AL-FAJER 4 HD",
+      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500298399.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "93",
+      "name": "AL-FAJER 5 HD",
+      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500298400.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
