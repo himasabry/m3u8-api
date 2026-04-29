@@ -102,7 +102,7 @@
     {
       "id": "15",
       "name": "Bein Sports 1 FHD",
-      "url": "https://live.plasma4k.workers.dev/beIN_1_PL.m3u8",
+      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/xWwmIzDK7eXcyNDlf0ivE2t4etR0cVCCGE9QddOPCS4FYJxg1EZ6EON_4d9Z3JO35lmJONOgWS8AJnJ-maT3Ww/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
