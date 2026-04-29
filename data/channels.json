@@ -412,7 +412,7 @@
     {
       "id": "89",
       "name": "AL-FAJER 1 HD",
-      "url": "https://ali.albesriali8.workers.dev/?url=http://23370wa.xyz:80/play/rO2zmenodoY4c0JDcSxFMGocnr0Q8cWZv-t9rebcrLE/m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://23370wa.xyz:80/play/rO2zmenodoY4c0JDcSxFMGocnr0Q8cWZv-t9rebcrLE/m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -421,25 +421,25 @@
     {
       "id": "90",
       "name": "AL-FAJER 2 HD",
-      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500283275.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ftv2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "91",
       "name": "AL-FAJER 3 HD",
-      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500298398.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ftv3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "92",
       "name": "AL-FAJER 4 HD",
-      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500298399.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ftv4.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "93",
       "name": "AL-FAJER 5 HD",
-      "url": "https://cors-proxy.cooks.fyi/https://thunderbolt-40gbps.com:443/live/qtTNEdtW/UApj2oXu/500298400.m3u8",
+      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/ftv5.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
