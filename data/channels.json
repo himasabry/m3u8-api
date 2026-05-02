@@ -114,13 +114,13 @@
     {
       "id": "17",
       "name": "Bein Sports 3 FHD",
-      "url": "https://man1ted.com/be3/index.m3u8",
+      "url": "https://live.plasma4k.workers.dev/beIN_3_PL.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "18",
       "name": "Bein Sports 4 FHD",
-      "url": "https://man1ted.com/be4/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/11.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -129,19 +129,19 @@
     {
       "id": "19",
       "name": "Bein Sports 5 FHD",
-      "url": "https://man1ted.com/be5/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/14.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "20",
       "name": "Bein Sports 6 FHD",
-      "url": "https://man1ted.com/be6/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/17.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "21",
       "name": "Bein Sports 7 FHD",
-      "url": "https://man1ted.com/be7/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/401.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
