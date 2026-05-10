@@ -103,7 +103,7 @@
       "id": "15",
       "name": "Bein Sports 1 FHD",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.firebase-g-g-firebase-no-e-r-ger.lol%2F&id=b1_1080&key=EWii%23%40%5E%26HNDF2024",
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/INKW9AG9L78HHv1rEdKUiSUHEpAQKuoE2D4U36ZqzmqGN9bKuohaJc3dtSphfePP06ao5wUef0eWH_guJGBUrw/non_transcode/eu-central-1/periscope-replay-direct-prod-us-west-2-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
