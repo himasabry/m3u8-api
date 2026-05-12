@@ -367,7 +367,7 @@
     {
       "id": "58",
       "name": "Thmanyah 1 SD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/41.m3u8",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd&key=EWii%23%40%5E%26HNDF2024",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -376,13 +376,13 @@
     {
       "id": "59",
       "name": "Thmanyah 2 SD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/359.m3u8",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd2&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "60",
       "name": "Thmanyah 3 SD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/362.m3u8",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd3&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
     ],
