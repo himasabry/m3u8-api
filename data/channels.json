@@ -103,19 +103,21 @@
       "id": "15",
       "name": "Bein Sports 1 FHD",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.firebase-g-g-firebase-no-e-r-ger.lol%2F&id=b1_1080&key=EWii%23%40%5E%26HNDF2024",
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.api-s-goo-st-f1.lat%2F&id=b1_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "16",
       "name": "Bein Sports 2 FHD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.firebase-g-g-firebase-no-e-r-ger.lol%2F&id=b2_1080&key=EWii%23%40%5E%26HNDF2024",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.api-s-goo-st-f1.lat%2F&id=b2_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "17",
       "name": "Bein Sports 3 FHD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.firebase-g-g-firebase-no-e-r-ger.lol%2F&id=b3_1080&key=EWii%23%40%5E%26HNDF2024",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.api-s-goo-st-f1.lat%2F&id=b3_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -367,7 +369,8 @@
     {
       "id": "58",
       "name": "Thmanyah 1 SD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd&key=EWii%23%40%5E%26HNDF2024",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd&key=EWii%23%40%5E%26HNDF2024",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -376,13 +379,15 @@
     {
       "id": "59",
       "name": "Thmanyah 2 SD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd2&key=EWii%23%40%5E%26HNDF2024",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd2&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "60",
       "name": "Thmanyah 3 SD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd3&key=EWii%23%40%5E%26HNDF2024",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs4.api-s-goo-st-f1.lat%2F&id=thamnya_sd3&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
     ],
