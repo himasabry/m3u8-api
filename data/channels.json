@@ -268,7 +268,7 @@
     {
       "id": "34",
       "name": "ALOSTORA Sports 1",
-      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=01",
+      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/LRr0cp49az3j3T85X52u5siWr035RcdMyf2O1D5Z9_cOuqbhHiY4oHN1NebOaZfhPx-0lgWol9w0iNbuJZHrFw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
