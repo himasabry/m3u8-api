@@ -9,19 +9,19 @@
     {
       "id": "01",
       "name": "Bein Sports 1 4K QA",
-      "url": "https://sr1.oz-tv.xyz/s1/b_1_HD/index.m3u8",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.api-s-goo-st-f1.lat%2F&id=b1_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "02",
       "name": "Bein Sports 2 HD",
-      "url": "https://sr1.oz-tv.xyz/s1/b_2_HD/index.m3u8",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.api-s-goo-st-f1.lat%2F&id=b2_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "03",
       "name": "Bein Sports 3 HD",
-      "url": "https://sr1.oz-tv.xyz/s1/b_3_HD/index.m3u8",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.api-s-goo-st-f1.lat%2F&id=b3_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
