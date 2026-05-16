@@ -123,7 +123,7 @@
     {
       "id": "18",
       "name": "Bein Sports 4 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/11.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/11.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -132,19 +132,19 @@
     {
       "id": "19",
       "name": "Bein Sports 5 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/14.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/14.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "20",
       "name": "Bein Sports 6 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/17.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/17.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "21",
       "name": "Bein Sports 7 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/67324286/62788299/401.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/401.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -408,7 +408,7 @@
     {
       "id": "61",
       "name": "StarzPlay SPORT 1 HD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/94939895/53753163/392.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/392.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -417,13 +417,13 @@
     {
       "id": "62",
       "name": "StarzPlay SPORT 2 HD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/94939895/53753163/73347194/395.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/395.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "63",
-      "name": "https://ali.albesriali8.workers.dev/?url=StarzPlay SPORT 3 HD",
-      "url": "https://w.shahidtv.net/live/94939895/53753163/398.m3u8",
+      "name": "StarzPlay SPORT 3 HD",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/398.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
