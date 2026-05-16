@@ -27,7 +27,7 @@
     {
       "id": "04",
       "name": "Bein Sports 4 HD",
-      "url": "https://kid-3bk.pages.dev/nm/d4.m3u8",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein4.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -36,19 +36,19 @@
     {
       "id": "05",
       "name": "Bein Sports 5 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_5_hd.m3u8",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein5.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "06",
       "name": "Bein Sports 6 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_6_hd.m3u8",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein6.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "07",
       "name": "Bein Sports 7 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_7_hd.m3u8",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein7.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -96,7 +96,7 @@
     {
       "id": "14",
       "name": "Bein Sports 7 SD",
-      "url": "https://polished-snow-3145.meryemmh24.workers.dev/live/60016_.m3u8",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.api-s-goo-st-f1.lat&id=b7&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
