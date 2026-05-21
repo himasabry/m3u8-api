@@ -624,43 +624,50 @@
     {
       "id": "40",
       "name": "YAHALA",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=OSN_TV_Yahala&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "41",
       "name": "YAHALA BIL ARABI",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20BIL%20ARABI.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=OSN_TV_Yahala_Bil_Arabi&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "42",
       "name": "YAHALA AFLAM",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/YAHALA%20AFLAM.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=OSN_YahalaAflam&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "43",
       "name": "Movies",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Movies.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=OSN_TV_Movies_Premiere&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "44",
       "name": "Action",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Action.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=OSN_TV_Movies_Action&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "45",
       "name": "Comedy",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/OSN%20Comedy.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=OSN_Comedy&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "46",
       "name": "CINEMA 1",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20CINEMA%201.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=cinema1&key=EWii%23%40%5E%26HNDF2024",
       "headers": {
 "User-Agent": "",
 "Referer": "",
@@ -669,25 +676,29 @@
     {
       "id": "47",
       "name": "CINEMA 2",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20CINEMA%202.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=cinema2&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "48",
       "name": "Alfa Musalsalat",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Musalsalat.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=osn_series_1&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
       {
       "id": "49",
       "name": "Alfa Alyoum",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alyoum.m3u8",
+      "url": 
+        "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=al_youm&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "50",
       "name": "Alfa Alsafwa",
-      "url": "https://github.com/himasabry/xpola-player/raw/refs/heads/main/Alfa%20Alsafwa.m3u8",
+      "url": 
+      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=osn_fan&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ]
