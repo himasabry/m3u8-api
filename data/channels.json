@@ -31,121 +31,47 @@
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "01",
-      "name": "Bein Sports 1 4K QA",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b1_1080&key=EWii%23%40%5E%26HNDF2024",
+      "id": "b1_4K",
+      "name": "Bein Sports 1 4K",
+      "url": "https://extraali4k.plasma4k.workers.dev/bn1ultra4k/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "02",
-      "name": "Bein Sports 2 HD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b2_1080&key=EWii%23%40%5E%26HNDF2024",
+      "id": "b2_4K",
+      "name": "Bein Sports 2 4K",
+      "url": "https://extraali4k.plasma4k.workers.dev/bn2hevc/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "03",
-      "name": "Bein Sports 3 HD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b3_1080&key=EWii%23%40%5E%26HNDF2024",
+      "id": "b3_4K",
+      "name": "Bein Sports 3 4K",
+      "url": "https://ali.albesriali8.workers.dev/?url=http://kkkserver.site/beinSpo3/video.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
+    ,
     {
-      "id": "04",
-      "name": "Bein Sports 4 HD",
-      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein4.m3u8",
-      "headers": { 
-        "User-Agent": "",
-        "Referer": "",
-        "Origin": "" }
-    },
-    {
-      "id": "05",
-      "name": "Bein Sports 5 HD",
-      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein5.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "06",
-      "name": "Bein Sports 6 HD",
-      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein6.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "07",
-      "name": "Bein Sports 7 HD",
-      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein7.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "08",
-      "name": "Bein Sports 1 SD",
-      "url": "https://husa.wizgan2013.workers.dev/?id=4",
-      "headers": {
-        "User-Agent": "",
-        "Referer": "",
-        "Origin": "" }
-    },
-    {
-      "id": "09",
-      "name": "Bein Sports 2 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_2_sd.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "10",
-      "name": "Bein Sports 3 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_3_sd.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "11",
-      "name": "Bein Sports 4 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_4_sd.m3u8",
-      "headers": { 
-        "User-Agent": "",
-        "Referer": "",
-        "Origin": "" }
-    },
-    {
-      "id": "12",
-      "name": "Bein Sports 5 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_5_sd.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "13",
-      "name": "Bein Sports 6 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_6_sd.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "14",
-      "name": "Bein Sports 7 SD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=b7&key=EWii%23%40%5E%26HNDF2024",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
-    },
-    {
-      "id": "15",
+      "id": "b1_FHD",
       "name": "Bein Sports 1 FHD",
       "url": 
       "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b1_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "16",
+      "id": "b2_FHD",
       "name": "Bein Sports 2 FHD",
       "url": 
       "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b2_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "17",
+      "id": "b3_FHD",
       "name": "Bein Sports 3 FHD",
       "url": 
       "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b3_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "18",
+      "id": "b4_FHD",
       "name": "Bein Sports 4 FHD",
       "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/11.m3u8",
       "headers": { 
@@ -154,39 +80,114 @@
         "Origin": "" }
     },
     {
-      "id": "19",
+      "id": "b5_FHD",
       "name": "Bein Sports 5 FHD",
       "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/14.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "20",
+      "id": "b6_FHD",
       "name": "Bein Sports 6 FHD",
       "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/17.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "21",
+      "id": "b7_FHD",
       "name": "Bein Sports 7 FHD",
       "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/401.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "86",
-      "name": "Bein Sports 1 4K",
-      "url": "https://extraali4k.plasma4k.workers.dev/bn1ultra4k/index.m3u8",
+      "id": "b1_HD",
+      "name": "Bein Sports 1 4K QA",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b1_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "87",
-      "name": "Bein Sports 2 4K",
-      "url": "https://extraali4k.plasma4k.workers.dev/bn2hevc/index.m3u8",
+      "id": "b2_HD",
+      "name": "Bein Sports 2 HD",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b2_1080&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "88",
-      "name": "Bein Sports 3 4K",
-      "url": "https://ali.albesriali8.workers.dev/?url=http://kkkserver.site/beinSpo3/video.m3u8",
+      "id": "b3_HD",
+      "name": "Bein Sports 3 HD",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b3_1080&key=EWii%23%40%5E%26HNDF2024",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b4_HD",
+      "name": "Bein Sports 4 HD",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein4.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "b5_HD",
+      "name": "Bein Sports 5 HD",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein5.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b6_HD",
+      "name": "Bein Sports 6 HD",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein6.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b7_HD",
+      "name": "Bein Sports 7 HD",
+      "url": "https://pub-5d579cce1f8f4f8faf00f60ef6a6b791.r2.dev/Bein7.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b1_SD",
+      "name": "Bein Sports 1 SD",
+      "url": "https://husa.wizgan2013.workers.dev/?id=4",
+      "headers": {
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "b2_SD",
+      "name": "Bein Sports 2 SD",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_2_sd.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b3_SD",
+      "name": "Bein Sports 3 SD",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_3_sd.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b4_SD",
+      "name": "Bein Sports 4 SD",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_4_sd.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "b5_SD",
+      "name": "Bein Sports 5 SD",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_5_sd.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b6_SD",
+      "name": "Bein Sports 6 SD",
+      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_6_sd.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "b7_SD",
+      "name": "Bein Sports 7 SD",
+      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=b7&key=EWii%23%40%5E%26HNDF2024",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
