@@ -384,6 +384,27 @@
   ],
   "Thmanyah": [
     {
+      "id": "THM1_HDR",
+      "name": "Thmanyah 1 HDR",
+      "url": "https://ms-live.servers8.com/live/ch01-fta/variant.m3u8",
+      "headers": { 
+        "User-Agent": "",
+        "Referer": "",
+        "Origin": "" }
+    },
+    {
+      "id": "THM2_HDR",
+      "name": "Thmanyah 2 HDR",
+      "url": "https://ms-live.servers8.com/live/ch02-fta/variant.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "THM3_HDR",
+      "name": "Thmanyah 3 HDR",
+      "url": "https://ms-live.servers8.com/live/ch03-fta/variant.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
       "id": "55",
       "name": "Thmanyah 1 HD",
       "url": "https://super.hima-sabry2015.workers.dev/ch/THM1_fhd.m3u8",
