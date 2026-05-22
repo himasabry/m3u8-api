@@ -33,19 +33,19 @@
     {
       "id": "b1_4K",
       "name": "Bein Sports 1 4K",
-      "url": "https://extraali4k.plasma4k.workers.dev/bn1ultra4k/index.m3u8",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=b1_4K",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b2_4K",
       "name": "Bein Sports 2 4K",
-      "url": "https://extraali4k.plasma4k.workers.dev/bn2hevc/index.m3u8",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=b2_4K",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b3_4K",
       "name": "Bein Sports 3 4K",
-      "url": "https://ali.albesriali8.workers.dev/?url=http://kkkserver.site/beinSpo3/video.m3u8",
+      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=b3_4K",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
