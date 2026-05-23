@@ -19,6 +19,18 @@
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
+      "id": "bmax1_720",
+      "name": "Bein Max 1 (720)",
+      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_HD_1/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax2_720",
+      "name": "Bein Max 2 (720)",
+      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_HD_2/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
       "id": "bmax1_480",
       "name": "Bein Max 1 (480)",
       "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs2.marketplace-io-none-kode-steeeee.lol%2F&id=bmax1480&key=EWii%23%40%5E%26HNDF2024",
@@ -28,6 +40,18 @@
       "id": "bmax2_480",
       "name": "Bein Max 2 (480)",
       "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=bmax2480&key=EWii%23%40%5E%26HNDF2024",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax1_360",
+      "name": "Bein Max 1 (360)",
+      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_1/index.m3u8",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax2_360",
+      "name": "Bein Max 2 (360)",
+      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
