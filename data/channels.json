@@ -324,7 +324,7 @@
       "id": "34",
       "name": "ALOSTORA Sports 1",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/nbAzMPtEXOpxwBbpIw_q5iYbNyApa_7qqHecdcuXIE8YEFrDYs4q5cPRhf45u112UE4w0AbNEAcYPMGocFH7jg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/2kryZiUN4jIO1uqKX3NP_ubiIwi1M1L-sN4L65g43wUrVDA0OJ1ZegJZNZHtBGOFOA8Qz81-8MtQWuiJLedB-g/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
