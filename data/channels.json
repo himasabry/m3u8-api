@@ -7,6 +7,18 @@
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
+      "id": "bmax1_multi",
+      "name": "Bein Max 1 (multi)",
+      "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Qn7Y00uqDKPXS8N0x_rbKFYM0igweXIqGVU7HFL4E66kAvspacW4yTkA51DlyfZPgQtXFxb0KCHooA50CiIwqw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax2_multi",
+      "name": "Bein Max 2 (multi)",
+      "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/zJj5EIrprdD-H3OtSIQ1FY-245E6F3ByOVsi8tStKeRJ2iVUf0SmBRzgsZMamSJX522ejQ5fyzvQB76WJiicQQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
       "id": "bmax1_1080",
       "name": "Bein Max 1 (1080)",
       "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F&id=bmax1080&key=EWii%23%40%5E%26HNDF2024",
@@ -333,9 +345,9 @@
     {
       "id": "35",
       "name": "ALOSTORA Sports 2",
-      "url": "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/dAPpo8H86vJzXdVL-sSrFnHFoFvUZAaNlJtNb4sWNwI3mLDFQni_jYia3avfU5wizIwFf84lYkp-5ewlD8onxw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "url": "https://matchnow.optikl.ink/super/play.m3u8?id=116901&cat=4524",
       "headers": { 
-        "User-Agent": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         "Referer": "", "Origin": "" }
     },
     {
