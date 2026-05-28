@@ -7,13 +7,13 @@
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "bmax1_multi",
+      "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/Qn7Y00uqDKPXS8N0x_rbKFYM0igweXIqGVU7HFL4E66kAvspacW4yTkA51DlyfZPgQtXFxb0KCHooA50CiIwqw/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
-      "id": "bmax2_multi",
+      "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/zJj5EIrprdD-H3OtSIQ1FY-245E6F3ByOVsi8tStKeRJ2iVUf0SmBRzgsZMamSJX522ejQ5fyzvQB76WJiicQQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
