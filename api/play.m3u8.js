@@ -1,13 +1,12 @@
 import fs from "fs";
 import path from "path";
-import { Readable } from "stream";
 import { incrementViewer } from "./viewers.js";
 
 // 🔥 User Agents
 const NEW_UA = "SUPERTV2026";
 const OLD_UA = "SUPERLIVETV2026";
 
-// 🎥 فيديو المصيدة (مصدر مباشر مضمون)
+// 🎥 Trap Video (رابط مباشر ثابت)
 const FAKE_VIDEO =
   "https://raw.githubusercontent.com/himasabry/video/main/fake.mp4";
 
@@ -21,31 +20,34 @@ export default async function handler(req, res) {
     incrementViewer(id);
 
     // =========================
-    // 🔴 1 - اليوزر القديم (مصيدة)
+    // 🔴 1 - اليوزر القديم (المصيدة)
     // =========================
-    if (ua.includes(OLD_UA.toLowerCase())) {
+    if (ua.includes(OLD_UA.toLowerCase()) || ua.includes("superlivetv")) {
       const response = await fetch(FAKE_VIDEO);
 
-      if (!response.ok || !response.body) {
+      if (!response.ok) {
         return res.status(502).send("Trap video failed");
       }
 
       res.setHeader("Content-Type", "video/mp4");
       res.setHeader("Access-Control-Allow-Origin", "*");
 
-      const stream = Readable.fromWeb(response.body);
-      return stream.pipe(res);
+      // ✔️ تحميل كامل (بدون stream مشاكل)
+      const arrayBuffer = await response.arrayBuffer();
+      const buffer = Buffer.from(arrayBuffer);
+
+      return res.end(buffer);
     }
 
     // =========================
-    // ❌ 2 - أي غير اليوزر الجديد مرفوض
+    // ❌ 2 - غير اليوزر الجديد يتمنع
     // =========================
     if (!ua.includes(NEW_UA.toLowerCase())) {
       return res.status(403).send("Forbidden");
     }
 
     // =========================
-    // ✅ 3 - اليوزر الجديد (تشغيل عادي)
+    // ✅ 3 - اليوزر الجديد (تشغيل طبيعي)
     // =========================
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -65,7 +67,7 @@ export default async function handler(req, res) {
     }
 
     // =========================
-    // 📺 القنوات العادية
+    // 📺 قنوات عادية
     // =========================
     if (!channel.url.includes("ostora")) {
       return res.redirect(channel.url);
