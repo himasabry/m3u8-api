@@ -6,10 +6,6 @@ import { incrementViewer } from "./viewers.js";
 const NEW_UA = "SUPERTV2026";
 const OLD_UA = "SUPERLIVETV2026";
 
-// 🎥 Trap Video (رابط مباشر ثابت)
-const FAKE_VIDEO =
-  "https://raw.githubusercontent.com/himasabry/video/main/fake.mp4";
-
 export default async function handler(req, res) {
   try {
     const { id } = req.query;
@@ -20,34 +16,24 @@ export default async function handler(req, res) {
     incrementViewer(id);
 
     // =========================
-    // 🔴 1 - اليوزر القديم (المصيدة)
+    // 🔴 1 - المصيدة (اليوزر القديم)
     // =========================
     if (ua.includes(OLD_UA.toLowerCase()) || ua.includes("superlivetv")) {
-      const response = await fetch(FAKE_VIDEO);
-
-      if (!response.ok) {
-        return res.status(502).send("Trap video failed");
-      }
-
-      res.setHeader("Content-Type", "video/mp4");
-      res.setHeader("Access-Control-Allow-Origin", "*");
-
-      // ✔️ تحميل كامل (بدون stream مشاكل)
-      const arrayBuffer = await response.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
-
-      return res.end(buffer);
+      // بدل فيديو (الأكثر استقرارًا)
+      return res.redirect(
+        "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+      );
     }
 
     // =========================
-    // ❌ 2 - غير اليوزر الجديد يتمنع
+    // ❌ 2 - أي حد مش اليوزر الجديد يتمنع
     // =========================
     if (!ua.includes(NEW_UA.toLowerCase())) {
       return res.status(403).send("Forbidden");
     }
 
     // =========================
-    // ✅ 3 - اليوزر الجديد (تشغيل طبيعي)
+    // ✅ 3 - اليوزر الجديد (تشغيل القنوات)
     // =========================
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -67,7 +53,7 @@ export default async function handler(req, res) {
     }
 
     // =========================
-    // 📺 قنوات عادية
+    // 📺 القنوات العادية
     // =========================
     if (!channel.url.includes("ostora")) {
       return res.redirect(channel.url);
