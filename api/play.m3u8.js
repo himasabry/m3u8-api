@@ -1,53 +1,59 @@
 import fs from "fs";
 import path from "path";
+import { Readable } from "stream";
 import { incrementViewer } from "./viewers.js";
 
-// 👇 اليوزر الجديد (التطبيق)
+// 🔥 User Agents
 const NEW_UA = "SUPERTV2026";
-
-// 👇 اليوزر القديم (السارقين)
 const OLD_UA = "SUPERLIVETV2026";
 
-// 👇 فيديو المصيدة
-const FAKE_VIDEO = "https://github.com/himasabry/video/raw/refs/heads/main/fake.mp4";
+// 🎥 Trap Video
+const FAKE_VIDEO =
+  "https://github.com/himasabry/video/raw/refs/heads/main/fake.mp4";
 
 export default async function handler(req, res) {
-
   try {
-
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
-    const ua = req.headers["user-agent"] || "";
+    const ua = (req.headers["user-agent"] || "").toLowerCase();
 
     incrementViewer(id);
 
-    // 🔴 لو اليوزر القديم → شغل فيديو المصيدة
-    if (ua.includes(OLD_UA)) {
+    // =========================
+    // 🔴 1 - OLD UA (Trap Video)
+    // =========================
+    if (ua.includes(OLD_UA.toLowerCase())) {
+      const response = await fetch(FAKE_VIDEO);
 
-      const response = await fetch(FAKE_VIDEO, {
-        headers: { "User-Agent": "Mozilla/5.0" }
-      });
+      if (!response.ok || !response.body) {
+        return res.status(502).send("Trap video failed");
+      }
 
       res.setHeader("Content-Type", "video/mp4");
       res.setHeader("Access-Control-Allow-Origin", "*");
 
-      return response.body.pipe(res);
+      const stream = Readable.fromWeb(response.body);
+      return stream.pipe(res);
     }
 
-    // ❌ أي UA غير الجديد → بلوك
-    if (!ua.includes(NEW_UA)) {
+    // =========================
+    // ❌ 2 - Block any non-new UA
+    // =========================
+    if (!ua.includes(NEW_UA.toLowerCase())) {
       return res.status(403).send("Forbidden");
     }
 
-    // ✅ UA الجديد → تشغيل طبيعي
+    // =========================
+    // ✅ 3 - NEW UA (Normal Flow)
+    // =========================
     const filePath = path.join(process.cwd(), "data", "channels.json");
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
     let channel = null;
 
     for (const group of Object.values(data)) {
-      const found = group.find(ch => ch.id === id);
+      const found = group.find((ch) => ch.id === id);
       if (found) {
         channel = found;
         break;
@@ -58,30 +64,29 @@ export default async function handler(req, res) {
       return res.status(404).send("Channel not found");
     }
 
-    // ===== القنوات العادية =====
+    // =========================
+    // 📺 Normal channels
+    // =========================
     if (!channel.url.includes("ostora")) {
       return res.redirect(channel.url);
     }
 
-    // ===== ostora =====
+    // =========================
+    // 🌐 Ostora handling
+    // =========================
     const cleanUrl = channel.url.split("#")[0];
 
     const response = await fetch(cleanUrl, {
       headers: {
         "User-Agent": "Mozilla/5.0",
-        "Referer": "https://ostora.pages.dev/"
-      }
+        Referer: "https://ostora.pages.dev/",
+      },
     });
 
-    const finalUrl = response.url;
-
-    return res.redirect(finalUrl);
+    return res.redirect(response.url);
 
   } catch (e) {
-
     console.error("PLAY ERROR:", e);
     return res.status(500).send("Server error");
-
   }
-
 }
