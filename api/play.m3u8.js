@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     if (ua.includes(OLD_UA.toLowerCase()) || ua.includes("superlivetv")) {
       // بدل فيديو (الأكثر استقرارًا)
       return res.redirect(
-        "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+        "https://github.com/himasabry/video/raw/refs/heads/main/output.m3u8"
       );
     }
 
