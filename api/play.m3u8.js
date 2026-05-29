@@ -9,7 +9,7 @@ const OLD_UA = "SUPERLIVETV2026";
 
 // 🎥 فيديو المصيدة (مصدر مباشر مضمون)
 const FAKE_VIDEO =
-  "https://test-streams.mux.dev/bigbuckbunny/mp4/h264/720p/30fps/bigbuckbunny.mp4";
+  "https://raw.githubusercontent.com/himasabry/video/main/fake.mp4";
 
 export default async function handler(req, res) {
   try {
