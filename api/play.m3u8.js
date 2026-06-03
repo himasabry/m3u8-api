@@ -11,8 +11,19 @@ export default async function handler(req, res) {
     const { id } = req.query;
     if (!id) return res.status(400).send("Missing id");
 
-    const ua = (req.headers["user-agent"] || "").toLowerCase();
+const ua = req.headers["user-agent"] || "";
 
+const ip =
+  req.headers["x-forwarded-for"]?.split(",")[0] ||
+  req.socket?.remoteAddress ||
+  "unknown";
+
+console.log({
+  channel: id,
+  ip,
+  ua,
+  time: new Date().toISOString()
+});
     incrementViewer(id);
 
     // =========================
