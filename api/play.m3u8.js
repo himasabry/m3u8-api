@@ -3,8 +3,8 @@ import path from "path";
 import { incrementViewer } from "./viewers.js";
 
 // 🔥 User Agents
-const NEW_UA = "SUPERTV2026";
-const OLD_UA = "SUPERLIVETV2026";
+const NEW_UA = "SUPERTV20266";
+const OLD_UA = "SUPERTV2026";
 
 export default async function handler(req, res) {
   try {
