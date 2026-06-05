@@ -67,6 +67,56 @@
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
+      "id": "bmax3_1080",
+      "name": "Bein Max 3 (1080)",
+      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_3_4k%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax4_1080",
+      "name": "Bein Max 4 (1080)",
+      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_4_4k%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax3_720",
+      "name": "Bein Max 3 (720)",
+      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_3_fhd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax4_720",
+      "name": "Bein Max 4 (720)",
+      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_4_fhd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax3_480",
+      "name": "Bein Max 3 (480)",
+      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_3_hd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax4_480",
+      "name": "Bein Max 4 (480)",
+      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_4_hd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax3_360",
+      "name": "Bein Max 3 (360)",
+      "url": 
+      "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_3_sd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
+      "id": "bmax4_360",
+      "name": "Bein Max 4 (360)",
+      "url": 
+      "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_4_sd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+    },
+    {
       "id": "b1_4K",
       "name": "Bein Sports 1 4K",
       "url": "https://extraali.pl4k.workers.dev/bn1ultra4k/index.m3u8",
