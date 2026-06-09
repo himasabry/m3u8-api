@@ -293,8 +293,10 @@
       "id": "24",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan1hd/index.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "https://player.kianezidi.workers.dev/play.m3u8?id=156588&cat=7193",
+      "headers": { 
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Norton/147.0.0.0", 
+        "Referer": "", "Origin": "" }
     },
     {
       "id": "25",
@@ -359,37 +361,43 @@
     {
       "id": "80",
       "name": "ALWAN Sports 1",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=alwan_sport1fhd&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan1hd/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "81",
       "name": "ALWAN Sports 2",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=alwan_sport2fhd&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan2hd/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "82",
       "name": "ALWAN Sports 3",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=alwan_sport3fhd&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan3hd/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "83",
       "name": "ALWAN Sports 4",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=alwan_sport4fhd&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan4hd/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "84",
       "name": "ALWAN Sports 5",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=alwan_sport5fhd&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan5hd/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "85",
       "name": "ALWAN Sports 6",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=alwan_sport6&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan6hd/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
