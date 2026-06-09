@@ -43,19 +43,21 @@
     {
       "id": "bmax2_720",
       "name": "Bein Max 2 (720)",
-      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_HD_2/index.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392990&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_480",
       "name": "Bein Max 1 (480)",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs2.marketplace-io-none-kode-steeeee.lol%2F&id=bmax1480&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/NjdvR1ntLaHjEd_-EIFiuy9gYGkj57n_RAiJifNjQktADVhOBfyx2xSoUvTiFUbZZKiVGrgA9fLdTLZpNB8DMA/transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ180ODBwMzBfMTAiLCJIZWlnaHQiOjQ4MCwiS2JwcyI6MTIwMCwiV2lkdGgiOjg0OH0.0LJi1usWbiPqp0QIcpq7Md5g1WxvJcPqVWNqsKw5nhA/dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_480",
       "name": "Bein Max 2 (480)",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk4.marketplace-io-none-kode-steeeee.lol&id=bmax2480&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/HLZRZ-2j5sjFlcoCX8OhoGoEfwFtslUNUeW87YqD1paG9tUU8X0-gCfsS-9PjhIxUzNaqc2EslD6VihyKwxRRg/transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ18zMjBwMzBfMTAiLCJIZWlnaHQiOjMyMCwiS2JwcyI6NjAwLCJUcmFuc2NvZGVBdWRpbyI6dHJ1ZSwiV2lkdGgiOjU2OH0.es_XpNv3J12hFXU4WrCwmH28GmToYAPDPdT_EjerHCU/dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
