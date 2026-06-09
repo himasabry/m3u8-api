@@ -63,49 +63,55 @@
     {
       "id": "bmax1_360",
       "name": "Bein Max 1 (360)",
-      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_1/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392991&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_360",
       "name": "Bein Max 2 (360)",
-      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_2/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392987&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_1080",
       "name": "Bein Max 3 (1080)",
-      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_3_4k%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "url": 
+      "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392970&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_1080",
       "name": "Bein Max 4 (1080)",
-      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_4_4k%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "url": 
+      "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392966&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_720",
       "name": "Bein Max 3 (720)",
-      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_3_fhd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "url": 
+      "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392986&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_720",
       "name": "Bein Max 4 (720)",
-      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_4_fhd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "url": 
+      "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392982&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_480",
       "name": "Bein Max 3 (480)",
-      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_3_hd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "url": 
+      "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392983&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_480",
       "name": "Bein Max 4 (480)",
-      "url": "https://on1tv.site/EGYFILM/index.php?action=stream&url=http%3A%2F%2F135.125.196.66%3A8080%2Fbn_max_4_hd%2Findex.m3u8%3Ftoken%3Df3837c7cf1ef04864c619e55af8ce033f1855e17-48ef75268e4b66b35e0fa9cacad09ac4-1780717869-1780689069-38.242.235.127%26",
+      "url": 
+      "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392963&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
