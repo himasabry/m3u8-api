@@ -293,16 +293,16 @@
       "id": "24",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://player.kianezidi.workers.dev/play.m3u8?id=156588&cat=7193",
+      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN1",
       "headers": { 
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Norton/147.0.0.0", 
+        "User-Agent": "", 
         "Referer": "", "Origin": "" }
     },
     {
       "id": "25",
       "name": "ALWAN Sports 2",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan2hd/index.m3u8",
+      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN2",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -310,28 +310,28 @@
       "name": 
       "ALWAN Sports 3",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan3hd/index.m3u8",
+      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN3",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "27",
       "name": "ALWAN Sports 4",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan4hd/index.m3u8",
+      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN4",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "28",
       "name": "ALWAN Sports 5",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan5hd/index.m3u8",
+      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN5",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "29",
       "name": "ALWAN Sports 6",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan6hd/index.m3u8",
+      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN6",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
