@@ -9,19 +9,21 @@
     {
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
-      "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/NjdvR1ntLaHjEd_-EIFiuy9gYGkj57n_RAiJifNjQktADVhOBfyx2xSoUvTiFUbZZKiVGrgA9fLdTLZpNB8DMA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "url": 
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/L5yU0SO3MPxG0uBuRdyaQe68Dd7RpCl-6dwlW5jfuatMP77ToMbI9h5qNyMhHLxkluCa3cNpf3oUPVls2zNuGg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
-      "url": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/zJj5EIrprdD-H3OtSIQ1FY-245E6F3ByOVsi8tStKeRJ2iVUf0SmBRzgsZMamSJX522ejQ5fyzvQB76WJiicQQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "url": 
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/HLZRZ-2j5sjFlcoCX8OhoGoEfwFtslUNUeW87YqD1paG9tUU8X0-gCfsS-9PjhIxUzNaqc2EslD6VihyKwxRRg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_1080",
       "name": "Bein Max 1 (1080)",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk4.marketplace-io-none-kode-steeeee.lol&id=bmax1080&key=MmYmJhIhdIDJHdoF22",
+      "url": "https://ali.albesriali8.workers.dev/?url=http://core.itsall.pro/live/Allgoodlotfi/hhDZSxCpeD/291494.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -33,7 +35,7 @@
     {
       "id": "bmax1_720",
       "name": "Bein Max 1 (720)",
-      "url": "https://ali.albesriali8.workers.dev/?url=http://raaeslivetv.raaeslive.com/Max_Sport_HD_1/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev/?url=https://w.myychann.store/live/oscar123/32682313/782.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
