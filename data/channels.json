@@ -23,19 +23,21 @@
     {
       "id": "bmax1_1080",
       "name": "Bein Max 1 (1080)",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=https://github.com/himasabry/xpola-player/raw/refs/heads/main/bmax1_1080.m3u8",
+      "url": 
+      "https://pub-b6a2e12c8294473a88fb9c317217dbbc.r2.dev/BMax1.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_1080",
       "name": "Bein Max 2 (1080)",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk4.marketplace-io-none-kode-steeeee.lol&id=bmax21080&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://pub-b6a2e12c8294473a88fb9c317217dbbc.r2.dev/BMax2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_720",
       "name": "Bein Max 1 (720)",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.myychann.store/live/oscar123/32682313/782.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392994&e=.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
