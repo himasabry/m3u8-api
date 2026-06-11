@@ -85,14 +85,14 @@
       "id": "bmax1_480",
       "name": "Bein Max 1 (480)",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392991&e=.m3u8",
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/QEDDg3JhuUpgV79Xp4b4Xv8l-Gh7Y3s4f2E8X3UfKPJDQ_6gPVXSAT0a6EV4vtNQ8dxXCHb5dRVVV1npKQaGrg/transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ18zMjBwMzBfMTAiLCJIZWlnaHQiOjMyMCwiS2JwcyI6NjAwLCJUcmFuc2NvZGVBdWRpbyI6dHJ1ZSwiV2lkdGgiOjU2OH0.es_XpNv3J12hFXU4WrCwmH28GmToYAPDPdT_EjerHCU/dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_480",
       "name": "Bein Max 2 (480)",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=https://bdix.spidy.online/MAC/SBHGOLD/play.php?id=1392987&e=.m3u8",
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/xJZ9zhKOYpscTPD7Q8XAgPTYoQPdlJElsirkrtxxy6wsl7qJAZ9A-uVl8xNL_K8ZbnAzK4uBx50kwdOD505wTA/transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ18zMjBwMzBfMTAiLCJIZWlnaHQiOjMyMCwiS2JwcyI6NjAwLCJUcmFuc2NvZGVBdWRpbyI6dHJ1ZSwiV2lkdGgiOjU2OH0.es_XpNv3J12hFXU4WrCwmH28GmToYAPDPdT_EjerHCU/dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
