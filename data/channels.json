@@ -31,14 +31,14 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=01",
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/04vlaQfH4wR7acCHko05KZt_1JiLuC02RU8xRhDVvUNKrd0RiulElF_qJaAmBflbQYxb6TFgZAIOPFUNCUoScA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=02",
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/4dA7FdggI0KBJtATE1btG0168ySsLZ8JUZ7hp34-vmPscOXAgrI4OyDZnPyzwAxYV94e4-R9HKLYGii1a0BsGQ/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
