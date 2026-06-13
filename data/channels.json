@@ -38,7 +38,7 @@
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/CyROtpxMi4Yql9acu9CpQT73E5dwjmC_8xjxThLH85JQnHehH8CAE8X7BpziHPUBnJC2UCLPC4sWSUdyovlAnw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/bydEQp0Upl1qODZU4qpqADmNoX9xsqVzVnZY_EKfNBpqEuiSK9EW5vC336uky-9KUd-3lMgBw5IEd4F2WP1iOQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -111,14 +111,14 @@
       "id": "bmax3_1080",
       "name": "Bein Max 3 (1080)",
       "url": 
-      "https://pub-b6a2e12c8294473a88fb9c317217dbbc.r2.dev/BMax3.m3u8",
+      "https://oottoo.online/max4g/video.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_1080",
       "name": "Bein Max 4 (1080)",
       "url": 
-      "https://pub-b6a2e12c8294473a88fb9c317217dbbc.r2.dev/BMax4.m3u8",
+      "https://oottoo.online/max4g/video.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
