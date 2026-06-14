@@ -10,7 +10,7 @@
       "id": "supertv1",
       "name": "SUPER TV 1 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/6ce1k8qh6zhk8ian/index.m3u8",
+      "https://livepeercdn.studio/hls/852e99hrnjvck2kd/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -24,7 +24,7 @@
       "id": "supertv3",
       "name": "SUPER TV 3 (multi)",
       "url": 
-      "https://lbgo.bozztv.com/ssh101/ssh101/max1hd/playlist.m3u8",
+      "https://livepeercdn.studio/hls/139bsadvu9tvxqg6/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
