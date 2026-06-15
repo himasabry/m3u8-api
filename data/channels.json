@@ -10,28 +10,28 @@
       "id": "supertv1",
       "name": "SUPER TV 1 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/852e99hrnjvck2kd/index.m3u8",
+      "https://livepeercdn.studio/hls/fb06e8g55oyum2a0/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "supertv2",
       "name": "SUPER TV 2 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/a01cg40ay26tre2d/index.m3u8",
+      "https://livepeercdn.studio/hls/83e8ochvdz6z3j9j/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "supertv3",
       "name": "SUPER TV 3 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/139bsadvu9tvxqg6/index.m3u8",
+      "https://livepeercdn.studio/hls/47ccg1w000g85faa/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "supertv4",
       "name": "SUPER TV 4 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/fbb14ggj4tb98q21/index.m3u8",
+      "https://livepeercdn.studio/hls/00b9ulonlwh2inbe/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
