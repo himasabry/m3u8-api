@@ -38,21 +38,21 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/bYZpaAzk9XphNoc-jNJQW5jJpjvxCv6Pl8IHPkoDmO4trx69gRZGYzfvO2quuLs_WbMK6LaH3M62J3YjN3dj5A/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/GGT5u-DFUFv1XXjk7hzrDK8139ozy9c1-LHUL9oFv0XWK6ZZfeDrgwo6sKyaBSsthGgochrd0u838MJoe9wVvg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/bYZpaAzk9XphNoc-jNJQW5jJpjvxCv6Pl8IHPkoDmO4trx69gRZGYzfvO2quuLs_WbMK6LaH3M62J3YjN3dj5A/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/2hqZ4gfBHiGyHG1b6MBMc35_7j0KbKcSV5A2NBYpT-lluou3b8oRBIBlh1Z7DCQ824XZV6UggY4rBdgrNv_ikw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3",
       "name": "Bein Max 3 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/y6qH7ri7L2pri0Us9pMr4b0tmNKcxQq9S-MJ4oBw_Vjo-oWrecxDw_-XMI7Bs6YJjocu273XhNqJVGpYqis7eg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/MuRvUSeEBioWrk-_MmiZPHU0JbYs5EOU_Lx0qsNNrfpX3vFZXvTi1XMEdR1wtWyGLsRFJuS3CifhGqeUaIfr5g/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
