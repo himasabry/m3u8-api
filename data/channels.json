@@ -17,7 +17,7 @@
       "id": "supertv2",
       "name": "SUPER TV 2 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/83e8ochvdz6z3j9j/index.m3u8",
+      "https://livepeercdn.studio/hls/0df1wiv0fh9wymbb/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -31,7 +31,7 @@
       "id": "supertv4",
       "name": "SUPER TV 4 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/00b9ulonlwh2inbe/index.m3u8",
+      "https://livepeercdn.studio/hls/57aafac5fbdngokn/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
