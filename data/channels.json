@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/HMIq3FHTtpMsboa1XJEf54z_vhnUDJAxgypBeXVR4_UwmpJGV3whIS5mt2KzojeC7AZibGBNry2QWpxvK0VdMA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/U2J9N1ofkmXzx1HlU_Ux94PQR74G_hY0oOGEncsuPKmJplMtV7LdOZJAS--y5UI_XLk36lXCN2RgIX17mwKKHA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
