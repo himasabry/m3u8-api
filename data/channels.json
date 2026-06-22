@@ -491,7 +491,7 @@
     {
       "id": "40",
       "name": "POST Sports 1",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post1/index.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/psot1/video.m3u8?token=Dev_Khal",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -500,7 +500,7 @@
     {
       "id": "41",
       "name": "POST Sports 2",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post2/index.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/psot2/video.m3u8?token=Dev_Khal",
       "headers": { 
         "User-Agent": "",
         "Referer": "", "Origin": "" }
@@ -508,25 +508,25 @@
     {
       "id": "42",
       "name": "POST Sports 3",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post3/index.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post3/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "43",
       "name": "POST Sports 4",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post4/index.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post4/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "44",
       "name": "POST Sports 5",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post5/index.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post5/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "45",
       "name": "POST Sports 6",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post6/index.m3u8",
+      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post6/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
