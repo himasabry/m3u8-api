@@ -3,7 +3,7 @@
     {
       "id": "22",
       "name": "Bein 4K ",
-      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=beIN_4k",
+      "url": "https://super-livetv.super-stv.workers.dev/?id=beIN_4k",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://web.facebook.com/video/playback/playlist.m3u8?v=1508296447613952&u=Adwt7QvnbjF6Bwc2kER4BRYmn74Jzdb49VtRygJm13bLNQT3H44KQpfpfRwIreDDjCq4USOtIAs&s=AdxuTbN4SL8vgskC2wEpjTp1GNw&a=0",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/YqJCZ4l2bitJ1I5iqIj_McA5R6-mnZUTFPtVbYL6WZav0l7KFfRiYPhFFgpM14ueHDc0pjK2JMfgHqdmGfCnMg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -52,122 +52,122 @@
       "id": "bmax3",
       "name": "Bein Max 3 (multi)",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=03",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/5C0goZ5i9lNAYeFmUbGKmEeJi9PYqeBhyv7pcfBarj3pjQMRWQ3oqhTzIVflAZ6KBQ3bgex_U5e17Vp2GnWE2w/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4",
       "name": "Bein Max 4 (multi)",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=04",
+      "https://super-livetv.super-stv.workers.dev/?id=04",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_1080",
       "name": "Bein Max 1 (1080)",
       "url": 
-      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745020",
+      "https://stream.camcloud.stream/stream/d057920dccca/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_1080",
       "name": "Bein Max 2 (1080)",
       "url": 
-      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745019",
+      "https://stream.camcloud.stream/stream/97e7e9e05d4e/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_1080",
       "name": "Bein Max 3 (1080)",
       "url": 
-      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745018",
+      "https://stream.camcloud.stream/stream/8180b5ca6618/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_1080",
       "name": "Bein Max 4 (1080)",
       "url": 
-      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745017",
+      "https://stream.camcloud.stream/stream/0bbaffb363b7/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_720",
       "name": "Bein Max 1 (720)",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://h42.reelpush.online/live/610303030/index.m3u8",
+      "url": "https://ali.albesriali8.workers.dev?url=http://h42.reelpush.online/live/610303030/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_720",
       "name": "Bein Max 2 (720)",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://h42.reelpush.online/live/1515000000/index.m3u8",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/1515000000/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_720",
       "name": "Bein Max 3 (720)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158530&cat=7216",
+      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745018",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_720",
       "name": "Bein Max 4 (720)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158531&cat=7216",
+      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745017",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_480",
       "name": "Bein Max 1 (480)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158534&cat=7217",
+      "https://stream.camcloud.stream/stream/e2c950491585/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_480",
       "name": "Bein Max 2 (480)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158535&cat=7217",
+      "https://stream.camcloud.stream/stream/70883bbc3254/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_480",
       "name": "Bein Max 3 (480)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158536&cat=7217",
+      "https://stream.camcloud.stream/stream/6f042b9d85d6/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_480",
       "name": "Bein Max 4 (480)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158537&cat=7217",
+      "https://stream.camcloud.stream/stream/1351ec7c7adc/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_360",
       "name": "Bein Max 1 (360)",
-      "url": "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158540&cat=7218",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/181818444/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_360",
       "name": "Bein Max 2 (360)",
-      "url": "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158541&cat=7218",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/9883322/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_360",
       "name": "Bein Max 3 (360)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158542&cat=7218",
+      "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/79247621/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_360",
       "name": "Bein Max 4 (360)",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=158543&cat=7218",
+      "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/31009988005/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -293,19 +293,19 @@
     {
       "id": "b2_SD",
       "name": "Bein Sports 2 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_2_sd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN_2_sd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b3_SD",
       "name": "Bein Sports 3 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_3_sd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN_3_sd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b4_SD",
       "name": "Bein Sports 4 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_4_sd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN_4_sd.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -314,13 +314,13 @@
     {
       "id": "b5_SD",
       "name": "Bein Sports 5 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_5_sd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN_5_sd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b6_SD",
       "name": "Bein Sports 6 SD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN_6_sd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN_6_sd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -335,7 +335,7 @@
       "id": "24",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN1",
+      "https://super-livetv.super-stv.workers.dev/?id=ALWAN1",
       "headers": { 
         "User-Agent": "", 
         "Referer": "", "Origin": "" }
@@ -344,7 +344,7 @@
       "id": "25",
       "name": "ALWAN Sports 2",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN2",
+      "https://super-livetv.super-stv.workers.dev/?id=ALWAN2",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -352,28 +352,28 @@
       "name": 
       "ALWAN Sports 3",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN3",
+      "https://super-livetv.super-stv.workers.dev/?id=ALWAN3",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "27",
       "name": "ALWAN Sports 4",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN4",
+      "https://super-livetv.super-stv.workers.dev/?id=ALWAN4",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "28",
       "name": "ALWAN Sports 5",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN5",
+      "https://super-livetv.super-stv.workers.dev/?id=ALWAN5",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "29",
       "name": "ALWAN Sports 6",
       "url": 
-      "https://super-livetv.hima-sabry2015.workers.dev/?id=ALWAN6",
+      "https://super-livetv.super-stv.workers.dev/?id=ALWAN6",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -448,7 +448,7 @@
       "id": "34",
       "name": "ALOSTORA Sports 1",
       "url": 
-      "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=4128&cat=333",
+      "https://ostora-tv.super-stv.workers.dev/super/play.m3u8?id=4128&cat=333",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -457,7 +457,7 @@
     {
       "id": "35",
       "name": "ALOSTORA Sports 2",
-      "url": "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=4129&cat=333",
+      "url": "https://ostora-tv.super-stv.workers.dev/super/play.m3u8?id=4129&cat=333",
       "headers": { 
         "User-Agent": "",
         "Referer": "", "Origin": "" }
@@ -465,25 +465,25 @@
     {
       "id": "36",
       "name": "ALOSTORA Sports 3",
-      "url": "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=4132&cat=333",
+      "url": "https://ostora-tv.super-stv.workers.dev/super/play.m3u8?id=4132&cat=333",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "37",
       "name": "ALOSTORA Sports 4",
-      "url": "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=4134&cat=333",
+      "url": "https://ostora-tv.super-stv.workers.dev/super/play.m3u8?id=4134&cat=333",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "38",
       "name": "ALOSTORA Sports 5",
-      "url": "https://ostora-tv.hima-sabry2015.workers.dev/super/play.m3u8?id=4136&cat=333",
+      "url": "https://ostora-tv.super-stv.workers.dev/super/play.m3u8?id=4136&cat=333",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "39",
       "name": "ALOSTORA Sports 6",
-      "url": "https://super-livetv.hima-sabry2015.workers.dev/?id=06",
+      "url": "https://super-livetv.super-stv.workers.dev/?id=06",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
@@ -491,7 +491,7 @@
     {
       "id": "40",
       "name": "POST Sports 1",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/psot1/video.m3u8?token=Dev_Khal",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/psot1/video.m3u8?token=Dev_Khal",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -500,7 +500,7 @@
     {
       "id": "41",
       "name": "POST Sports 2",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/psot2/video.m3u8?token=Dev_Khal",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/psot2/video.m3u8?token=Dev_Khal",
       "headers": { 
         "User-Agent": "",
         "Referer": "", "Origin": "" }
@@ -508,25 +508,25 @@
     {
       "id": "42",
       "name": "POST Sports 3",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post3/video.m3u8?token=Dev_Khal",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/post3/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "43",
       "name": "POST Sports 4",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post4/video.m3u8?token=Dev_Khal",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/post4/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "44",
       "name": "POST Sports 5",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post5/video.m3u8?token=Dev_Khal",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/post5/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "45",
       "name": "POST Sports 6",
-      "url": "https://supertv.hima-sabry2015.workers.dev/?url=http://palestine.vibertv.cyou/post6/video.m3u8?token=Dev_Khal",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/post6/video.m3u8?token=Dev_Khal",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
@@ -555,7 +555,7 @@
     {
       "id": "55",
       "name": "Thmanyah 1 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/THM1_fhd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/THM1_fhd.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -564,13 +564,13 @@
     {
       "id": "56",
       "name": "Thmanyah 2 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/THM2_fhd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/THM2_fhd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "57",
       "name": "Thmanyah 3 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/THM3_fhd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/THM3_fhd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -716,7 +716,7 @@
     {
       "id": "67",
       "name": "beIN FR 1 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN1FR_hd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN1FR_hd.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -725,19 +725,19 @@
     {
       "id": "68",
       "name": "beIN FR 2 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN2FR_hd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN2FR_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "69",
       "name": "beIN FR 3 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN3FR_hd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN3FR_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "70",
       "name": "beIN EN 1 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN1EN_hd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN1EN_hd.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -746,13 +746,13 @@
     {
       "id": "71",
       "name": "beIN EN 2 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN2EN_hd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN2EN_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "72",
       "name": "beIN EN 3 HD",
-      "url": "https://super.hima-sabry2015.workers.dev/ch/beIN3EN_hd.m3u8",
+      "url": "https://super.super-stv.workers.dev/ch/beIN3EN_hd.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
