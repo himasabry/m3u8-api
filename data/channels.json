@@ -335,7 +335,7 @@
       "id": "24",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://super-livetv.super-stv.workers.dev/?id=ALWAN1",
+      "https://fox-tv-app.yallakoora.org/live/alwan1/index.m3u8",
       "headers": { 
         "User-Agent": "", 
         "Referer": "", "Origin": "" }
@@ -344,7 +344,7 @@
       "id": "25",
       "name": "ALWAN Sports 2",
       "url": 
-      "https://super-livetv.super-stv.workers.dev/?id=ALWAN2",
+      "https://fox-tv-app.yallakoora.org/live/alwan2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
