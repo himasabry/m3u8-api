@@ -38,14 +38,14 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://web.facebook.com/video/playback/playlist.m3u8?v=1092232583318567&u=Adw5qjGkaXyRZbjqFRsADwZcJqll9kq-jVjdcKu5UKWW17HSHrEbxFYjAR2F6DBQ8a1_6Cz8LRM&s=AdyXMYkzXE_2-ltVRMff02tLbPI&a=0",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/WzOVtw7FGJZTQUEqhbq0RgpFLrKYEPAwu8w8XXRG7T5jw6XoSWjfCfQvfPgzEnhfwdG2GAWDIiPfkOXXROyYAQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://web.facebook.com/video/playback/playlist.m3u8?v=1092232583318567&u=Adw5qjGkaXyRZbjqFRsADwZcJqll9kq-jVjdcKu5UKWW17HSHrEbxFYjAR2F6DBQ8a1_6Cz8LRM&s=AdyXMYkzXE_2-ltVRMff02tLbPI&a=0",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/1f3YDWGhLBUw4yyl5VwnrFastKmCQjJxEMepbb4G3AttK68t3QxuzqGiheL1JTqYtIAxvA9mzX0wBcPc2N14VQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -500,7 +500,7 @@
     {
       "id": "41",
       "name": "POST Sports 2",
-      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/psot2/video.m3u8?token=Dev_Khal",
+      "url": "https://supertv.super-stv.workers.dev/?url=http://palestine.vibertv.cyou/post2/video.m3u8?token=Dev_Khal",
       "headers": { 
         "User-Agent": "",
         "Referer": "", "Origin": "" }
