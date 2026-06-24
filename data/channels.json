@@ -3,7 +3,7 @@
     {
       "id": "22",
       "name": "Bein 4K ",
-      "url": "https://super-livetv.super-stv.workers.dev/?id=beIN_4k",
+      "url": "https://super-tv.pages.dev/TOD.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -38,14 +38,14 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/WzOVtw7FGJZTQUEqhbq0RgpFLrKYEPAwu8w8XXRG7T5jw6XoSWjfCfQvfPgzEnhfwdG2GAWDIiPfkOXXROyYAQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://super-tv.pages.dev/MAX_1.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/igB6gfpnnb0ok2mvoHK1KKemXMEbp1oHYMfW57HLwPbHr3i7mKDLG5edHU6oM98_rIou0Vmi0ueQjSYTRtroiA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://super-tv.pages.dev/MAX_2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -335,7 +335,7 @@
       "id": "24",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://fox-tv-app.yallakoora.org/live/alwan1/index.m3u8",
+      "https://super-tv.pages.dev/ALWAN1.m3u8",
       "headers": { 
         "User-Agent": "", 
         "Referer": "", "Origin": "" }
@@ -344,7 +344,7 @@
       "id": "25",
       "name": "ALWAN Sports 2",
       "url": 
-      "https://fox-tv-app.yallakoora.org/live/alwan2/index.m3u8",
+      "https://super-tv.pages.dev/ALWAN2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -352,28 +352,28 @@
       "name": 
       "ALWAN Sports 3",
       "url": 
-      "https://super-livetv.super-stv.workers.dev/?id=ALWAN3",
+      "https://super-tv.pages.dev/ALWAN3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "27",
       "name": "ALWAN Sports 4",
       "url": 
-      "https://super-livetv.super-stv.workers.dev/?id=ALWAN4",
+      "https://super-tv.pages.dev/ALWAN4.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "28",
       "name": "ALWAN Sports 5",
       "url": 
-      "https://super-livetv.super-stv.workers.dev/?id=ALWAN5",
+      "https://super-tv.pages.dev/ALWAN5.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "29",
       "name": "ALWAN Sports 6",
       "url": 
-      "https://super-livetv.super-stv.workers.dev/?id=ALWAN6",
+      "https://super-tv.pages.dev/ALWAN6.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
