@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/YqJCZ4l2bitJ1I5iqIj_McA5R6-mnZUTFPtVbYL6WZav0l7KFfRiYPhFFgpM14ueHDc0pjK2JMfgHqdmGfCnMg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://web.facebook.com/video/playback/playlist.m3u8?v=1092232583318567&u=Adw5qjGkaXyRZbjqFRsADwZcJqll9kq-jVjdcKu5UKWW17HSHrEbxFYjAR2F6DBQ8a1_6Cz8LRM&s=AdyXMYkzXE_2-ltVRMff02tLbPI&a=0",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -52,7 +52,7 @@
       "id": "bmax3",
       "name": "Bein Max 3 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/5C0goZ5i9lNAYeFmUbGKmEeJi9PYqeBhyv7pcfBarj3pjQMRWQ3oqhTzIVflAZ6KBQ3bgex_U5e17Vp2GnWE2w/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://web.facebook.com/video/playback/playlist.m3u8?v=1355892736425388&u=AdycikgtAoCGyMQVjzEbR6ANCci4e4jv5X7Q4HDQQg2zvH-BQwQ161Ge3jBVdlTHo4vhjudePus&s=AdzO8k3J1z9Yf4l0lqZSvtlV_Oo&a=0",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
