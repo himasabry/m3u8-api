@@ -45,7 +45,7 @@
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://web.facebook.com/video/playback/playlist.m3u8?v=894544433677591&u=Adz8ytmVz0YVxj3y72TeVvwttEgayFvN6BZt1cVJB2cVxyJY9_UzY_j-GLPZQPPKsSGdlTCfR_8&s=AdyM_xCCG0xwBFqDTlS_LrABAsY&a=0",
+      "https://web.facebook.com/video/playback/playlist.m3u8?v=1092232583318567&u=Adw5qjGkaXyRZbjqFRsADwZcJqll9kq-jVjdcKu5UKWW17HSHrEbxFYjAR2F6DBQ8a1_6Cz8LRM&s=AdyXMYkzXE_2-ltVRMff02tLbPI&a=0",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -59,7 +59,7 @@
       "id": "bmax4",
       "name": "Bein Max 4 (multi)",
       "url": 
-      "https://super-livetv.super-stv.workers.dev/?id=04",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/yvWcG3JJwNfTQN1UjabTOYhWCqFmOPz0uxhz2hkYvonyZD1QBhG1vAwzQQHv8b3UR9j2Z60-Ad5XiHCBGW8h8Q/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
