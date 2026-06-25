@@ -9,39 +9,54 @@ const OLD_UA = "SUPERTVLIVE2026";
 export default async function handler(req, res) {
   try {
     const { id } = req.query;
-    if (!id) return res.status(400).send("Missing id");
+
+    if (!id) {
+      return res.status(400).send("Missing id");
+    }
 
     const ua = (req.headers["user-agent"] || "").toLowerCase();
 
     incrementViewer(id);
 
     // =========================
-    // 🔴 1 - المصيدة (اليوزر القديم)
+    // 🔴 المصيدة
     // =========================
-    if (ua.includes(OLD_UA.toLowerCase()) || ua.includes("superlivetv")) {
-      // بدل فيديو (الأكثر استقرارًا)
+    if (
+      ua.includes(OLD_UA.toLowerCase()) ||
+      ua.includes("superlivetv")
+    ) {
       return res.redirect(
         "https://github.com/himasabry/video/raw/refs/heads/main/output.m3u8"
       );
     }
 
     // =========================
-    // ❌ 2 - أي حد مش اليوزر الجديد يتمنع
+    // ❌ منع أي يوزر غير المسموح
     // =========================
     if (!ua.includes(NEW_UA.toLowerCase())) {
       return res.status(403).send("Forbidden");
     }
 
     // =========================
-    // ✅ 3 - اليوزر الجديد (تشغيل القنوات)
+    // 📦 تحميل القنوات
     // =========================
-    const filePath = path.join(process.cwd(), "data", "channels.json");
-    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const filePath = path.join(
+      process.cwd(),
+      "data",
+      "channels.json"
+    );
+
+    const data = JSON.parse(
+      fs.readFileSync(filePath, "utf8")
+    );
 
     let channel = null;
 
     for (const group of Object.values(data)) {
-      const found = group.find((ch) => ch.id === id);
+      const found = group.find(
+        (ch) => ch.id === id
+      );
+
       if (found) {
         channel = found;
         break;
@@ -53,28 +68,68 @@ export default async function handler(req, res) {
     }
 
     // =========================
-    // 📺 القنوات العادية
+    // 🔥 هيدرز القناة
     // =========================
-    if (!channel.url.includes("ostora")) {
-      return res.redirect(channel.url);
+    const headers = {};
+
+    if (channel.headers?.["User-Agent"]) {
+      headers["User-Agent"] =
+        channel.headers["User-Agent"];
+    }
+
+    if (channel.headers?.Referer) {
+      headers["Referer"] =
+        channel.headers.Referer;
+    }
+
+    if (channel.headers?.Origin) {
+      headers["Origin"] =
+        channel.headers.Origin;
     }
 
     // =========================
-    // 🌐 ostora handling
+    // 📡 جلب البث الحقيقي
     // =========================
-    const cleanUrl = channel.url.split("#")[0];
+    const response = await fetch(
+      channel.url.split("#")[0],
+      {
+        headers,
+        redirect: "follow"
+      }
+    );
 
-    const response = await fetch(cleanUrl, {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        Referer: "https://ostora.pages.dev/",
-      },
-    });
+    if (!response.ok) {
+      return res
+        .status(response.status)
+        .send("Source error");
+    }
 
-    return res.redirect(response.url);
+    // =========================
+    // 📺 رجع الـ m3u8 نفسه
+    // =========================
+    const body =
+      await response.text();
+
+    res.setHeader(
+      "Content-Type",
+      response.headers.get(
+        "content-type"
+      ) ||
+      "application/vnd.apple.mpegurl"
+    );
+
+    res.setHeader(
+      "Cache-Control",
+      "no-store"
+    );
+
+    return res.send(body);
 
   } catch (e) {
-    console.error("PLAY ERROR:", e);
-    return res.status(500).send("Server error");
+    console.error(e);
+
+    return res
+      .status(500)
+      .send("Server error");
   }
 }
