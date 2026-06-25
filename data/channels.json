@@ -38,8 +38,10 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://super-tv.pages.dev/MAX_1.m3u8",
-      "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
+      "https://player.kianezidi.workers.dev/play.m3u8?id=154472&cat=7031",
+      "headers": { 
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2",
