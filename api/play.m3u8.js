@@ -9,58 +9,39 @@ const OLD_UA = "SUPERTVLIVE2026";
 export default async function handler(req, res) {
   try {
     const { id } = req.query;
+    if (!id) return res.status(400).send("Missing id");
 
-    if (!id) {
-      return res.status(400).send("Missing id");
-    }
-
-    const ua = String(
-      req.headers["user-agent"] || ""
-    ).toLowerCase();
+    const ua = (req.headers["user-agent"] || "").toLowerCase();
 
     incrementViewer(id);
 
     // =========================
-    // 🔴 المصيدة
+    // 🔴 1 - المصيدة (اليوزر القديم)
     // =========================
-    if (
-      ua.includes(OLD_UA.toLowerCase()) ||
-      ua.includes("superlivetv")
-    ) {
+    if (ua.includes(OLD_UA.toLowerCase()) || ua.includes("superlivetv")) {
+      // بدل فيديو (الأكثر استقرارًا)
       return res.redirect(
         "https://github.com/himasabry/video/raw/refs/heads/main/output.m3u8"
       );
     }
 
     // =========================
-    // ❌ منع أي يوزر غير المسموح
+    // ❌ 2 - أي حد مش اليوزر الجديد يتمنع
     // =========================
-    if (
-      !ua.includes(NEW_UA.toLowerCase())
-    ) {
+    if (!ua.includes(NEW_UA.toLowerCase())) {
       return res.status(403).send("Forbidden");
     }
 
     // =========================
-    // 📦 قراءة القنوات
+    // ✅ 3 - اليوزر الجديد (تشغيل القنوات)
     // =========================
-    const filePath = path.join(
-      process.cwd(),
-      "data",
-      "channels.json"
-    );
-
-    const data = JSON.parse(
-      fs.readFileSync(filePath, "utf8")
-    );
+    const filePath = path.join(process.cwd(), "data", "channels.json");
+    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
     let channel = null;
 
     for (const group of Object.values(data)) {
-      const found = group.find(
-        (x) => x.id === id
-      );
-
+      const found = group.find((ch) => ch.id === id);
       if (found) {
         channel = found;
         break;
@@ -68,100 +49,32 @@ export default async function handler(req, res) {
     }
 
     if (!channel) {
-      return res
-        .status(404)
-        .send("Channel not found");
+      return res.status(404).send("Channel not found");
     }
 
     // =========================
-    // ✅ لو مفيش headers
+    // 📺 القنوات العادية
     // =========================
-    if (
-      !channel.headers ||
-      Object.keys(
-        channel.headers
-      ).length === 0
-    ) {
-      return res.redirect(
-        channel.url
-      );
+    if (!channel.url.includes("ostora")) {
+      return res.redirect(channel.url);
     }
 
     // =========================
-    // 🔥 Proxy للقنوات اللي عليها headers
+    // 🌐 ostora handling
     // =========================
-    const headers = {};
+    const cleanUrl = channel.url.split("#")[0];
 
-    if (
-      channel.headers[
-        "User-Agent"
-      ]
-    ) {
-      headers["User-Agent"] =
-        channel.headers[
-          "User-Agent"
-        ];
-    }
+    const response = await fetch(cleanUrl, {
+      headers: {
+        "User-Agent": "Mozilla/5.0",
+        Referer: "https://ostora.pages.dev/",
+      },
+    });
 
-    if (
-      channel.headers.Referer
-    ) {
-      headers["Referer"] =
-        channel.headers.Referer;
-    }
-
-    if (
-      channel.headers.Origin
-    ) {
-      headers["Origin"] =
-        channel.headers.Origin;
-    }
-
-    const response =
-      await fetch(
-        channel.url.split(
-          "#"
-        )[0],
-        {
-          headers,
-          redirect:
-            "follow",
-        }
-      );
-
-    if (!response.ok) {
-      return res
-        .status(
-          response.status
-        )
-        .send(
-          "Source Error"
-        );
-    }
-
-    res.setHeader(
-      "Content-Type",
-      response.headers.get(
-        "content-type"
-      ) ||
-        "application/vnd.apple.mpegurl"
-    );
-
-    return res.send(
-      await response.text()
-    );
+    return res.redirect(response.url);
 
   } catch (e) {
-
-    console.error(
-      "PLAY ERROR:",
-      e
-    );
-
-    return res
-      .status(500)
-      .send(
-        "Server error"
-      );
+    console.error("PLAY ERROR:", e);
+    return res.status(500).send("Server error");
   }
 }
