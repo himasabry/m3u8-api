@@ -54,15 +54,11 @@ export default async function handler(req, res) {
 
     // =========================
     // =========================
+// =========================
 // 📺 القنوات العادية
 // =========================
 if (!channel.url.includes("ostora")) {
-
-  const proxyUrl =
-    `${req.headers["x-forwarded-proto"] || "https"}://${req.headers.host}` +
-    `/api/proxy.m3u8?url=${encodeURIComponent(channel.url)}`;
-
-  return res.redirect(proxyUrl);
+  return res.redirect(channel.url);
 }
 
     // =========================
