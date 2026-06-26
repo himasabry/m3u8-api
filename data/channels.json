@@ -808,77 +808,77 @@
       "id": "40",
       "name": "YAHALA",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=OSN_TV_Yahala&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/YAHALA_1.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "41",
       "name": "YAHALA BIL ARABI",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=OSN_TV_Yahala_Bil_Arabi&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/YAHALA_BIL_ARABI.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "42",
       "name": "YAHALA AFLAM",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=OSN_YahalaAflam&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/YAHALA_AFLAM.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "43",
       "name": "Movies",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=OSN_TV_Movies_horror&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/Movies.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "44",
       "name": "Action",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=OSN_TV_Movies_Action&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/Action.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "45",
       "name": "Comedy",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=OSN_Comedy&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/Comedy.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "46",
       "name": "CINEMA 1",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=cinema1&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/Cinema_1.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
     {
       "id": "47",
       "name": "CINEMA 2",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=cinema2&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/Cinema_2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "48",
       "name": "Alfa Musalsalat",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=osn_series_1&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/Musalsalat_1.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
       },
       {
       "id": "49",
       "name": "Alfa Alyoum",
       "url": 
-        "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=al_youm&key=MmYmJhIhdIDJHdoF22",
+        "https://super-tv.pages.dev/Alfa_Alyoum.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "50",
       "name": "Alfa Alsafwa",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk1.marketplace-io-none-kode-steeeee.lol&id=osn_fan&key=MmYmJhIhdIDJHdoF22",
+      "https://super-tv.pages.dev/Alfa_Alsafwa.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ]
