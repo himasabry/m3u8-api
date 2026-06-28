@@ -68,14 +68,14 @@
       "id": "bmax1_1080",
       "name": "Bein Max 1 (1080)",
       "url": 
-      "https://stream.camcloud.stream/stream/9b108ca51de9/playlist.m3u8",
+      "https://max.st-plasma.workers.dev/max14k/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_1080",
       "name": "Bein Max 2 (1080)",
       "url": 
-      "https://stream.camcloud.stream/stream/5f2ff374bad1/playlist.m3u8",
+      "https://tmaxapp.site/beinmax2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -122,14 +122,14 @@
       "id": "bmax1_480",
       "name": "Bein Max 1 (480)",
       "url": 
-      "https://stream.camcloud.stream/stream/e2c950491585/playlist.m3u8",
+      "https://pub-e3eb43d02df647099f49525f20574746.r2.dev/BMax1-2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_480",
       "name": "Bein Max 2 (480)",
       "url": 
-      "https://stream.camcloud.stream/stream/a8bcbb987552/playlist.m3u8",
+      "https://pub-e3eb43d02df647099f49525f20574746.r2.dev/BMax2-2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
