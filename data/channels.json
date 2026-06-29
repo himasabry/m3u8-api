@@ -55,14 +55,14 @@
       "id": "bmax3",
       "name": "Bein Max 3 (multi)",
       "url": 
-      "https://web.facebook.com/video/playback/playlist.m3u8?v=1561681858734705&u=AdxfNd4_v4VRoFdy_DrTfwTGE6WffzNDpNSeA2_g3sTvW5gPB5K_zxI9wCrwJbHNcOvmx_szyns&s=AdxihS5Hp3Evf8D85_D8pvt1veE&a=0",
+      "https://stream.hicham-tv-app.com/hls/beinmax3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4",
       "name": "Bein Max 4 (multi)",
       "url": 
-      "https://web.facebook.com/video/playback/playlist.m3u8?v=1014163220987239&u=AdwUAt1-pnLk3wN_K90RqkXdG0rEy1s1jN18NOFBf_f1tgoT8W6C5KfvKq-5K2vzBIMRz-HMb44&s=Adwulf-QnB0knpaeNRgQvC2jJVk&a=0",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/uDigLUzkGHiPjUq7w_7q8GAzAcVEbScwtzz3ZlTEtye8rQwxp0ocyduyK-NNXYwNcCcCnHWJF5AxqCGoHtjo8A/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
