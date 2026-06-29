@@ -69,7 +69,7 @@
       "id": "bmax1_1080",
       "name": "Bein Max 1 (1080)",
       "url": 
-      "https://max.st-plasma.workers.dev/max14k/index.m3u8",
+      "https://tmaxapp.site/beinmax1.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -83,14 +83,14 @@
       "id": "bmax3_1080",
       "name": "Bein Max 3 (1080)",
       "url": 
-      "https://stream.camcloud.stream/stream/2374d9843dd4/playlist.m3u8",
+      "https://tmaxapp.site/beinmax3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_1080",
       "name": "Bein Max 4 (1080)",
       "url": 
-      "https://stream.camcloud.stream/stream/0f7ca424775d/playlist.m3u8",
+      "https://tmaxapp.site/beinmax4.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -102,7 +102,7 @@
     {
       "id": "bmax2_720",
       "name": "Bein Max 2 (720)",
-      "url": "https://super-tv.pages.dev/MAX_2.m3u8",
+      "url": "https://stm.linkip.org/live/1956_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
