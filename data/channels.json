@@ -338,7 +338,7 @@
       "id": "24",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://super-tv.pages.dev/ALWAN1.m3u8",
+      "https://supertv.super-stv.workers.dev/?url=http://appranks.org/output/stream/482015/output.m3u8?token=AAjnqbPqxz8omsF94efiuwfSHkU1u0wS1IGqKpYtM9Uk41LWY8kKGY473wbchWS9",
       "headers": { 
         "User-Agent": "", 
         "Referer": "", "Origin": "" }
