@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://majed-koora.co/stream.php?channel=majed20267&file=stream.m3u8",
+      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/iI-nQmNLul90cWnCMqJN59UHi_QQ2OyULxMZEu1RmvuPAOBdhZDJioVBM2vD27Ut4gRrG0TiM9jGcNl8dmoEHg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { 
         "User-Agent": 
         "",
@@ -69,7 +69,7 @@
       "id": "bmax1_1080",
       "name": "Bein Max 1 (1080)",
       "url": 
-      "https://sptvspk.st-plasma.workers.dev/max1_4k/index.m3u8",
+      "https://stream.cdncloud.stream/stream/d9a99f4b1594/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -109,42 +109,42 @@
       "id": "bmax3_720",
       "name": "Bein Max 3 (720)",
       "url": 
-      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745018",
+      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1734311",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_720",
       "name": "Bein Max 4 (720)",
       "url": 
-      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1745017",
+      "https://ranapkbd.site/RANAPK33g/TVD/play.php?id=1734312",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_480",
       "name": "Bein Max 1 (480)",
       "url": 
-      "https://stream.cdnstream.stream/stream/6b28e8d7626b/playlist.m3u8",
+      "https://stream.cdncloud.stream/stream/42aef332e09c/playlist.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_480",
       "name": "Bein Max 2 (480)",
       "url": 
-      "https://stream.cdnstream.stream/stream/6b28e8d7626b/playlist.m3u8",
+      "https://alive1.kianezidi1.workers.dev/beemax2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_480",
       "name": "Bein Max 3 (480)",
       "url": 
-      "https://stream.camcloud.stream/stream/56681b810c24/playlist.m3u8",
+      "https://alive1.kianezidi1.workers.dev/beemax3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_480",
       "name": "Bein Max 4 (480)",
       "url": 
-      "https://stream.camcloud.stream/stream/490a4e58f0da/playlist.m3u8",
+      "https://alive1.kianezidi1.workers.dev/beemax4.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
