@@ -407,42 +407,42 @@
       "id": "80",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://82.39.115.24:8080/Colors1/index.m3u8",
+      "https://ali.albesriali8.workers.dev/?url=https://stm.linkip.org/live/3461_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "81",
       "name": "ALWAN Sports 2",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://82.39.115.24:8080/Colors2/index.m3u8",
+      "https://ali.albesriali8.workers.dev/?url=https://stm.linkip.org/live/3460_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "82",
       "name": "ALWAN Sports 3",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan3hd/index.m3u8",
+      "https://ali.albesriali8.workers.dev/?url=https://stm.linkip.org/live/3459_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "83",
       "name": "ALWAN Sports 4",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan4hd/index.m3u8",
+      "https://ali.albesriali8.workers.dev/?url=https://stm.linkip.org/live/3458_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "84",
       "name": "ALWAN Sports 5",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan5hd/index.m3u8",
+      "https://ali.albesriali8.workers.dev/?url=https://stm.linkip.org/live/3457_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "85",
       "name": "ALWAN Sports 6",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://virtualdbxv.com:8080/alwan6hd/index.m3u8",
+      "https://ali.albesriali8.workers.dev/?url=https://stm.linkip.org/live/3456_.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
