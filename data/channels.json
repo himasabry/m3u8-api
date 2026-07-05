@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/iI-nQmNLul90cWnCMqJN59UHi_QQ2OyULxMZEu1RmvuPAOBdhZDJioVBM2vD27Ut4gRrG0TiM9jGcNl8dmoEHg/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "https://supertv.super-stv.workers.dev/?url=https://coopxeg.org/output/stream/489114/master.m3u8?token=Ek2E0wt0g0k9Py79aqSkQAfFrfRYnM",
       "headers": { 
         "User-Agent": 
         "",
