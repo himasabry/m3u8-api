@@ -48,7 +48,7 @@
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://foxtv7.com/m7/tools/stream3.php?channel=Fox_TV_Stream_1&file=stream.m3u8",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/AZ4Llh0nvFQGNZlEpagRKkqG1mkm2nEWuB5c8Qj80VDd8V5yefEoEbR1EbneZKblkCs2K4c0HMQCVagADlY1Bg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
