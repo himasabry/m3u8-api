@@ -96,28 +96,28 @@
     {
       "id": "bmax1_720",
       "name": "Bein Max 1 (720)",
-      "url": "https://goal-livetv.pages.dev/GUBA_STREAM_SS1.m3u8",
+      "url": "https://redperch.space/neocardinal.php?id=BEIN_MAX_1_HD.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_720",
       "name": "Bein Max 2 (720)",
       "url": 
-      "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/1515000000/index.m3u8",
+      "https://redperch.space/neocardinal.php?id=BEIN_MAX_2_HD.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_720",
       "name": "Bein Max 3 (720)",
       "url": 
-      "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/33523510/index.m3u8",
+      "https://redperch.space/neocardinal.php?id=BEIN_MAX_3_HD.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_720",
       "name": "Bein Max 4 (720)",
       "url": 
-      "https://supertv.super-stv.workers.dev/?url=http://h42.reelpush.online/live/918454578001/index.m3u8",
+      "https://redperch.space/neocardinal.php?id=BEIN_MAX_4_HD.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
