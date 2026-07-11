@@ -83,14 +83,14 @@
       "id": "bmax3_1080",
       "name": "Bein Max 3 (1080)",
       "url": 
-      "https://sptvspk.st-plasma.workers.dev/max3_4k/index.m3u8",
+      "https://sptvspk.st-plasma.workers.dev/max3_8k/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_1080",
       "name": "Bein Max 4 (1080)",
       "url": 
-      "https://sptvspk.st-plasma.workers.dev/max4_4k/index.m3u8",
+      "https://sptvspk.st-plasma.workers.dev/max4_8k/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
