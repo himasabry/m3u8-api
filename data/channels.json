@@ -48,7 +48,7 @@
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://livepeercdn.studio/hls/afd4bys036mdxxjg/index.m3u8",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/AZ4Llh0nvFQGNZlEpagRKkqG1mkm2nEWuB5c8Qj80VDd8V5yefEoEbR1EbneZKblkCs2K4c0HMQCVagADlY1Bg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -76,7 +76,7 @@
       "id": "bmax2_1080",
       "name": "Bein Max 2 (1080)",
       "url": 
-      "https://goal-livetv.pages.dev/GUBA_STREAM_SS2.m3u8",
+      "https://sptvspk.st-plasma.workers.dev/max2_8k/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -96,56 +96,56 @@
     {
       "id": "bmax1_720",
       "name": "Bein Max 1 (720)",
-      "url": "https://ranapkbd.site/RANAPK33k/TVD/play.php?id=1745020",
+      "url": "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax1-1/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_720",
       "name": "Bein Max 2 (720)",
       "url": 
-      "https://ranapkbd.site/RANAPK33k/TVD/play.php?id=1745019",
+      "https://table.houseinventer.com/pdf/AzMjD2IyADQPb2dLfQ/tracks-v1a1/mono.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_720",
       "name": "Bein Max 3 (720)",
       "url": 
-      "https://ranapkbd.site/RANAPK33k/TVD/play.php?id=1745018",
+      "https://table.houseinventer.com/pdf/cTMhX14BDE0/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_720",
       "name": "Bein Max 4 (720)",
       "url": 
-      "https://ranapkbd.site/RANAPK33k/TVD/play.php?id=1745017",
+      "https://table.houseinventer.com/pdf/cTMhX14BDE1/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax1_480",
       "name": "Bein Max 1 (480)",
       "url": 
-      "https://alive1.kianezidi1.workers.dev/beemax1.m3u8",
+      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax1-4/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax2_480",
       "name": "Bein Max 2 (480)",
       "url": 
-      "https://alive1.kianezidi1.workers.dev/beemax2.m3u8",
+      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax2-4/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax3_480",
       "name": "Bein Max 3 (480)",
       "url": 
-      "https://alive1.kianezidi1.workers.dev/beemax3.m3u8",
+      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax3-4/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_480",
       "name": "Bein Max 4 (480)",
       "url": 
-      "https://alive1.kianezidi1.workers.dev/beemax4.m3u8",
+      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax4-4/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -339,7 +339,7 @@
       "id": "24",
       "name": "ALWAN Sports 1",
       "url": 
-      "https://super-tv.pages.dev/ALWAN1.m3u8",
+      "https://alwan.st-plasma.workers.dev/alwan1/index.m3u8",
       "headers": { 
         "User-Agent": "", 
         "Referer": "", "Origin": "" }
@@ -348,7 +348,7 @@
       "id": "25",
       "name": "ALWAN Sports 2",
       "url": 
-      "https://super-tv.pages.dev/ALWAN2.m3u8",
+      "https://alwan.st-plasma.workers.dev/alwan2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
