@@ -138,14 +138,14 @@
       "id": "bmax3_480",
       "name": "Bein Max 3 (480)",
       "url": 
-      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax3-4/index.m3u8",
+      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax3-2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "bmax4_480",
       "name": "Bein Max 4 (480)",
       "url": 
-      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax4-4/index.m3u8",
+      "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax4-2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
