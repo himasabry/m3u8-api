@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://od.lk/s/MF80MTUxNTY4Njlf/Beinmax1multi.m3u8",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/SLd8MWxI2Qqotoj9ukAxCbpMPZQTOVtnvRmVIizXwFXyLrQDJFPzCRsjcP0k5ZZV1Vr1qEm7FbtC7E0Bn5IY3Q/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { 
         "User-Agent": 
         "",
@@ -48,7 +48,7 @@
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/AZ4Llh0nvFQGNZlEpagRKkqG1mkm2nEWuB5c8Qj80VDd8V5yefEoEbR1EbneZKblkCs2K4c0HMQCVagADlY1Bg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_highlatency.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/KEMXALi2QwxUE4Tdi140oMX37KNmyASmX5ztkmnSalpsKdiD-el2Q23Ahim8wDbj__G891JIrjGgpuOSQ4aBCQ/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -96,7 +96,7 @@
     {
       "id": "bmax1_720",
       "name": "Bein Max 1 (720)",
-      "url": "https://pub-64bd1ce0f83f478096e21a0d8483b3f3.r2.dev/BMax1-1/index.m3u8",
+      "url": "https://ayassport.776740.ir.cdn.ir/hls2/sport.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -630,7 +630,7 @@
       "id": "89",
       "name": "AL-FAJER 1 HD",
       "url": 
-      "https://stm.linkip.org/live/1114_.m3u8",
+      "https://test.antmedia.io/live/streams/fajer.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
