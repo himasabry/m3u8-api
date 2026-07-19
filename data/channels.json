@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/gRrWfCrkQ9x4h4AA0F-ksAaX25Muaa4GKq4DC2WuIaiOI3z77hpAr7lInUT4KuTYat-zY9UD0B20Y3gjXuxUUw/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/qZwx8iXyDlTSAtyU0MS-cFxwds7_qXrYYSt2trdIdaQ0FTxKY3053jO5zufQlUWXYs2qrD74ZztsuWdhUJ7VDA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { 
         "User-Agent": 
         "",
@@ -96,7 +96,7 @@
     {
       "id": "bmax1_720",
       "name": "Bein Max 1 (720)",
-      "url": "https://euc11.playlist.ttvnw.net/v1/playlist/CokHSSp0WFb4CBCcMucoV_rZMhX0gwrW53LKnxS81Vwlm3fd3c8LH8ucAew0UY-9Sb-14YPdKaUgACGOaRO9LGtPkA2y5cUptyG-SDKN6Ut1TzvDD-IwBbu4PHntDAZmgPpSZRp6AFhPfzzzI-2n3POV8ePFplGFJoe8ZOUJ0Co8IZT7CNI04PxbqoeBrkStc7uYL7y-0ZNXlpMzB53DQVJ16bLOmBi1qbD_N-k6KVseUSgFFYusQT1TkQYJBXjTmo5AdNxznijtnq0Bxr4Z_p8ICPrxSa4RjSOmhL9VKRIsBGdfz4DbBYAf8dmADK4bo5K4FkTzw_FyO2zopYbBKjOQ-08FWULgnAfELLBxWBH9bQIOLuChxrLFKWI5IzaE5hosXlpmZ9R9P2AeD9yCCG9Jv-HXDtI91pqtietW46OvNJEvSjS40ZbvJBm2wSgcg-fBBqBbVkAJIFLizx_F2N1FAy9uIgTWBzpdb1kzEH06vtY6bLe4hWFI70IPxC-WM4UFiVWTXGr7Q_BV8YCtyucPOw9iMzsUJtspH_oO9Qsc64XRLwDdgiVLF764GC4t5b8lokYzE-XB1bwuokQCP5_9mVTBVxJVAg0h3vM6qGqjPPH5ubQnrjmD5Wb6j8sZoMA7w7zTzQTzJYhvXL4ManIFz1h3bJuNdxxGLOw5U5CnsNpKryGvJYsrf1okt5H24a1It50BLv5aTOT462E9nTajX-0m2szFTjx4mK7A4t-B3VL263KPU4UcbMfu-WMTo150kxZQBW2wO_LVT-0EV7tRqFHHQGjjb1TRPmILiWn_mhrdqr4a1UawE5u_3EyCYKHgNcnRUUvWiWQrP0wATU9x66_araEul4iksTFZxkgaaqLSzKF9J48m24wtZQgyHFSSNFYBYgQmeRaBYrU8tynAisxbd-iL2k4kLdLMe16831UDvdVelzSkT9-hD3DXFNCX4nUJYU71iMs74tbW3A4b1jXvL826SAagdMmjM6XS5e1oKeaKUV9gG7AdhY4ZlFhJC9NHOA_4vaadL__cKWYJDf58WoaGjmX8GV_8oJgd_nRVcIAnlyiNIdk1B9DpZyF_ZVBhNGc5VDK8cQOcZbmcWcD440OAYcd2lNvxm6wex4w9HUmZaYWSuQZiyqSrVkF7-8VcKcKdVyHOjeX8kwPwnk_pihQ-Qy3T0tdWCa2Tp6_QqGtX7NNdukcaDOFYjQDgJKZyxidgQiABKglldS13ZXN0LTIwzg8.m3u8",
+      "url": "",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
