@@ -38,7 +38,7 @@
       "id": "bmax1",
       "name": "Bein Max 1 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/wnpipm_Mf5WX6qOVd66Z9SyoE_Yr66cCiVIyb9JBRtxJyanSgT3bpPFns_TbjRmcUSepnZztzB2PHsmjD0xgpg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/7vTUEaHKEVYKJgAQNa1LgLHpjp5vlfeOUmU9Duk0mgFVAvi_y-7qwDcHrnvUEUGrnXqX1yJyfnPVx_eEM8KqPg/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { 
         "User-Agent": 
         "",
@@ -48,7 +48,7 @@
       "id": "bmax2",
       "name": "Bein Max 2 (multi)",
       "url": 
-      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/0gZzQvBbEw8460Zwwkqq2zSl1EtUQttdeesAtUTWpw82nU5qmxMO4cgeeH0VwE_WSk5LToDIyUGpafimfb4loA/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
+      "https://prod-fastly-eu-west-1.video.pscp.tv/Transcoding/v1/hls/PXkkBQzlV80xQjb6gLR8WrUsEwxfBVvQ981ciS8vzcNkGGbS0fFNJCQVgZTYyKMpw5VA7_kZOyHR1wlV7gau7Q/non_transcode/eu-west-1/periscope-replay-direct-prod-eu-west-1-public/master_dynamic_delta.m3u8?type=live",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
