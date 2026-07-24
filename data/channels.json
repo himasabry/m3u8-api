@@ -357,28 +357,28 @@
       "name": 
       "ALWAN Sports 3",
       "url": 
-      "https://super-tv.pages.dev/ALWAN3.m3u8",
+      "https://alwan.st-plasma.workers.dev/alwan3/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "27",
       "name": "ALWAN Sports 4",
       "url": 
-      "https://super-tv.pages.dev/ALWAN4.m3u8",
+      "https://alwan.st-plasma.workers.dev/alwan4/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "28",
       "name": "ALWAN Sports 5",
       "url": 
-      "https://super-tv.pages.dev/ALWAN5.m3u8",
+      "https://alwan.st-plasma.workers.dev/alwan5/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "29",
       "name": "ALWAN Sports 6",
       "url": 
-      "https://super-tv.pages.dev/ALWAN6.m3u8",
+      "https://alwan.st-plasma.workers.dev/alwan6/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
