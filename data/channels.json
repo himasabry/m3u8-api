@@ -203,20 +203,20 @@
       "id": "b2_FHD",
       "name": "Bein Sports 2 FHD",
       "url": 
-      "http://ityyy54viner.atwebpages.com/Al-AbboudiTV3/index.php?action=proxy&channel=1425&server=0",
+      "https://ityyy54viner.atwebpages.com/Al-AbboudiTV3/index.php?action=proxy&channel=1425&server=0",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b3_FHD",
       "name": "Bein Sports 3 FHD",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b3_1080&key=MmYmJhIhdIDJHdoF22",
+      "https://super-livetv.super-stv.workers.dev/?id=b3_4K",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b4_FHD",
       "name": "Bein Sports 4 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/11.m3u8",
+      "url": "https://super-livetv.super-stv.workers.dev/?id=b4_4K",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -225,19 +225,19 @@
     {
       "id": "b5_FHD",
       "name": "Bein Sports 5 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/14.m3u8",
+      "url": "https://super-livetv.super-stv.workers.dev/?id=b5_4K",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b6_FHD",
       "name": "Bein Sports 6 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/17.m3u8",
+      "url": "https://super-livetv.super-stv.workers.dev/?id=b6_4K",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b7_FHD",
       "name": "Bein Sports 7 FHD",
-      "url": "https://ali.albesriali8.workers.dev/?url=https://w.shahidtv.net/live/22384631/61957661/401.m3u8",
+      "url": "https://super-livetv.super-stv.workers.dev/?id=b7_4K",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
