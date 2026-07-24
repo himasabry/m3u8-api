@@ -196,14 +196,14 @@
       "id": "b1_FHD",
       "name": "Bein Sports 1 FHD",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b1_1080&key=MmYmJhIhdIDJHdoF22",
+      "https://ityyy54viner.atwebpages.com/Al-AbboudiTV3/index.php?action=proxy&channel=1424&server=0",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b2_FHD",
       "name": "Bein Sports 2 FHD",
       "url": 
-      "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fs1.marketplace-io-none-kode-steeeee.lol%2F%2F&id=b2_1080&key=MmYmJhIhdIDJHdoF22",
+      "http://ityyy54viner.atwebpages.com/Al-AbboudiTV3/index.php?action=proxy&channel=1425&server=0",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
@@ -288,7 +288,7 @@
     {
       "id": "b1_SD",
       "name": "Bein Sports 1 SD",
-      "url": "https://husa.wizgan2013.workers.dev/?id=4",
+      "url": "https://popcdn.kianezidi.workers.dev/beINAR.m3u8",
       "headers": {
         "User-Agent": "",
         "Referer": "",
@@ -297,19 +297,19 @@
     {
       "id": "b2_SD",
       "name": "Bein Sports 2 SD",
-      "url": "https://super.super-stv.workers.dev/ch/beIN_2_sd.m3u8",
+      "url": "https://popcdn.kianezidi.workers.dev/beINAR2.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b3_SD",
       "name": "Bein Sports 3 SD",
-      "url": "https://super.super-stv.workers.dev/ch/beIN_3_sd.m3u8",
+      "url": "https://popcdn.kianezidi.workers.dev/beINAR3.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b4_SD",
       "name": "Bein Sports 4 SD",
-      "url": "https://super.super-stv.workers.dev/ch/beIN_4_sd.m3u8",
+      "url": "https://popcdn.kianezidi.workers.dev/beINAR4.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -318,19 +318,20 @@
     {
       "id": "b5_SD",
       "name": "Bein Sports 5 SD",
-      "url": "https://super.super-stv.workers.dev/ch/beIN_5_sd.m3u8",
+      "url": "https://popcdn.kianezidi.workers.dev/beINAR5.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b6_SD",
       "name": "Bein Sports 6 SD",
-      "url": "https://super.super-stv.workers.dev/ch/beIN_6_sd.m3u8",
+      "url": "https://popcdn.kianezidi.workers.dev/beINAR6.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "b7_SD",
       "name": "Bein Sports 7 SD",
-      "url": "https://genral.oxml1237.workers.dev/index.m3u8?base=https%3A%2F%2Fk4.marketplace-io-none-kode-steeeee.lol&id=b7&key=MmYmJhIhdIDJHdoF22",
+      "url": 
+      "https://popcdn.kianezidi.workers.dev/beINAR7.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
