@@ -627,7 +627,7 @@
       "id": "89",
       "name": "AL-FAJER 1 HD",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=http://23370wa.xyz:80/play/BMoDRXtRtbrnsYhxpeoI7vmdLumMjX5PJESx43I7lpI/m3u8",
+      "https://sptvspk.st-plasma.workers.dev/f1/index.m3u8",
       "headers": { 
         "User-Agent": "",
         "Referer": "",
@@ -637,28 +637,28 @@
       "id": "90",
       "name": "AL-FAJER 2 HD",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=https://redperch.space/neocardinal.php?id=alfajer2",
+      "https://sptvspk.st-plasma.workers.dev/f2/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "91",
       "name": "AL-FAJER 3 HD",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=https://redperch.space/neocardinal.php?id=alfajer3",
+      "https://sptvspk.st-plasma.workers.dev/f3/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "92",
       "name": "AL-FAJER 4 HD",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=https://redperch.space/neocardinal.php?id=alfajer4",
+      "https://sptvspk.st-plasma.workers.dev/f4/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     },
     {
       "id": "93",
       "name": "AL-FAJER 5 HD",
       "url": 
-      "https://ali.albesriali8.workers.dev/?url=https://redperch.space/neocardinal.php?id=alfajer5",
+      "https://sptvspk.st-plasma.workers.dev/f5/index.m3u8",
       "headers": { "User-Agent": "", "Referer": "", "Origin": "" }
     }
   ],
